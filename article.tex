@@ -1,0 +1,157 @@
+%!TEX encoding = IsoLatin
+\newcommand{\MYLANGUAGE}{english}
+\newcommand{\MYMAINFONT}{Georgia}
+\newcommand{\MYSANSFONT}{Georgia}
+
+\documentclass[
+a4paper,
+11pt,
+%appendixprefix,
+%openany,
+%nochapterprefix,
+%normalheadings,
+parskip,
+\MYLANGUAGE,
+abstractoff,
+bibliography=totoc
+]{scrartcl}
+% scrbook
+
+\XeTeXinputencoding latin1 
+
+
+\newcommand{\TITLEONE}{Case MeeGo}
+\newcommand{\TITLESUB}{An application of the ODESSA method}
+%\newcommand{\DATE}{January 20, 2012}
+\newcommand{\AUTHOR}{Martin von Weissenberg and Damian Andrew Tamburri}
+%\newcommand{\KEYWORDS}{Agile, enterprise, organization}
+
+\newtheorem{hypo}{Hypothesis}
+
+%\usepackage[latin1]{inputenc}
+\usepackage{url}
+%\usepackage{setspace}
+\usepackage{natbib}
+\usepackage[right]{eurosym}
+\usepackage{appendix}
+\usepackage{colortbl}
+
+\usepackage{mdwlist}
+
+\usepackage[
+pdfauthor={\AUTHOR},
+pdftitle={\TITLEONE --- \TITLESUB},
+%pdfkeywords={\KEYWORDS},
+pdfpagemode=UseOutlines,
+bookmarksnumbered=true,
+breaklinks
+]{hyperref}
+
+
+
+
+%% XeLaTeX
+\usepackage{polyglossia}\setdefaultlanguage{\MYLANGUAGE}
+\usepackage{xltxtra}
+\setmainfont[Mapping=tex-text]{\MYMAINFONT}
+\setsansfont[Mapping=tex-text]{\MYSANSFONT}
+\areaset{150mm}{237mm}
+
+%% PDFLaTeX
+
+%\usepackage{times}\usepackage[T1]{fontenc} % Times
+% The default is Computer Modern (T1)
+
+\usepackage{setspace}
+%\singlespacing
+%\onehalfspacing
+\doublespacing
+%\setstretch{1.1}
+
+
+\pagestyle{plain}
+\bibliographystyle{abbrvnat} % could also be plainnat or alpha
+
+
+\newif\ifpdf
+\ifx\pdfoutput\undefined
+\pdffalse % we are not running PDFLaTeX
+\else
+\pdfoutput=1 % we are running PDFLaTeX
+\pdftrue
+\fi
+
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\DeclareGraphicsExtensions{.pdf, .jpg, .png}
+\else
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.eps, .jpg, .png}
+\fi
+
+\bibpunct{(}{)}{;}{a}{,}{,}
+
+
+\begin{document}
+
+%\makecompactlist{itemize*}{itemize}
+%\makecompactlist{enumerate*}{enumerate}
+%\makecompactlist{description*}{description}
+
+
+\title{\TITLEONE}
+\@ifundefined{TITLESUB}{ }{\subject{\TITLESUB}}
+\author{\AUTHOR}
+\@ifundefined{DATE}{ }{\date{\DATE}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{12pt plus 6pt minus 3pt}
+
+\setlength{\textfloatsep}{36pt plus 12.0pt minus 8.0pt} % top or bottom figures [tb]
+\setlength{\floatsep}{20.0pt plus 4.0pt minus 2.0pt} % spacing between figures
+\setlength{\intextsep}{20.0pt plus 4.0pt minus 2.0pt} % embedded figures [h]
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg, .pdf}
+\fi
+
+\maketitle
+
+%\begin{abstract}
+%Abstract
+%\end{abstract}
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+\section{Introduction}
+
+
+\section{Background}
+
+
+\section{Methodology}
+
+
+\section{Analysis}
+
+
+\section{Results}
+
+
+\section{Conclusions}
+
+
+%\addcontentsline{toc}{section}{Bibliography}
+\bibliography{/Users/mvonweis/Documents/Agile/AgileAtScale/book/book}
+
+
+%\appendix
+%\appendixpage
+
+
+
+
+\end{document}
