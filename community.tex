@@ -349,7 +349,7 @@
 %
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
-\title{How is your community doing?}
+\title{``How is your community doing?'' An empirical study on development communities}
 
 
 % author names and affiliations
@@ -404,7 +404,8 @@ mvw@iki.fi }}
 
 \begin{abstract}
 %\boldmath
-Engineering software is a social activity. Software projects' success is very often connected to how their development community fares. This connection becomes especially delicate when multiple communities have to join forces (e.g. in global software engineering). So far however, software engineering discipline lacks systematic methods to sense a community state to act upon. In this paper we propose a method to sense the state of a development community, by making its key attributes explicit. In addition, we suggest ways in which practitioners can use the community state, to adjust the relative communities (e.g. by adding specific technologies or changing organisational goals). One key finding is that certain barriers inhibit community effectiveness. These barriers can be tackled by analysing the state of the software development community. We illustrate our method with a case-study.
+Engineering software is a social activity. Software projects' success is very often connected to how their development community fares. This connection becomes especially delicate when multiple communities have to join forces (e.g. in global software engineering). So far however, software engineering discipline lacks systematic methods to sense a community state to act upon. In this paper we propose a method to sense the status of a development community. One key finding is that observable organisational information misleads community detection. In addition, organisational barriers are not necessarily a bad thing. If they are, they can be tackled by analysing the status of the software development community. We illustrate with a case-study.
+%, by making its key attributes explicit. In addition, we suggest ways in which practitioners can use the community state, to adjust the relative communities (e.g. by adding specific technologies or changing organisational goals). 
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -427,9 +428,10 @@ Engineering software is a social activity. Software projects' success is very of
 
 \section{Introduction}
 
-The craft of software is becoming more and more a social activity \cite{specissue}. Several studies suggest that engineers spend between 70 and 85\% of their time working with other people (e.g. end-user focus groups, managers, business sponsors, etc.) \cite{socialbook}. This means that in 70-85\% of times, software engineering success is a community effort, rather than a success single individuals. This figure becomes more impactful with the increase of diversity and size of the development community. For example, Global Software Engineering is a development strategy entailing global teams to collaborate together from different locations in different timezones \cite{gsdbook}. In this circumstance, time, space and culture distances magnify the risks of project failure connected to failures in the development community \cite{empirglob,nachiappan,icgseoss}.
-The problem persists since the software engineering practice still lacks a systematic method to identify the state of development communities. As a consequence, there is no way for software engineering practitioners to effectively act upon the development community they are part of.
-To tackle this issue, this paper proposes a method to ``sense'' and manipulate a development community's status. The method is applied to a real-life organisation. We found that the method helps uncovering the state of development communities but it cannot be automated.
+The craft of software is becoming more and more a social activity \cite{specissue}. Several studies suggest that engineers spend between 70 and 85\% of their time working with other people (e.g. end-user focus groups, managers, business sponsors, etc.) \cite{socialbook}. This means that in 70-85\% of times, software engineering success is a community effort, rather than a success of single individuals. This figure becomes more impactful with the increase of diversity and size of the development community. For example, Global Software Engineering is a development strategy entailing global teams to collaborate together from different locations in different timezones \cite{gsdbook}. In this circumstance, time, space and culture distances magnify the risks of project failure connected to failures in the development community \cite{empirglob,nachiappan,icgseoss}.
+The problem persists since software engineering practitioners still lack a systematic method to identify the state of development communities. 
+%As a consequence, there is no way for software engineering practitioners to effectively act upon the development community they are part of.
+To tackle this issue, this paper proposes a method to ``sense'' a development community status. First, our method uses a questionnaire to gather necessary information about the observed community. Then, our method uses a decision-tree to match the information in the questionnaire to known community types. The method is applied to a real-life organisation. We found that the method helps uncovering the status of development communities but it cannot be fully automated.
 %In addition we suggest ways to manipulate the community state, e.g. to change community type or its focus. 
 %In algorithms theory, a process state is given by the (current) values of all variables within the scope of the process \cite{algos}.
 %Our method is based on empirical evidence. 
@@ -437,12 +439,13 @@ To tackle this issue, this paper proposes a method to ``sense'' and manipulate a
 %%%%%%%%%% NOOOOOO!!!
 %We found that a \emph{social community} is a specific type of social network for which certain attributes remain constantly true.
 
-We found that observable \emph{social communities} are a composition of known social community types \cite{icgseoss,ossslr}. Each type can be characterised with attributes that are necessary and sufficient to uniquely identify it \cite{specissue}. We argue that the status of a community is given by the (set of) values of attributes that are necessary and sufficient to identify (all) its components.
+%We found that the status of a community is given by a set of paths on a community decision-tree.
 %For example, imagine you are working within a UK open-source forge that collaborates with another open-source community from the US. This basic information conveys two critical informations: (a) the resulting community (US+UK) is \emph{dispersed}, i.e. not collocated; (b) the resulting community is \emph{informal}. According to \cite{ossslr,specissue} the presence of these two attributes is necessary and sufficient to identify an \emph{Informal Network} social community type.
+%
 
-First, our method uses a questionnaire to identify the current state of the observed community. Second, our method uses a decision-tree to uncover the communities represented by the organisational information obtained. Finally, we compare the identified social community attributes (i.e. the community state) with empirical results from previous work \cite{ossslr}. This last step allows us to understand what can be done to improve the communities, e.g. by encouraging changes in its attributes.
-The benefits of using our method are threefold: first, practitioners can use the questionnaire as a checklist for missing management information; second, the questionnaire can be used as a guideline to engineer communities for a specific software development problem; third, the community state we obtain can be cross-referenced with development velocity to evaluate community effectiveness in the current state.
-The rest of the paper is structured as follows: Section \ref{devcomm} provides some background on software engineering and the study of its social aspects; Sections \ref{rq} and \ref{mm} provides our research questions, evidence and methods; Section \ref{res} provides or results; Section \ref{cs} presents the case-study we conducted to validate our work. Finally, Sections \ref{disc} and \ref{conc} discuss our results, case-study and conclude the paper.
+%Finally, we compare the identified social community attributes (i.e. the community state) with empirical results from previous work \cite{ossslr}. This last step allows us to understand what can be done to improve the communities, e.g. by encouraging changes in attributes.
+%The benefits of using our method are threefold: first, practitioners can use the questionnaire as a checklist for missing management information; second, the questionnaire can be used as a guideline to engineer communities for a specific software development problem; third, the community state we obtain can be cross-referenced with development velocity to evaluate community effectiveness in the current state.
+The rest of the paper is structured as follows: Section \ref{devcomm} provides some background on software engineering and the study of its social aspects; Sections \ref{rq} and \ref{mm} provides our research questions, evidence and methods; Section \ref{cs} presents the case-study we conducted; Section \ref{res} provides our results and discussion. Finally, Section \ref{conc} concludes the paper.
 
 % no \IEEEPARstart
 %This demo file is intended to serve as a ``starter file''
@@ -455,17 +458,25 @@ The rest of the paper is structured as follows: Section \ref{devcomm} provides s
 
 \section{On the Benefits of Studying and Supporting Software Development Communities}\label{devcomm}
 
-\section{Research Questions}\label{rq}
+\section{Research Question}\label{rq}
 
-The work presented in this paper was realised rotating around three research questions.
+The work presented in this paper was realised with the following research question:
 
-First, {\bf how can we identify the status of a software development community?}  .\\
+\begin{center}
+{\bf How can we identify and represent the status of a software development community?}\\
+\end{center}
+
+\begin{itemize}
+\item explain impact of the question and importance of answering
+\end{itemize}
+
+
 %
 %previous research in software engineering, organisational sciences and systems theory has observed many social community types. Over time, many attributes were observed and used to characterise these community. We analyse empirical evidence with the aim of pinpointing the attributes that are necessary and sufficient to capture the state of a certain community
-
-Second, {\bf how can we act on the status of a software development community?}  .\\
-
-Finally, {\bf how can practitioners use the state-of-the-art in social communities to improve development collaboration?}  .\\
+%
+%Second, {\bf how can we act on the status of a software development community?}  .\\
+%
+%Finally, {\bf how can practitioners use the state-of-the-art in social communities to improve development collaboration?}  .\\
 
 % 
 %\hfill January 11, 2007
@@ -478,13 +489,36 @@ Finally, {\bf how can practitioners use the state-of-the-art in social communiti
 %Subsubsection text here.
 %
 
-\section{Evidence Used and Methods}\label{mm}
+\section{Materials and Method}\label{mm}
+The work described in this paper introduces a method to determine the status of a community and applies it on empirical data sources. The following sections describe materials and method in more detail.
 
 \subsection{Previous and Related Work}
+Our work uses discoveries from previous and related research. We used our previous work to confirm its validity and use it in more sizeable, real-life, industrial scenario. In addition, we used related work to compare our findings.
+
+In previous work \cite{icgseoss,ossslr}, we found that observable \emph{social communities} are a composition of known social community types. Each type can be characterised with attributes necessary and sufficient to identify it \cite{specissue}. 
+
+\begin{itemize}
+\item describe work in the SLR
+\item describe work in ICGSE paper
+\item describe work in IEEE Sw paper
+\item related work
+\end{itemize}
 
 \subsection{Materials Used}
+To get a real-life industry scenario, the work relies on empirical research conducted in a big organisation, active in the mobile technologies market. The organisation is multinational and employs over 50k people in more than 15 worldwide sites. At the time the empirical research was conducted, the organisation has a market revenue of over 5-7 billion euros. 
+\begin{itemize}
+\item explain thesis Ossi
+\item explain thesis Minna
+\item explain slides
+%\item explain unique input by martin
+\end{itemize}
 
-\subsection{Research Methods}
+\subsection{Research Method}
+\begin{itemize}
+\item explain the design of the case-study: (a) through a questionnaire\footnote{link to URL of ODeSSATemplate.gdoc}; (b) the decision-tree described in \cite{specissue});
+\item explain the way we had to proceed in separate cases and weekly meet to share ideas and discussion of approach only limited to clarification of tasks
+\item overseeing of two senior researchers
+\end{itemize}
 
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
@@ -509,14 +543,40 @@ Finally, {\bf how can practitioners use the state-of-the-art in social communiti
 %\label{fig_sim}
 %\end{figure}
 
-\section{Results}\label{res}
-
 % Note that IEEE typically puts floats only at the top, even when this
 % results in a large percentage of a column being occupied by floats.
 
 \section{Sensing Community state: a Case-Study}\label{cs}
+\begin{itemize}
+\item explain how the case-study was conducted
+\item explain what the evidence used to give an answer to the questionnaire
+\item show the questionnaire and the visits
+\item explain types found in the case
+\end{itemize}
 
-\section{Discussion}\label{disc}
+\section{Findings and Discussion}\label{res}
+
+We made four key findings (below, in {\bf bold}). Text in \emph{italic} provides discussions.
+
+{\bf First, we found that observable organisational information misleads the detection of communities.}
+%
+\emph{This suggests that observable organisational information is overloaded with data. A questionnaire is an essential piece to organise and contain only the necessary and sufficient information to uncover a community type. In addition, this finding also suggests that some organisational information might be missing or incomplete. The questionnaire can also be used as a checklist to make sure all needed information is actually available. Finally, this finding implies that our method for community detection cannot be fully automated.}
+TODO: make examples of each of the above statements.\\
+
+{\bf Second, we found that the status of a community can be represented as an ordered set of paths on a decision-tree. This means that  four possible status types can be observed: (1) \emph{simple} status, represents the presence of a single path; (2) \emph{enriched-community} status, represents the presence of a path blended with attributes from other types; (3) \emph{complex} status, represents the presence of a more than one path; (4) \emph{uncertain} status, represents the presence of sparse attributes that don't represent any path but only broken segments.}
+\emph{The four types can be used as a metric to evaluate community complexity. If the community matches a single path then it's more controllable, since it refers to a single type known to literature. Steering and management complexity increases the more the type diverges from simple.}
+TODO: add example\\
+
+{\bf Third, all paths share common decision-points (i.e. questions in the questionnaire) that, according to organisational information available, have multiple possible answers. These particular decision-points can be given a certain answer within a more general context (e.g. on a global scale) and another answer in a different, more specific context (e.g. focusing on a single site within the organisation). Stemming from this property, these decision-points are \emph{pivots} for community detection, i.e. they represent key variations that distinguish a community from its sub-communities. \emph{Pivots} allow mapping the answers in the questionnaire to decision-tree visits.}
+%More in particular you need to visit the tree once per every possible combination of all \emph{pivots}.
+\emph{In the status of a community, pivots are foci that differentiate the overall community type of an organisation, from the type of its constituent parts. Consequently, pivots can be used as drivers for the analysis of the community status. For example, suppose your organisational information suggests the presence of both a Formal Network (FN) and a Network-of-Practice (NoP). The pivot-point in this case is ``formality''. It follows that the community you are observing behaves formally at one level (for example on a global scale, or between sites) and informally at another level (for example between divisions or business units). It's at least something you might want to think about, if the community you are observing exhibits organisational or communication problems. Moreover, suppose you are investigating communities that should all behave in the same way. The pivot-points suggest who is diverging. You might want to consider if and why the divergence is a good thing.}
+TODO: use example of pivot from case-study\\
+
+{\bf Finally, organisational literature defines barriers as mechanisms or circumstances that filter organisational activity \cite{Correia2010}. We found that many barriers are present in software development communities but are not necessarily a bad thing.}\\
+TODO: needs the reasoning about barriers Me+Hans \\
+TODO: Add example\\
+%If they are, then they constrain people's communication. 
+%\section{Discussion}\label{disc}
 
 % An example of a double column floating figure using two subfigures.
 % (The subfig.sty package must be loaded for this to work.)
@@ -572,6 +632,12 @@ Finally, {\bf how can practitioners use the state-of-the-art in social communiti
 % exclusively. Note that, LaTeX2e, unlike IEEE journals/conferences, places
 % footnotes above bottom floats. This can be corrected via the \fnbelowfloat
 % command of the stfloats package.
+
+\section{Threats to Validity}
+\begin{itemize}
+\item minna and ossi are two different situations in two different points in time. results confirmed by executing the case-study twice, contemporarily by two different researchers.
+\item observations are made on only a single case-study
+\end{itemize}
 
 \section{Conclusion}\label{conc}
 
