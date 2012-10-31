@@ -532,7 +532,15 @@ Both case-studies, and subsequently the findings, were coordinated and checked b
 %\end{itemize}
 %
 %\subsection{Materials Used}
-The empirical evidence used in our work, stems from empirical research conducted in a big organisation, active in the mobile technologies market. The organisation (called Company X from now on) is multinational and employs over 50k people in more than 15 worldwide sites. At the time the empirical research was conducted, the organisation has a market revenue of over 5-7 billion euros. Three key sources of evidence were used:
+The empirical evidence used in our work, stems from empirical research conducted in a big organisation, active in the mobile technologies market. The organisation (called Company X from now on) is multinational and employs over 50k people in more than 15 worldwide sites. At the time the empirical research was conducted, the organisation has a market revenue of over 5-7 billion euros. 
+\begin{figure}[h!]
+\hspace{-.2cm}
+%\begin{sideways}
+\includegraphics[width=3.5in]{quest}%
+%\end{sideways}
+\caption{sorting out organisational information: a questionnaire.}\label{quest}
+\end{figure}
+Three key sources of evidence were used:
 \begin{enumerate}
 \item The first key resource is a research report studying agile and open-source adoption in Company X. The study was conducted using grounded-theory \cite{gt}, to analyse interviews and artefacts alike. The study offers an overview of the organisational structure of Company X as a whole (i.e. as a global community) as well as explaining its various ``localised'' facets (i.e. in local sites). The research focuses on a division of Company X, working on a specific project release, at the time of investigation.
 \item The second key resource is a research report studying three software engineering teams within Company X. The organisational details of this report focus around software process, software coding methods, development best-practices adopted, problems found, and ultimately, the people's perspective on all the above.
@@ -548,14 +556,27 @@ All of the above sources are dated around 2012. At the time of investigation, Co
 We began the case-study by analyzing the evidence available to apply the method in \cite{specissue}. The method allows associating a single community type to multiple observable attributes, through a decision-tree (see Fig. \ref{tree}). The tree however, is a single-decision mechanism that clashed with the sheer size and cluttering of organisational information from our real-life scenario. 
 
 To dig deeper, we needed a mechanism to support the decision-tree. Consequently, we used a questionnaire to sort out the evidence available. The questionnaire is shown in Fig. \ref{quest}. The questionnaire gathers necessary organisational information, without limiting the observer's to a single path on a decision-tree. Column 1 of the questionnaire provides the (YES-NO) question that needs answering; Column 4 provides an ID for the question, to ease the mapping on the community decision-tree; finally, Column 5 requires the observer to capture the rationale of the answer, i.e. the piece of organisational information that allowed the decision.
+\begin{figure}[h!]
+\hspace{-.2cm}
+%\begin{sideways}
+\includegraphics[width=3.5in]{answers}%
+%\end{sideways}
+\caption{Company X, a case-study: questionnaire with answers; in question 3, a point of indecision.}\label{answers}
+\end{figure}
 
-Based on the information available, our scenario is reflected on the questionnaire in Fig. \ref{answers}.\\
-TODO: put figure of the answered questionnaire. on the figure, the pivot answers need to be with interrogation marks\\
-TODO: explain the answers\\
+Based on the information available, our scenario is reflected on the questionnaire in Fig. \ref{answers}. With the empirical evidence available, we were able to clearly answer most questions except question 3: ``do all community members exhibit a different location?''. Organisational information leading to both a ``YES'' or a ``NO''. We noticed that organisational information leading to ``YES'' was related to Company X as a whole. Conversely, organisational information leading to ``NO'' was referring to only a few sites within Company X. 
+%TODO: put figure of the answered questionnaire. on the figure, the pivot answers need to be with interrogation marks\\
+%TODO: explain the answers\\
 
-Once the questionnaire was completed, we matched the answers therein with the decision-tree, to identify the corresponding community types.
-TODO: then proceed with showing the tree visit.\\
-
+Once the questionnaire was completed, we matched the answers therein with the decision-tree, to identify the corresponding community types. The result of the mapping to the decision-tree is shown in Figure \ref{result}. We noticed that, when mapped to the decision-tree, the point of indecision marks the start of another path. The point of indecision acts as a \emph{pivot} around which ``revolve'' decision-tree visits.
+%TODO: then proceed with showing the tree visit.\\
+\begin{figure}[h!]
+\hspace{-.2cm}
+%\begin{sideways}
+\includegraphics[width=3.5in]{visits}%
+%\end{sideways}
+\caption{Company X, a case-study: decision-tree visits; the point of indecision acts as a \emph{pivot} between visits.}\label{result}
+\end{figure}
 %\begin{itemize}
 %\item explain how the case-study was conducted
 %\item explain what the evidence used to give an answer to the questionnaire
@@ -565,13 +586,6 @@ TODO: then proceed with showing the tree visit.\\
 %\item explain the way we had to proceed in separate cases and weekly meet to share ideas and discussion of approach only limited to clarification of tasks
 %\item overseeing of two senior researchers
 %\end{itemize}
-\begin{figure}[h!]
-\hspace{-.2cm}
-%\begin{sideways}
-\includegraphics[width=3.5in]{quest}%
-%\end{sideways}
-\caption{sorting out organisational information: a questionnaire}\label{quest}
-\end{figure}
 
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
@@ -599,9 +613,9 @@ TODO: then proceed with showing the tree visit.\\
 % Note that IEEE typically puts floats only at the top, even when this
 % results in a large percentage of a column being occupied by floats.
 
-\section{Findings and Discussion}\label{res}
+\section{Discussion and Findings}\label{res}
 
-We made four key findings (below, in {\bf bold}). First, we found that the method used during the case-study can be generalised. Second, we found that the questionnaire has many uses other than gathering the needed organisational information. Third, we found that some decision points can have multiple answers, this detail makes them worthy of particular attention. Fourth, finally, we found that data in the questionnaire can assume five possible forms, each with some interesting properties. The text below explains the findings in more detail. In \emph{italic} provides discussions.
+An important observation we made is, that the method used during the case-study can be generalised. In addition, we made four key findings (below, in {\bf bold}). First, we found that the questionnaire has many uses other than gathering the needed organisational information. Second, we found that \emph{pivot} points can have multiple answers for the same community, this detail makes them worthy of particular attention. Third, we found that data in the questionnaire can assume five possible forms, each with some interesting properties. Fourth, organisational barriers can either be useful to shape an organisation or harmful to its operations. The text below explains all findings in more detail. In \emph{italic} we provide a discussion of the finding.
 
 \subsection{ODeSSA: a method for Outlining Development Social Structures to Analyse}
 %
@@ -614,19 +628,25 @@ We made four key findings (below, in {\bf bold}). First, we found that the metho
 
 \subsection{Findings and Observations}
 
-{\bf First, we found that observable organisational information misleads the detection of communities.}
-%
-\emph{This suggests that observable organisational information is overloaded with data. A questionnaire is an essential piece to organise and contain only the necessary and sufficient information to uncover a community type. In addition, this finding also suggests that some organisational information might be missing or incomplete. The questionnaire can also be used as a checklist to make sure all needed information is actually available. Finally, this finding implies that our method for community detection cannot be fully automated.}
-TODO: make examples of each of the above statements.\\
+%{\bf First, we found that observable organisational information misleads the detection of communities.}
+%%
+%\emph{This suggests that observable organisational information is overloaded with data. A questionnaire is an essential piece to organise and contain only the necessary and sufficient information to uncover a community type. In addition, this finding also suggests that some organisational information might be missing or incomplete. The questionnaire can also be used as a checklist to make sure all needed information is actually available. Finally, this finding implies that our method for community detection cannot be fully automated.}
+%TODO: make examples of each of the above statements.\\
 
-{\bf Second, we found that the status of a community can be represented as an ordered set of paths on a decision-tree. This means that five possible status types can be observed: (1) \emph{simple} status, represents the presence of a single path; (2) \emph{enriched-community} status, represents the presence of a path blended with attributes from other types; (3) \emph{complex} status, represents the presence of a more than one path; (4) \emph{uncertain} status, represents the presence of sparse attributes that don't represent any path but only broken segments.}
-\emph{The four types can be used as a metric to evaluate community complexity. If the community matches a single path then it's more controllable, since it refers to a single type known to literature. Steering and management complexity increases the more the type diverges from simple.}
+{\bf First, the questionnaire part of the ODeSSA method… }
+TODO: finish explaining\\
 TODO: add example\\
+TODO: explain how the finding was extracted from our case study and how and why it can be generalized\\
 
-{\bf Third, all paths share common decision-points (i.e. questions in the questionnaire) that, according to organisational information available, have multiple possible answers. These particular decision-points can be given a certain answer within a more general context (e.g. on a global scale) and another answer in a different, more specific context (e.g. focusing on a single site within the organisation). Stemming from this property, these decision-points are \emph{pivots} for community detection, i.e. they represent key variations that distinguish a community from its sub-communities. \emph{Pivots} allow mapping the answers in the questionnaire to decision-tree visits.}
+{\bf Second, pivots are decision-points common to all paths that describe an observable community. According to organisational information available, pivot points can be given a certain answer within one context (e.g. on a global scale) and another answer in a different context (e.g. focusing on a single site within the organisation). Stemming from this property, these decision-points represent key variations that distinguish a community from its sub-communities.}
 %More in particular you need to visit the tree once per every possible combination of all \emph{pivots}.
 \emph{In the status of a community, pivots are foci that differentiate the overall community type of an organisation, from the type of its constituent parts. Consequently, pivots can be used as drivers for the analysis of the community status. For example, suppose your organisational information suggests the presence of both a Formal Network (FN) and a Network-of-Practice (NoP). The pivot-point in this case is ``formality''. It follows that the community you are observing behaves formally at one level (for example on a global scale, or between sites) and informally at another level (for example between divisions or business units). It's at least something you might want to think about, if the community you are observing exhibits organisational or communication problems. Moreover, suppose you are investigating communities that should all behave in the same way. The pivot-points suggest who is diverging. You might want to consider if and why the divergence is a good thing.}
 TODO: use example of pivot from case-study\\
+
+{\bf Third, we found that the information in the ODeSSA questionnaire can assume five possible forms: (1) \emph{simple} status, represents the presence of a single path; (2) \emph{enriched-community} status, represents the presence of a path blended with attributes from other types; (3) \emph{complex} status, represents the presence of a more than one path; (4) \emph{uncertain} status, represents the presence of sparse attributes that don't represent any path but only broken segments.}
+\emph{The five types can be used as a metric to evaluate community complexity. If the community matches a single path then it's more controllable, since it refers to a single type known to literature. Steering and management complexity increases the more the type diverges from simple.}
+TODO: finish explaining the fifth status and elaborate on the others; make sure that they are all\\
+TODO: add example\\
 
 {\bf Finally, organisational literature defines barriers as mechanisms or circumstances that filter organisational activity \cite{Correia2010}. We found that many barriers are present in software development communities but are not necessarily a bad thing.}\\
 TODO: needs the reasoning about barriers Me+Hans \\
