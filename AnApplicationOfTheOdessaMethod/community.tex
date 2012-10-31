@@ -127,7 +127,7 @@
 % *** GRAPHICS RELATED PACKAGES ***
 %
 \ifCLASSINFOpdf
-  % \usepackage[pdftex]{graphicx}
+   \usepackage[pdftex]{graphicx}
   % declare the path(s) where your graphic files are
   % \graphicspath{{../pdf/}{../jpeg/}}
   % and their extensions so you won't have to specify these with
@@ -137,7 +137,7 @@
   % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
   % will default to the driver specified in the system graphics.cfg if no
   % driver is specified.
-  % \usepackage[dvips]{graphicx}
+   \usepackage[dvips]{graphicx}
   % declare the path(s) where your graphic files are
   % \graphicspath{{../eps/}}
   % and their extensions so you won't have to specify these with
@@ -349,7 +349,7 @@
 %
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
-\title{``How is your community doing?'' An empirical study on development communities}
+\title{``How is your community doing?'' studying snapshots of development communities}
 
 
 % author names and affiliations
@@ -361,7 +361,8 @@ VU University Amsterdam, The Netherlands\\
 $[$d.a.tamburri, p.lago, j.c.van.vliet$]$@vu.nl}
 \and
 \IEEEauthorblockN{Martin von Weissenberg}
-\IEEEauthorblockA{Hanken School of Economics\\
+\IEEEauthorblockA{Hanken
+School of Economics\\
 Department of Information Systems\\
 Helsinki, Finland \\
 mvw@iki.fi }}
@@ -403,7 +404,9 @@ mvw@iki.fi }}
 
 \begin{abstract}
 %\boldmath
-Engineering software is a social activity. Software projects' success is very often connected to how their development community fares. This connection becomes especially delicate when multiple communities have to join forces (e.g. in global software engineering). So far however, software engineering discipline lacks systematic methods to sense a community state to act upon. In this paper we propose a method to sense the status of a development community. One key finding is that observable organisational information misleads community detection. In addition, organisational barriers are not necessarily a bad thing. If they are, they can be tackled by analysing the status of the software development community. We illustrate with a case-study.
+Engineering software is a social activity. Software projects' success is very often dependent on how the welfare of their development community. This connection becomes especially delicate when multiple communities have to join forces (e.g. in global software engineering). So far however, software engineering discipline lacks systematic methods to steer development communities. In this paper we present a method to study development communities. We elaborated the method conducting a real-life case-study in a large software development organisation. 
+One key finding is that observable organisational information misleads community detection. In addition, in the case-study we found many organisational barriers, both negative and positive ones. 
+%If they are, they can be tackled by analysing the status of the software development community. We illustrate with a case-study.
 %, by making its key attributes explicit. In addition, we suggest ways in which practitioners can use the community state, to adjust the relative communities (e.g. by adding specific technologies or changing organisational goals). 
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
@@ -427,10 +430,14 @@ Engineering software is a social activity. Software projects' success is very of
 
 \section{Introduction}
 
-The craft of software is becoming more and more a social activity \cite{specissue}. Several studies suggest that engineers spend between 70 and 85\% of their time working with other people (e.g. end-user focus groups, managers, business sponsors, etc.) \cite{socialbook}. This means that in 70-85\% of times, software engineering success is a community effort, rather than a success of single individuals. This figure becomes more impactful with the increase of diversity and size of the development community. For example, Global Software Engineering is a development strategy entailing global teams to collaborate together from different locations in different timezones \cite{gsdbook}. In this circumstance, time, space and culture distances magnify the risks of project failure connected to failures in the development community \cite{empirglob,nachiappan,icgseoss}.
-The problem persists since software engineering practitioners still lack a systematic method to identify the state of development communities. 
+The craft of software is becoming more and more a social activity \cite{specissue}. Several studies suggest that engineers spend between 70 and 85\% of their time working with other people (e.g. end-user focus groups, managers, business sponsors, etc.) \cite{socialbook}. This means that in 70-85\% of times, software engineering success is a community effort, rather than a success of single individuals. This figure becomes critical with the increase of diversity and size of the development community. For example, Global Software Engineering (GSE) is a development strategy entailing global teams to collaborate together from different locations in different timezones \cite{gsdbook}. In this circumstance, distances in time, space and culture, magnify project risks connected to failures in the development social structure \cite{empirglob,nachiappan,icgseoss}.
+The problem persists since software practitioners lack a systematic method to study (global) development social structures. In previous work \cite{specissue} we provided a mechanism to uncover social communities latent in software development but we learned that it shows many limitations when used in real-life scenarios.
 %As a consequence, there is no way for software engineering practitioners to effectively act upon the development community they are part of.
-To tackle this issue, this paper proposes a method to ``sense'' a development community status. First, our method uses a questionnaire to gather necessary information about the observed community. Then, our method uses a decision-tree to match the information in the questionnaire to known community types. The method is applied to a real-life organisation. We found that the method helps uncovering the status of development communities but it cannot be fully automated.
+To tackle this issue we conducted a real-life case-study in a big software development organisation. 
+
+The study resulted in a semi-automatic method to snapshot a development community. The method uses a questionnaire to gather necessary information about the observed community. Finally, the method uses a decision-tree \cite{specissue} to interpret the information in the questionnaire. 
+ 
+We made three observations: (a) the method helps uncovering the status of development communities but it cannot be fully automated; (b) the method makes it possible to uncover organisational barriers; (c) the community snapshot can have a limited number of possible forms, each with its own particular characteristics, these forms are worthy of further study since they could act as proxies for quality of the observed community.
 %In addition we suggest ways to manipulate the community state, e.g. to change community type or its focus. 
 %In algorithms theory, a process state is given by the (current) values of all variables within the scope of the process \cite{algos}.
 %Our method is based on empirical evidence. 
@@ -444,6 +451,14 @@ To tackle this issue, this paper proposes a method to ``sense'' a development co
 
 %Finally, we compare the identified social community attributes (i.e. the community state) with empirical results from previous work \cite{ossslr}. This last step allows us to understand what can be done to improve the communities, e.g. by encouraging changes in attributes.
 %The benefits of using our method are threefold: first, practitioners can use the questionnaire as a checklist for missing management information; second, the questionnaire can be used as a guideline to engineer communities for a specific software development problem; third, the community state we obtain can be cross-referenced with development velocity to evaluate community effectiveness in the current state.
+\begin{figure*}
+\hspace{.5cm}
+%\begin{sideways}
+\includegraphics[width=6.3in]{tree}%
+%\end{sideways}
+\caption{a decision-tree to uncover social communities \cite{specissue}}\label{tree}
+\end{figure*}
+
 The rest of the paper is structured as follows: Section \ref{devcomm} provides some background on software engineering and the study of its social aspects; Sections \ref{rq} and \ref{mm} provides our research questions, evidence and methods; Section \ref{cs} presents the case-study we conducted; Section \ref{res} provides our results and discussion. Finally, Section \ref{conc} concludes the paper.
 
 % no \IEEEPARstart
@@ -455,20 +470,33 @@ The rest of the paper is structured as follows: Section \ref{devcomm} provides s
 %I wish you the best of success.
 %\hfill mds
 
-\section{On the Benefits of Studying and Supporting Software Development Communities}\label{devcomm}
-
 \section{Research Question}\label{rq}
 
 The work presented in this paper was realised with the following research question:
 
 \begin{center}
-{\bf How can we identify and represent the status of a software development community?}\\
+{\bf How can we snapshot software development communities?}
 \end{center}
 
-\begin{itemize}
-\item explain impact of the question and importance of answering
-\end{itemize}
+%\begin{itemize}
+%\item explain impact of the question and importance of answering
+%\end{itemize}
+Providing an intelligible shape for an observable software development community is the first step towards steering community operations. For example, global software development literature acknowledged that global communication is compromised by the presence of organisational barriers within and between communities \cite{gse,gsdbook}. Studying snapshots of global communities could enable the development of ad-hoc governance models, that adapt based on current (or desired) community snapshots. In addition, studying snapshots of communities, managers can plot cross-community communication patterns that match exactly the current status. For example, during a Scrum sprint, Scrum coaches can evaluate snapshots of the development community to understand its productivity and adapt it as needed (e.g. to avoid ``Crunch-times'' in Scrum).
 
+
+\section{Previous and Related work: On the Benefits of Studying and Supporting Software Development Communities}\label{devcomm}
+%\begin{itemize}
+%\item related work from socio-technical congruence
+%\item related work dana damian
+%%\item conway's law?
+%\item other works in ged for social studies
+%\item productivity and agile methods to be adopted in gsd
+%\end{itemize}
+
+Literature in GSE already recognises the need to study global communities. More in particular, many works such as \cite{nachiappan} have studied empirically the effect of organisational structures on the quality of software. These works motivate further studies to understand, represent and support social structures and communities. In addition, similar works such as \cite{uls,rel9} study the effect of socio-technical congruence on designing global systems as well as the process of global engineering. Such works suggests that understanding how coordination requirements map to their people counterpart is critical to steer information across global communities successfully. Our work is limited to identifying communities and finding ways to study their observable characteristics. 
+Other works such as \cite{Davenport2001} study the impact of successful communities on socio-technical problems (e.g. coordination, shared understanding, etc.). These works take a more social and organisational approach, pointing out the paramount importance of supporting explicitly the work of communities rather than allocating tasks to single individuals. In previous work \cite{icgseoss,ossslr}, we found that observable \emph{social communities} captured in \cite{Davenport2001} are a composition of known social community types \cite{ossslr}.
+Finally, works such as \cite{scrum} study the impact of agile methods on a large scale distributed software engineering attempt. Understanding the impact and changes on global communities forced in by agile methods adoption, could be a key advantage in using such methods successfully, especially on a global scale.
+Our work in this paper does not explore the impact of organisational decisions affecting the community status, but introduces a method to understand the community by snapshotting its current status, e.g. to support related organisational decisions such as agile adoption.
 
 %
 %previous research in software engineering, organisational sciences and systems theory has observed many social community types. Over time, many attributes were observed and used to characterise these community. We analyse empirical evidence with the aim of pinpointing the attributes that are necessary and sufficient to capture the state of a certain community
@@ -488,36 +516,60 @@ The work presented in this paper was realised with the following research questi
 %Subsubsection text here.
 %
 
-\section{Materials and Method}\label{mm}
-The work described in this paper introduces a method to determine the status of a community and applies it on empirical data sources. The following sections describe materials and method in more detail.
+\section{Methods and Empirical Evidence Used}\label{mm}
+%This paper introduces a method to study a development community using a case-study. 
+We carried out a case-study stemming from the theoretical foundations in previous work. More in particular, \\
+TODO: explain that two people conducted the case-study with the same material in parallel with minimal interaction on the case study, as overseen by two senior researchers. when it was finished the results were compared for evaluation. the method can be generalised since both researchers followed the same emergent path and encountered the same probs, that were solved in pretty much the same way.\\
+%The following sections describe materials and methods in more detail.
 
-\subsection{Previous and Related Work}
-Our work uses discoveries from previous and related research. We used our previous work to confirm its validity and use it in more sizeable, real-life, industrial scenario. In addition, we used related work to compare our findings.
-
-In previous work \cite{icgseoss,ossslr}, we found that observable \emph{social communities} are a composition of known social community types. Each type can be characterised with attributes necessary and sufficient to identify it \cite{specissue}. 
-
-\begin{itemize}
-\item describe work in the SLR
-\item describe work in ICGSE paper
-\item describe work in IEEE Sw paper
-\item related work
-\end{itemize}
-
-\subsection{Materials Used}
-To get a real-life industry scenario, the work relies on empirical research conducted in a big organisation, active in the mobile technologies market. The organisation is multinational and employs over 50k people in more than 15 worldwide sites. At the time the empirical research was conducted, the organisation has a market revenue of over 5-7 billion euros. 
-\begin{itemize}
-\item explain thesis Ossi
-\item explain thesis Minna
-\item explain slides
+%\begin{itemize}
+%\item describe work in the SLR
+%\item describe work in ICGSE paper
+%\item describe work in IEEE Sw paper
+%\item related work
+%\end{itemize}
+%
+%\subsection{Materials Used}
+The empirical evidence used in our work, stems from empirical research conducted in a big organisation, active in the mobile technologies market. The organisation (called Company X from now on) is multinational and employs over 50k people in more than 15 worldwide sites. At the time the empirical research was conducted, the organisation has a market revenue of over 5-7 billion euros. Three key sources of evidence were used:
+\begin{enumerate}
+\item The first key resource is a research report studying agile and open-source adoption in Company X. The study was conducted using grounded-theory \cite{gt}, to analyse interviews and artefacts alike. The study offers an overview of the organisational structure of Company X as a whole (i.e. as a global community) as well as explaining its various ``localised'' facets (i.e. in local sites). The research focuses on a division of Company X, working on a specific project release, at the time of investigation.
+\item The second key resource is a research report studying three software engineering teams within Company X. The organisational details of this report focus around software process, software coding methods, development best-practices adopted, problems found, and ultimately, the people's perspective on all the above.
+\item The third key resource is a set of tutorial slides that agile coaches within Company X used to introduce X's organisational structure and process to new staff.
 %\item explain unique input by martin
-\end{itemize}
+\end{enumerate}
 
-\subsection{Research Method}
-\begin{itemize}
-\item explain the design of the case-study: (a) through a questionnaire\footnote{link to URL of ODeSSATemplate.gdoc}; (b) the decision-tree described in \cite{specissue});
-\item explain the way we had to proceed in separate cases and weekly meet to share ideas and discussion of approach only limited to clarification of tasks
-\item overseeing of two senior researchers
-\end{itemize}
+All of the above sources are dated around 2012. At the time of investigation, Company X was going through many organisational changes and both studies aimed at understanding the impact of organisational change on teams, their production velocity, community productivity and end-product quality. 
+
+%\subsection{Methods}
+\section{Snapshotting Communities: a Case-Study}\label{cs}
+
+We began the case-study by analyzing the evidence available to apply the method in \cite{specissue}. The method allows associating a single community type to multiple observable attributes, through a decision-tree (see Fig. \ref{tree}). The tree however, is a single-decision mechanism that clashed with the sheer size and cluttering of organisational information from our real-life scenario. 
+
+To dig deeper, we needed a mechanism to support the decision-tree. Consequently, we used a questionnaire to sort out the evidence available. The questionnaire is shown in Fig. \ref{quest}. The questionnaire gathers necessary organisational information, without limiting the observer's to a single path on a decision-tree. Column 1 of the questionnaire provides the (YES-NO) question that needs answering; Column 4 provides an ID for the question, to ease the mapping on the community decision-tree; finally, Column 5 requires the observer to capture the rationale of the answer, i.e. the piece of organisational information that allowed the decision.
+
+Based on the information available, our scenario is reflected on the questionnaire in Fig. \ref{answers}.\\
+TODO: put figure of the answered questionnaire. on the figure, the pivot answers need to be with interrogation marks\\
+TODO: explain the answers\\
+
+Once the questionnaire was completed, we matched the answers therein with the decision-tree, to identify the corresponding community types.
+TODO: then proceed with showing the tree visit.\\
+
+%\begin{itemize}
+%\item explain how the case-study was conducted
+%\item explain what the evidence used to give an answer to the questionnaire
+%\item show the questionnaire and the visits
+%\item explain types found in the case
+%\item explain the design of the case-study: (a) through a questionnaire\footnote{link to URL of ODeSSATemplate.gdoc}; (b) the decision-tree described in \cite{specissue});
+%\item explain the way we had to proceed in separate cases and weekly meet to share ideas and discussion of approach only limited to clarification of tasks
+%\item overseeing of two senior researchers
+%\end{itemize}
+\begin{figure}[h!]
+\hspace{-.2cm}
+%\begin{sideways}
+\includegraphics[width=3.5in]{quest}%
+%\end{sideways}
+\caption{sorting out organisational information: a questionnaire}\label{quest}
+\end{figure}
 
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
@@ -545,24 +597,27 @@ To get a real-life industry scenario, the work relies on empirical research cond
 % Note that IEEE typically puts floats only at the top, even when this
 % results in a large percentage of a column being occupied by floats.
 
-\section{Sensing Community state: a Case-Study}\label{cs}
-\begin{itemize}
-\item explain how the case-study was conducted
-\item explain what the evidence used to give an answer to the questionnaire
-\item show the questionnaire and the visits
-\item explain types found in the case
-\end{itemize}
-
 \section{Findings and Discussion}\label{res}
 
-We made four key findings (below, in {\bf bold}). Text in \emph{italic} provides discussions.
+We made four key findings (below, in {\bf bold}). First, we found that the method used during the case-study can be generalised. Second, we found that the questionnaire has many uses other than gathering the needed organisational information. Third, we found that some decision points can have multiple answers, this detail makes them worthy of particular attention. Fourth, finally, we found that data in the questionnaire can assume five possible forms, each with some interesting properties. The text below explains the findings in more detail. In \emph{italic} provides discussions.
+
+\subsection{ODeSSA: a method for Outlining Development Social Structures to Analyse}
+%
+%diversi usi della tabella:
+%1. social communities multiple
+%2. incompletezza? fungi da checklist
+%3. ingegnerizzate una community per sw dev in forward
+% inoltre, storia dei pivot e cosa significano
+% inoltre, possibili forme e cosa significano
+
+\subsection{Findings and Observations}
 
 {\bf First, we found that observable organisational information misleads the detection of communities.}
 %
 \emph{This suggests that observable organisational information is overloaded with data. A questionnaire is an essential piece to organise and contain only the necessary and sufficient information to uncover a community type. In addition, this finding also suggests that some organisational information might be missing or incomplete. The questionnaire can also be used as a checklist to make sure all needed information is actually available. Finally, this finding implies that our method for community detection cannot be fully automated.}
 TODO: make examples of each of the above statements.\\
 
-{\bf Second, we found that the status of a community can be represented as an ordered set of paths on a decision-tree. This means that  four possible status types can be observed: (1) \emph{simple} status, represents the presence of a single path; (2) \emph{enriched-community} status, represents the presence of a path blended with attributes from other types; (3) \emph{complex} status, represents the presence of a more than one path; (4) \emph{uncertain} status, represents the presence of sparse attributes that don't represent any path but only broken segments.}
+{\bf Second, we found that the status of a community can be represented as an ordered set of paths on a decision-tree. This means that five possible status types can be observed: (1) \emph{simple} status, represents the presence of a single path; (2) \emph{enriched-community} status, represents the presence of a path blended with attributes from other types; (3) \emph{complex} status, represents the presence of a more than one path; (4) \emph{uncertain} status, represents the presence of sparse attributes that don't represent any path but only broken segments.}
 \emph{The four types can be used as a metric to evaluate community complexity. If the community matches a single path then it's more controllable, since it refers to a single type known to literature. Steering and management complexity increases the more the type diverges from simple.}
 TODO: add example\\
 
@@ -635,17 +690,18 @@ TODO: Add example\\
 \section{Threats to Validity}
 \begin{itemize}
 \item minna and ossi are two different situations in two different points in time. results confirmed by executing the case-study twice, contemporarily by two different researchers.
-\item observations are made on only a single case-study
+\item observations are made on only a single case-study.
 \end{itemize}
 
-\section{Conclusion}\label{conc}
+\section{Conclusion and Future Work}\label{conc}
 
+TODO: explain possible followup studies, connected to the notion of community snapshot.\\
 % conference papers do not normally have an appendix
 
 % use section* for acknowledgement
 \section*{Acknowledgment}
 
-The authors would like to thank beer, Mirella's home-made sweets and her mother's home-made cheese.
+The authors would like to thank beer, Mrs. Mirella Sangiovanni's home-made sweets and her mother's home-made cheese.
 
 % trigger a \newpage just before the given reference
 % number - used to balance the columns on the last page
@@ -654,7 +710,6 @@ The authors would like to thank beer, Mirella's home-made sweets and her mother'
 %\IEEEtriggeratref{8}
 % The "triggered" command can be changed if desired:
 %\IEEEtriggercmd{\enlargethispage{-5in}}
-
 % references section
 
 % can use a bibliography generated by BibTeX as a .bbl file
