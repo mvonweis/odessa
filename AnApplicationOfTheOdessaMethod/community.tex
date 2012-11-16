@@ -348,8 +348,8 @@
 %
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
-\title{``How is your community doing?'' Studying snapshots of development communities}
-
+%\title{``How is your community doing?'' Studying snapshots of development communities}
+\title{Analysing ``snapshots'' of development communities}
 
 % author names and affiliations
 % use a multiple column layout for up to three different
@@ -403,8 +403,8 @@ martin.vonweissenberg@hanken.fi }}
 
 \begin{abstract}
 %\boldmath
-Engineering software is a social activity. Software projects' success is very often dependent on how the welfare of their development community. This connection becomes especially delicate when multiple communities have to join forces (e.g. in global software engineering). So far however, software engineering discipline lacks systematic methods to steer development communities. In this paper we present a method to snapshot development communities. We elaborated the method conducting a real-life case-study in a large software development organisation. 
-One key finding is that the method can be generalised. In addition, from the case-study we found that community snapshots can have a limited number of forms, each we found many organisational barriers, both negative and positive ones. 
+Engineering software is a social activity. Therefore, software project success is very often dependent on the welfare of the development community. This connection becomes especially delicate when multiple communities have to join forces (e.g. in global software engineering). So far however, software engineering discipline lacks systematic methods to steer development communities. In this paper we present ODeSSA a method to Outline Development Social Structures to Analyse them. We elaborated the method by conducting a real-life case-study in a large software development organisation. 
+From the case-study we found that community snapshots can have a limited number of forms, each with their own peculiarities. In addition, we found that ODeSSA helps detecting many organisational barriers, both negative and positive ones. 
 %If they are, they can be tackled by analysing the status of the software development community. We illustrate with a case-study.
 %, by making its key attributes explicit. In addition, we suggest ways in which practitioners can use the community state, to adjust the relative communities (e.g. by adding specific technologies or changing organisational goals). 
 \end{abstract}
@@ -434,7 +434,7 @@ The problem persists since software practitioners lack a systematic method to st
 %As a consequence, there is no way for software engineering practitioners to effectively act upon the development community they are part of.
 To tackle this issue we conducted a real-life case-study in a big software development organisation. 
 
-The study resulted in a semi-automatic method to ``snapshot'' a development community. A community \emph{snapshot} is obtained by combining two key pieces ofinformation: (a) answers to a questionnaire (see Fig. \ref{quest}); (b) visits to a decision-tree (presented in previous work \cite{specissue}). 
+The study resulted in ODeSSA, a semi-automatic method for Outlining Development Social Structures to Analyse. ODeSSA allows the observers of a social structure (more simply, a community) to obtain analysable ``snapshots'' for it. A community \emph{snapshot} is obtained by combining two key pieces of information: (a) answers to a questionnaire (see Fig. \ref{quest}); (b) visits to a decision-tree. 
 
 The method uses the questionnaire in Fig. \ref{quest} to gather and organise necessary information about the observed community. Finally, the method uses the decision-tree form \cite{specissue} to match the information in the questionnaire with community types. 
  
@@ -483,12 +483,11 @@ The work presented in this paper was realised to answer the following research q
 %\begin{itemize}
 %\item explain impact of the question and importance of answering
 %\end{itemize}
-Providing an intelligible shape for an observable software development community is the first step towards steering community operations. 
+Providing an intelligible shape for an observable software development community is the first step towards efficient steering of community operations. 
 
-Studying snapshots of global communities enables the development of ad-hoc adaptations based on current (or desired) community snapshots. For example, global software development literature acknowledged that global communication is compromised by the presence of organisational barriers within and between communities \cite{gse,gsdbook}. Given the presence of barriers in certain snapshots, organisations could plan organisational adaptations to those barriers.
+For example, studying snapshots of global communities enables the development of ad-hoc adaptations based on current (or desired) community snapshots. Global software development literature acknowledged that global communication is compromised by the presence of organisational barriers within and between communities \cite{gse,gsdbook}. Given the presence of barriers in certain snapshots, organisations could plan organisational adaptations to those barriers.
 
-In addition, studying snapshots of communities, managers can plot cross-community communication patterns that match exactly the current situation. For example, during a Scrum sprint, Scrum coaches can evaluate snapshots of the development community to understand its productivity and adapt it as needed (e.g. to avoid ``Crunch-times'' in Scrum).
-
+Moreover, studying snapshots of communities, managers can plot cross-community communication patterns that match exactly the current situation. For example, during a Scrum sprint, Scrum coaches can evaluate snapshots of the development community to understand its productivity and adapt it as needed (e.g. to avoid ``Crunch-times'' in Scrum).
 
 \section{Previous and Related work: On the Benefits of Studying and Supporting Software Development Communities}\label{devcomm}
 %\begin{itemize}
@@ -502,7 +501,7 @@ In addition, studying snapshots of communities, managers can plot cross-communit
 Literature in GSE already recognises the need to study global communities. More in particular, many works such as \cite{nachiappan} have studied empirically the effect of organisational structures on the quality of software. These works motivate further studies to understand, represent and support social structures and communities. In addition, similar works such as \cite{uls,rel9} study the effect of socio-technical congruence on designing global systems as well as the process of global engineering. Such works suggests that understanding how coordination requirements map to their people counterpart is critical to steer information across global communities successfully. Our work is limited to identifying communities and finding ways to study their observable characteristics. 
 Other works such as \cite{Davenport2001} study the impact of successful communities on socio-technical problems (e.g. coordination, shared understanding, etc.). These works take a more social and organisational approach, pointing out the paramount importance of supporting explicitly the work of communities rather than allocating tasks to single individuals. In previous work \cite{icgseoss,ossslr}, we found that observable \emph{social communities} captured in \cite{Davenport2001} are a composition of known social community types \cite{ossslr}.
 Finally, works such as \cite{scrum} study the impact of agile methods on a large scale distributed software engineering attempt. Understanding the impact and changes on global communities forced in by agile methods adoption, could be a key advantage in using such methods successfully, especially on a global scale.
-Our work in this paper does not explore the impact of organisational decisions affecting the community status, but introduces a method to understand the community by snapshotting its current status, e.g. to support related organisational decisions such as agile adoption.
+Our work in this paper does not explore the impact of organisational decisions affecting the development community, but introduces a method to understand the community by snapshotting its current status, e.g. to support related organisational decisions such as agile adoption.
 
 %
 %previous research in software engineering, organisational sciences and systems theory has observed many social community types. Over time, many attributes were observed and used to characterise these community. We analyse empirical evidence with the aim of pinpointing the attributes that are necessary and sufficient to capture the state of a certain community
@@ -562,13 +561,11 @@ Three key sources of evidence were used:
 
 All of the above sources are dated around 2012. At the time of investigation, Company X was going through many organisational changes and both studies aimed at understanding the impact of organisational change on teams, their production velocity, community productivity and end-product quality. 
 
-
 \section{Snapshotting Communities: a Case-Study}\label{cs}
-
 
 To apply the method in \cite{specissue} on our case-study, we analysed the evidence available. 
 %The method allows associating a single community type to multiple observable attributes, through a decision-tree (see Fig. \ref{tree}). 
-We noticed that the method in \cite{specissue} works best when trying to identify a single observable community. This underlying limitation clashed with the sheer size and cluttering of organisational information from our big real-life scenario. We needed a mechanism to sort out the evidence available. To this purpose, we used the questionnaire in Fig. \ref{quest}. The questionnaire gathers necessary organisational information, without limiting the observer's to a single path on the decision-tree from \cite{specissue}. Column 1 of the questionnaire provides the question that needs answering; Column 4 provides an ID for the question, to ease the mapping on the decision-tree from \cite{specissue}; finally, Column 5 requires the observer to capture the rationale of the answer, i.e. the piece of organisational evidence that sustains the decision.
+We noticed that the method in \cite{specissue} works best to identify a single observable community. This underlying limitation clashed with the sheer size and cluttering of organisational information from our big real-life scenario. We needed a mechanism to sort out the evidence available. To this purpose, we used the questionnaire in Fig. \ref{quest}. The questionnaire gathers necessary organisational information, without limiting the observer's to a single path on the decision-tree from \cite{specissue}. Column 1 of the questionnaire provides the question that needs answering; Column 4 provides an ID for the question, to ease the mapping on the decision-tree from \cite{specissue}; finally, Column 5 requires the observer to capture the rationale of the answer, i.e. the piece of organisational evidence that sustains the decision.
 
 The evidence available reflected the questionnaire in Fig. \ref{answers}. We were able to clearly answer most questions except question 3: ``do all community members exhibit a different location?''. Organisational information leading to both a ``YES'' or a ``NO''. We noticed that organisational information leading to ``YES'' was related to Company X as a whole. Conversely, organisational information leading to ``NO'' was referring to only a few sites within Company X. 
 %TODO: put figure of the answered questionnaire. on the figure, the pivot answers need to be with interrogation marks\\
