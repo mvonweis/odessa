@@ -318,10 +318,6 @@
 % cuted.sty or midfloat.sty packages (also by Sigitas Tolusis) as IEEE does
 % not format its papers in such ways.
 
-
-
-
-
 % *** PDF, URL AND HYPERLINK PACKAGES ***
 %
 %\usepackage{url}
@@ -438,7 +434,7 @@ The study resulted in ODeSSA, a semi-automatic method for Outlining Development 
 
 The method uses the questionnaire in Fig. \ref{quest} to gather and organise necessary information about the observed community. Finally, the method uses the decision-tree form \cite{specissue} to match the information in the questionnaire with community types. 
  
-We made four key observations: (a) the procedure we followed during the case-study can be generalised into a method to gather and study community snapshots; (b) the method uncovers points of indecision on the observed snapshot; (c) the community snapshot can have a limited number of possible forms, each with its own particular characteristics; (d) the method makes it possible to uncover organisational barriers. 
+We made three key observations: (a) ODeSSA uncovers points of indecision on the observed snapshot, these points deserve further attention; (b) the community snapshot captured through ODeSSA, can have a limited number of possible forms, each with its own particular characteristics; (c) ODeSSA makes it possible to uncover organisational barriers. 
 %these forms are worthy of further study since they could act as proxies for quality of the observed community.
 %In addition we suggest ways to manipulate the community state, e.g. to change community type or its focus. 
 %In algorithms theory, a process state is given by the (current) values of all variables within the scope of the process \cite{algos}.
@@ -529,7 +525,7 @@ We carried out a case-study stemming from the theoretical foundations in previou
 %\begin{sideways}
 \includegraphics[width=3.5in]{quest}%
 %\end{sideways}
-\caption{sorting out organisational information: a questionnaire.}\label{quest}
+\caption{sorting out organisational information: a questionnaire.}\label{question}
 \end{figure}
 Both case-studies, and subsequently the findings, were coordinated and checked by two senior researchers.
 %TODO: explain that two people conducted the case-study with the same material in parallel with minimal interaction on the case study, as overseen by two senior researchers. when it was finished the results were compared for evaluation. the method can be generalised since both researchers followed the same emergent path and encountered the same probs, that were solved in pretty much the same way.\\
@@ -543,19 +539,15 @@ Both case-studies, and subsequently the findings, were coordinated and checked b
 %\end{itemize}
 %
 %\subsection{Materials Used}
-The empirical evidence used in our work, stems from empirical research conducted in a big organisation, active in the mobile technologies market. The organisation (called Company X from now on) is multinational and employs over 50k people in more than 15 worldwide sites. At the time the empirical research was conducted, the organisation has a market revenue of over 5-7 billion euros. 
-\begin{figure*}
-\hspace{-.6cm}
-%\begin{sideways}
-\includegraphics[width=7.5in]{answers_new}%
-%\end{sideways}
-\caption{Company X, questionnaire with answers: question 3 is a point of indecision.}\label{answers}
-\end{figure*}
+The empirical evidence used in our work, stems from empirical research conducted in a big organisation, active in the mobile technologies market. The organisation (called Company X from now on) is multinational and employs over 130K people in 16 worldwide sites, with sales in over 160 countries. At the time the empirical research was conducted (early 2012), the organisation had a net market sale of 42.4 billion euros. 
+
 Three key sources of evidence were used:
 \begin{enumerate}
-\item The first key resource is a research report studying agile and open-source adoption in Company X. The study was conducted using grounded-theory \cite{gt}, to analyse interviews and artefacts alike. The study offers an overview of the organisational structure of Company X as a whole (i.e. as a global community) as well as explaining its various ``localised'' facets (i.e. in local sites). The research focuses on a division of Company X, working on a specific project release, at the time of investigation.
-\item The second key resource is a research report studying three software engineering teams within Company X. The organisational details of this report focus around software process, software coding methods, development best-practices adopted, problems found, and ultimately, the people's perspective on all the above.
-\item The third key resource is a set of tutorial slides that agile coaches within Company X used to introduce X's organisational structure/process to newly appointed staff members.
+\item The first key resource (called REF1 from now on) is a research report studying agile and open-source adoption in Company X. The study was conducted using grounded-theory \cite{gt}. The study features six interviews with focus groups from Company X. Focus groups had varied expertise, from areas such as project management to agile coaches to code developers. The focus sessions are analysed through grounded theory. The study offers an overview of the organisational structure of Company X as a whole (i.e. as a global community) as well as explaining its local sites. The research focuses on a division of Company X, working on a specific project release, at the time of investigation.
+
+\item The second key resource (called REF2 from now on) is a research report studying three software engineering teams within Company X. The study features 16 interviews harvested through accidental and snowball sampling \cite{Goodman}. Interviewees had varied backgrounds but an average work experience in Company X of about 10 years. The sample consisted of both sexes, however, with a minority of females. As a result, the organisational details of this report focus around software process, software coding methods, development best-practices adopted, problems found, and ultimately, the people's perspective on all the above.
+
+\item The third key resource (called AGILE SLIDES from now on) is a set of tutorial slides that agile coaches within Company X used to introduce X's organisational structure/process to newly appointed staff members. The slides provide an overview of the agile process and open-source integration protocols in place within Company X at the time of investigation.
 %\item explain unique input by martin
 \end{enumerate}
 
@@ -570,18 +562,18 @@ We noticed that the method in \cite{specissue} works best to identify a single o
 The evidence available reflected the questionnaire in Fig. \ref{answers}. We were able to clearly answer most questions except question 3: ``do all community members exhibit a different location?''. Organisational information leading to both a ``YES'' or a ``NO''. We noticed that organisational information leading to ``YES'' was related to Company X as a whole. Conversely, organisational information leading to ``NO'' was referring to only a few sites within Company X. 
 %TODO: put figure of the answered questionnaire. on the figure, the pivot answers need to be with interrogation marks\\
 %TODO: explain the answers\\
-
+\begin{figure*}
+\hspace{-.6cm}
+%\begin{sideways}
+\includegraphics[width=7.5in]{answers_new}%
+%\end{sideways}
+\caption{Company X, questionnaire with answers: question 3 is a point of indecision.}\label{answers}
+\end{figure*}
 To evaluate results we mapped the answers in Figure \ref{answers} with the decision-tree from \cite{specissue}. The result of the mapping to the decision-tree is shown in Figure \ref{result}. 
 %We noticed that, when mapped to the decision-tree, the point of indecision marks the start of another path on the tree, i.e. another community. 
 %The point of indecision is a \emph{pivot} decision-tree visits.
 %TODO: then proceed with showing the tree visit.\\
-\begin{figure}[h!]
-\hspace{-.2cm}
-%\begin{sideways}
-\includegraphics[width=3.5in]{visits}%
-%\end{sideways}
-\caption{Company X, a case-study: decision-tree visits; the point of indecision acts as a \emph{pivot} between visits.}\label{result}
-\end{figure}
+
 %\begin{itemize}
 %\item explain how the case-study was conducted
 %\item explain what the evidence used to give an answer to the questionnaire
@@ -640,9 +632,9 @@ We made four key observations.
 %\emph{This suggests that observable organisational information is overloaded with data. A questionnaire is an essential piece to organise and contain only the necessary and sufficient information to uncover a community type. In addition, this finding also suggests that some organisational information might be missing or incomplete. The questionnaire can also be used as a checklist to make sure all needed information is actually available. Finally, this finding implies that our method for community detection cannot be fully automated.}
 %TODO: make examples of each of the above statements.\\
 
-First, the procedure we used during the case-study can be generalised into a method to capture community \emph{snapshots}. The process is as follows:
+First, the procedure we used during the case-study can be generalised into a method to capture community \emph{snapshots}. The ODeSSA method is organised as follows:
 \begin{enumerate}
-\item \emph{Gather Data:} The questionnaire in Fig. \cite{quest} can be used as a checklist to gather necessary organisational details. Once analysed, these details must enable answering the questions in the questionnaire.
+\item \emph{Gather Data:} The questionnaire in Fig. \ref{question} can be used as a checklist to gather necessary organisational details. Once analysed, these details must enable answering the questions in the questionnaire.
 \item \emph{Fill-in Questionnaire:} 
 \item \emph{Identify Pivots:}
 \item \emph{Map to Decision-Tree:}
@@ -658,8 +650,17 @@ First, the procedure we used during the case-study can be generalised into a met
 
 {\bf Second, pivot points represent key variation points distinguishing a community from its components.}
 %More in particular you need to visit the tree once per every possible combination of all \emph{pivots}.
-\emph{Pivots can be used as drivers for the analysis of the community status. For example, suppose your organisational information suggests the presence of both a Formal Network (FN) and a Network-of-Practice (NoP). The pivot-point in this case is ``formality''. It follows that the community you are observing behaves formally at one level (for example on a global scale, or between sites) and informally at another level (for example between divisions or business units). It's at least something you might want to think about, if the community you are observing exhibits communication problems. Moreover, suppose you are investigating communities that should all behave in the same way. The pivot-points suggest who is diverging. You might want to consider if and why the divergence is a good thing.}
+\emph{Pivots can be used as drivers for the analysis of the community status.}
+
+%For example, suppose your organisational information suggests the presence of both a Formal Network (FN) and a Network-of-Practice (NoP). The pivot-point in this case is ``formality''. It follows that the community you are observing behaves formally at one level (for example on a global scale, or between sites) and informally at another level (for example between divisions or business units). It's at least something you might want to think about, if the community you are observing exhibits communication problems. Moreover, suppose you are investigating communities that should all behave in the same way. The pivot-points suggest who is diverging. You might want to consider if and why the divergence is a good thing.}
 TODO: use example of pivot from case-study\\
+\begin{figure}[h!]
+\hspace{-.2cm}
+%\begin{sideways}
+\includegraphics[width=3.5in]{visits}%
+%\end{sideways}
+\caption{Company X, a case-study: decision-tree visits; the point of indecision acts as a \emph{pivot} between visits.}\label{result}
+\end{figure}
 
 {\bf Third, we found that the information in the ODeSSA questionnaire can assume five possible forms: (1) \emph{simple} status, represents the presence of a single path; (2) \emph{enriched-community} status, represents the presence of a path blended with attributes from other types; (3) \emph{complex} status, represents the presence of a more than one path; (4) \emph{uncertain} status, represents the presence of sparse attributes that don't represent any path but only broken segments.}
 \emph{The five types can be used as a metric to evaluate community complexity. If the community matches a single path then it's more controllable, since it refers to a single type known to literature. Steering and management complexity increases the more the type diverges from simple.}
