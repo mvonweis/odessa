@@ -345,7 +345,7 @@
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
 %\title{``How is your community doing?'' Studying \emph{snapshot}s of development communities}
-\title{An Empirical Study of Software Development Communities ``snapshots''}
+\title{An Empirical Study of Software Development Communities ``Snapshots''}
 
 % author names and affiliations
 % use a multiple column layout for up to three different
@@ -687,19 +687,21 @@ To evaluate results we mapped the answers in Figure \ref{answers} with the decis
 %The point of indecision is a \emph{pivot} decision-tree visits.
 %TODO: then proceed with showing the tree visit.\\
 
-We concluded the case-study by applying the decision-tree from previous work \cite{specissue}. This allowed us to understand the communities emerging within Company X's organisational structure. Figure \emph{result} shows results of this application. Two social communities were identified, namely, Networks of Practice (NoPs) and Workgroups (WGs). We found that the point of indecision acts as a \emph{pivot} between the two identified community types. More in particular, the attributes leading to the identification of a NoP were referred to Company X as a whole (and consequently the answer to question 3 was YES). Conversely the attributes leading to the identification of a WG are referred to only some localised divisions or business units within Company X (and therefore the answers to question 3 was NO). 
+Finally, we concluded the case-study by applying the decision-tree from previous work \cite{specissue}. This allowed us to understand the communities emerging within Company X's organisational structure. Figure \emph{result} shows results of this application. Two social communities were identified, namely, Networks of Practice (NoPs - part B of Fig. \ref{result}) and Workgroups (WGs - part A of Fig. \ref{result}). We found that the point of indecision, i.e. the DISPERSION node (see part C of Fig. \ref{result}) acts as a \emph{pivot} between the two identified community types. The attributes leading to the identification of a NoP were referred to global details of Company X (DISPERSION set to YES). Conversely the attributes leading to the identification of a WG are referred to localised divisions or business units within Company X (DISPERSION set to NO). 
 
-\begin{figure}[h!]
+\begin{figure*}
 \hspace{-.2cm}
 %\begin{sideways}
-\includegraphics[width=3.5in]{results}%
+\includegraphics[width=7in]{results}%
 %\end{sideways}
 \caption{Company X, a case-study: decision-tree visits.}\label{result}
-\end{figure}
+\end{figure*}
 
 \subsection{Replication}
 
-The procedure we used during the case-study can be generalised into a method to capture community \emph{snapshots}. The ODeSSA method is organised as follows:
+After our analysis was done, we explored the generality of our approach and findings, by comparing results from two parallel efforts. We found that
+
+Therefore, the approach we used, can be generalised into ODeSSA, a method to outline development social structures to analyse them by capturing \emph{snapshots}. The ODeSSA method is organised as follows:
 \begin{enumerate}
 \item \emph{Gather Data:} The questionnaire in Fig. \ref{question} can be used as a checklist to gather necessary organisational details. Once analysed, these details must enable answering the questions in the questionnaire.
 \item \emph{Fill-in Questionnaire:} 
@@ -848,7 +850,7 @@ TODO: Add example\\
 
 \section{Threats to Validity}
 \begin{itemize}
-\item Minna and Ossi are two different situations in two different points in time. results confirmed by executing the case-study twice, contemporarily by two different researchers.
+\item Minna and Ossi are two different situations in two different points of Company X and different levels of abstraction. results confirmed by executing the case-study twice, contemporarily by two different researchers.
 \item observations are made on only a single case-study.
 \end{itemize}
 
