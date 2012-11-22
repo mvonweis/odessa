@@ -345,7 +345,7 @@
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
 %\title{``How is your community doing?'' Studying \emph{snapshot}s of development communities}
-\title{An Empirical Study of Software Development Communities ``Snapshots''}
+\title{Empirically Studying ``Snapshots'' of Software Development Social Communities}
 
 % author names and affiliations
 % use a multiple column layout for up to three different
@@ -363,20 +363,20 @@
 %martin.vonweissenberg@hanken.fi }}
 
 \author{Damian A. Tamburri,~\IEEEmembership{Member,~IEEE,}
-        Patricia Lago,~\IEEEmembership{Member,~IEEE,}
-        Hans Van Vliet,~\IEEEmembership{Member,~IEEE}
+        Patricia Lago,~\IEEEmembership{Member,~IEEE,}\\
+        Hans van Vliet,~\IEEEmembership{Member,~IEEE}
         and Martin von Weissenberg,~\IEEEmembership{Member,~IEEE}
         % <-this % stops a space
 \IEEEcompsocitemizethanks{
-\IEEEcompsocthanksitem D.A. Tamburri, P. Lago and H. Van Vliet
+\IEEEcompsocthanksitem D.A. Tamburri, P. Lago and H. van Vliet
 are with the Information Management and Software Engineering group, VU University, Amsterdam,
 The Netherlands.\protect\\
 % note need leading \protect in front of \\ to get a newline within \thanks as
 % \\ is fragile and will error, could use \hfil\break instead.
-E-mail: $[$d.a.tamburri, p.lago, j.c.van.vliet$]$@vu.nl
+Find them at: $[$d.a.tamburri, p.lago, j.c.van.vliet$]$@vu.nl
 \IEEEcompsocthanksitem M. von Weissenberg is with the Department of Information Systems, Hanken
 School of Economics,Helsinki, Finland.\protect\\
-E-mail: martin.vonweissenberg@hanken.fi}% <-this % stops a space
+Find him at: martin.vonweissenberg@hanken.fi}% <-this % stops a space
 \thanks{}}
 
 % conference papers do not typically use \thanks and this command
@@ -447,7 +447,7 @@ The problem persists since software practitioners lack a systematic method to st
 %As a consequence, there is no way for software engineering practitioners to effectively act upon the development community they are part of.
 To tackle this issue we conducted a real-life case-study in a big software development organisation. 
 
-The study resulted in ODeSSA, a semi-automatic method for Outlining Development Social Structures to Analyse. ODeSSA allows the observers of a social structure (more simply, a community) to obtain analysable ``\emph{snapshot}s'' for it. A community \emph{\emph{snapshot}} is obtained by combining: (a) answers to a questionnaire (see Fig. \ref{question} also available online\footnote{\url{https://docs.google.com/document/d/1lZ2IrQzd3uBqk4eivqA6RStiquzImxEETbdtCKRdHjY/edit}}); (b) visits to a decision-tree (previously introduced in \cite{specissue}). 
+The study resulted in ODeSSA, a semi-automatic method for Outlining Development Social Structures to Analyse. ODeSSA allows the observers of a social structure (more simply, a community) to obtain analysable ``\emph{snapshot}s'' for it. A community \emph{\emph{snapshot}} is obtained by combining: (a) answers to a questionnaire (see Fig. \ref{question} also available online\footnote{\url{https://docs.google.com/document/d/~1lZ2IrQzd3uBqk4eivqA6RStiquzImxEETbdtCKRdHjY/edit}}); (b) visits to a decision-tree (previously introduced in \cite{specissue}). 
 %
 %The method uses the questionnaire in Fig. \ref{quest} to gather and organise necessary information about the observed community. Finally, the method uses the decision-tree form \cite{specissue} to match the information in the questionnaire with community types. 
  
@@ -503,9 +503,12 @@ We made three key observations: (a) ODeSSA uncovers points of indecision on the 
 
 Literature in GSE already recognises the need to study global communities. More in particular, many works such as \cite{nachiappan} have studied empirically the effect of organisational structures on the quality of software. These works motivate further studies to understand, represent and support social structures and communities. In addition, similar works such as \cite{uls,rel9} study the effect of socio-technical congruence on designing global systems as well as the process of global engineering. Such works suggests that understanding how coordination requirements map to their people counterpart is critical to steer information across global communities successfully. Our work is limited to identifying communities and finding ways to study their observable characteristics. 
 Other works such as \cite{Davenport2001} study the impact of successful communities on socio-technical problems (e.g. coordination, shared understanding, etc.). These works take a more social and organisational approach, pointing out the paramount importance of supporting explicitly the work of communities rather than allocating tasks to single individuals. In previous work \cite{icgseoss,ossslr}, we found that observable \emph{social communities} captured in \cite{Davenport2001} are a composition of known social community types \cite{ossslr}.
-Finally, works such as \cite{scrum} study the impact of agile methods on a large scale distributed software engineering attempt. Understanding the impact and changes on global communities forced in by organisational changes such as agile adoption, is key to successful change, especially on a global scale.
-Our work in this paper does not explore the impact of organisational decisions affecting the development community, but introduces a method to understand the community by \emph{snapshot}ting its current status, e.g. to support related organisational decisions such as agile adoption.\\
-TODO: elaborate with the rest of related work, e.g. references on organisational change, other empirical studies in global communities or global communication \\
+In addition, works such as \cite{scrum} study the impact of agile methods on a large scale distributed software engineering attempt. Understanding the impact and changes on global communities forced in by organisational changes such as agile adoption, is key to successful change, especially on a global scale.
+Our work in this paper does not explore the impact of organisational decisions affecting the development community, but introduces a method to understand the community by \emph{snapshot}ting its current status, e.g. to support related organisational decisions such as agile adoption.
+Similarly, works such as \cite{rel,rel4} investigate the impact of organizational decision-making on software development. For example, understanding if the current community \emph{snapshot} is performant (or even compatible) with offshoring is essential for the community to ``go global''.
+%
+%
+%TODO: elaborate with the rest of related work, e.g. references on organisational change, other empirical studies in global communities or global communication \\
 
 \subsection{Research Questions}\label{rq}
 
@@ -588,28 +591,37 @@ All of the above sources are dated around 2012 and are protected by non-disclosu
 
 \subsection{Methods}
 
-grounded-theory as applied in our case\\
-interviews as applied in our case\\
-two-way parallel case-study (to assess repeatability and validate results) using questionnaire to gather and organise organisational information needed plus the decision-tree to match with visits and comm. types use the piece below as a start\\
+We conducted two parallel case-studies, following guidelines in \cite{runeson}. Given the same input materials, two parallel case-studies were started, with the same objective, i.e. to evaluate real-life development communities from a big industrial case using an application of the decision-tree theory from \cite{specissue}. 
+%
+%The study was intended to validate and enrich the method from our previous work, to make it usable in real-life practice. 
+The connotation of our case-study was both exploratory and descriptive. We set out to find an intelligible form for the observed development community, such that the outlined form could be further studied, e.g. compared to organisational metrics for Company X.
 
-We noticed that the method in \cite{specissue} works best to identify a single observable community. This underlying limitation clashed with the sheer size and cluttering of organisational information from our big real-life scenario. We needed a mechanism to sort out the evidence available. To this purpose, we used the questionnaire in Fig. \ref{question}. The questionnaire gathers necessary organisational information, without limiting the observer's to a single path on the decision-tree from \cite{specissue}. Column 1 of the questionnaire provides the question that needs answering; Column 4 provides an ID for the question, to ease the mapping on the decision-tree from \cite{specissue}; finally, Column 5 requires the observer to capture the rationale of the answer, i.e. the piece of organisational evidence that sustains the decision.
+The parallel study was used to assess the generalizability of the approach. In addition, the use of a parallel study was meant to minimise bias and unreliability of results through observer triangulation, according to \cite{stake}. While the two studies were started at the same time, both researchers conducting them were prohibited to share increments of partial results. Weekly meetings were planned to assess progress status only. The supervision of two senior researchers was used throughout the duration of the study.
+
+Moreover, data sources triangulation \cite{stake} was used to aid the generalizability of our results. To this purpose, three different sets of data were used. Two of these were obtained through surveys and other empirical enquiry methods.
+
+%using questionnaire to gather and organise organisational information needed plus the decision-tree to match with visits and comm. types use the piece below as a start\\
+%
+%
 
 \section{Results}\label{cs}
 
 To apply the method in \cite{specissue} on our case-study, we analysed the evidence available. 
 %The method allows associating a single community type to multiple observable attributes, through a decision-tree (see Fig. \ref{tree}). 
 
-The evidence available reflected the questionnaire in Table \ref{answers}. The following description summarises the details from Table \ref{answers}:
+We noticed immediately that the method in \cite{specissue} works best to identify a single observable community. This underlying limitation clashed with the sheer size and cluttering of organisational information from our big real-life scenario. We needed a mechanism to sort out the evidence available. To this purpose, we used the questionnaire in Fig. \ref{question}. The questionnaire gathers necessary organisational information, without limiting the observer's to a single path on the decision-tree from \cite{specissue}. Column 1 of the questionnaire provides the question that needs answering; Column 4 provides an ID for the question, to ease the mapping on the decision-tree from \cite{specissue}; finally, Column 5 requires the observer to capture the rationale of the answer, i.e. the piece of organisational evidence that sustains the decision.
+
+The evidence available reflected the questionnaire in Table \ref{answers}. To remain simple, we present only one of the pieces of evidence that led us to answer each question. This piece of evidence is reported in column 5 of Table \ref{answers}. The following description summarises the details from Table \ref{answers}:
 \begin{center}
-\emph{Company X works with an integrated Scrum model, using many divisions of work, e.g. business units, or product teams. Communication takes place informally only during certain phases. Other phases are regulated by rigid governance policies and protocols. New personnel is formally evaluated and selected to integrate the community. Both Company X and its clients actively encourage and motivate the development community to increase engagement and cohesion. Organisational culture is neither collected nor maintained. Rather, the experience of personnel is established during evaluation of background and skills. Finally, Company X doesn't employ any mechanism to visualise product development process but leaves it up to Scrum masters and other leadership to disseminate results and increase their visibility.}
+\emph{Company X works with an integrated Scrum model, using many divisions of work, e.g. business units, or product teams. Communication takes place informally only during certain phases. Other phases (such as stakeholder reviews, corporate progress meetings, product release plans, etc.) are regulated by rigid governance policies and protocols. New personnel is formally evaluated and selected to integrate the community. Both Company X and its clients actively encourage and motivate the development community to increase engagement and cohesion. Organisational culture (such as best-practices, recurrent product requirements, collaboration patterns, etc.) is neither collected nor maintained. Rather, the experience of personnel is established during evaluation of background and skills (i.e. during personnel review and initial evaluation before employment). Finally, Company X doesn't employ any mechanism to visualise product development process but leaves it up to Scrum masters and other leadership to disseminate results and increase their visibility.}
 \end{center}
 %%%%%% Martin!!! please revise/integrate!!! :)
 
 We were able to clearly answer most questions except question 3 and 11.
 
-First, for question 3 ``do all community members exhibit a different location?'', we found organisational information leading to both a ``YES'' or a ``NO''. Moreover, we noticed that organisational information leading to ``YES'' was related to Company X as a whole. Conversely, organisational information leading to ``NO'' was referring to only a few sites within Company X. 
+For question 3 ``do all community members exhibit a different location?'', we found organisational information leading to both a ``YES'' or a ``NO''. Moreover, we noticed that organisational information leading to ``YES'' was related to Company X as a whole. Conversely, organisational information leading to ``NO'' was referring to only a few sites within Company X. 
 
-Second, question 11 ``do community members require formal status evaluation?'', was impossible to answer given the lack of available information.
+For question 11 ``do community members require formal status evaluation?'', it was impossible for us to answer, given the lack of available information.
 %TODO: put figure of the answered questionnaire. on the figure, the pivot answers need to be with interrogation marks\\
 %TODO: explain the answers\\
 \begin{table*}
@@ -687,7 +699,13 @@ To evaluate results we mapped the answers in Figure \ref{answers} with the decis
 %The point of indecision is a \emph{pivot} decision-tree visits.
 %TODO: then proceed with showing the tree visit.\\
 
-Finally, we concluded the case-study by applying the decision-tree from previous work \cite{specissue}. This allowed us to understand the communities emerging within Company X's organisational structure. Figure \emph{result} shows results of this application. Two social communities were identified, namely, Networks of Practice (NoPs - part B of Fig. \ref{result}) and Workgroups (WGs - part A of Fig. \ref{result}). We found that the point of indecision, i.e. the DISPERSION node (see part C of Fig. \ref{result}) acts as a \emph{pivot} between the two identified community types. The attributes leading to the identification of a NoP were referred to global details of Company X (DISPERSION set to YES). Conversely the attributes leading to the identification of a WG are referred to localised divisions or business units within Company X (DISPERSION set to NO). 
+Finally, we concluded the case-study by applying the decision-tree from previous work \cite{specissue}. This allowed us to understand the communities emerging within Company X's organisational structure. Figure \emph{result} shows results of this application. Two social communities were identified, namely, Networks of Practice (NoPs - part B of Fig. \ref{result}) and Workgroups (WGs - part A of Fig. \ref{result}). 
+
+According to our data, Company X is organised as a globally dispersed (i.e. separated by distance in time and space) set of sites. No collocated work sessions are planned or supported in any one site. Rather, work stays dispersed and relies on dedicated digital means for sharing and synchronisation. The NoP is self-organising and open to collaboration with other communities. In our case, for example, some (parts of) sites, were explicitly collaborating with (and connected to) open-source communities.
+
+Moreover, sites within Company X, are organised as tight Workgroups. Internal cohesion and enthusiastic collaboration are key characteristics. Frequent collocated Workgroup meetings are used to verify productivity. Workgroups in Company X have a wide business agenda and are focused on delivering valuable products rather than delivering time-bound projects. 
+
+We found that the point of indecision, i.e. the DISPERSION node (part C of Fig. \ref{result}) acts as a \emph{pivot} between the two identified community types. The attributes leading to the identification of a NoP were referred to global details of Company X (DISPERSION set to YES). Conversely the attributes leading to the identification of a WG are referred to localised divisions or business units within Company X (DISPERSION set to NO). 
 
 \begin{figure*}
 \hspace{-.2cm}
@@ -699,16 +717,16 @@ Finally, we concluded the case-study by applying the decision-tree from previous
 
 \subsection{Replication}
 
-After our analysis was done, we explored the generality of our approach and findings, by comparing results from two parallel efforts. We found that
-
-Therefore, the approach we used, can be generalised into ODeSSA, a method to outline development social structures to analyse them by capturing \emph{snapshots}. The ODeSSA method is organised as follows:
+After our analysis was done, we explored the generality of our approach and findings, by comparing results from both parallel studies. We found that both efforts were carried out with the same underlying approach. We concluded that the approach can be generalised into ODeSSA, a method to outline development social structures to analyse them by capturing \emph{snapshots}. The ODeSSA method is organised as follows:
 \begin{enumerate}
-\item \emph{Gather Data:} The questionnaire in Fig. \ref{question} can be used as a checklist to gather necessary organisational details. Once analysed, these details must enable answering the questions in the questionnaire.
-\item \emph{Fill-in Questionnaire:} 
-\item \emph{Identify Pivots:}
-\item \emph{Map to Decision-Tree:}
-\item \emph{Associate \emph{snapshot} form:}
+\item \emph{Gather Data:} The questionnaire in Fig. \ref{question} must used as a checklist to gather necessary organisational details. Once analysed, these details must enable answering the questions in the questionnaire. Missing data can be gathered by directly surveying (e.g. with online forms) members of the community under observation. Alternatively, other quantitative mechanisms can be used, such as Social-Network Analysis (SNA) \cite{Rosso2009}. 
+\item \emph{Fill-in Questionnaire:} The questionnaire must then be filled out. The questionnaire is a lightweight mechanism to analysing observable development communities, rather than using complex coding schemes on available evidence, as seen previously in literature \cite{Hustad2010,Rosso2009}.
+\item \emph{Identify Pivots:} Pivot points are points of indecision within the questionnaire. These points deserve further attention since the indicate one of two things: (a) there is a conflict or inconsistency in the analysed snapshot; (b) there is a sub-community within the analysed community.
+\item \emph{Map to Decision-Tree:} Once organisational evidence is ready, the decision-tree can be mapped on the questionnaire to uncover community types. A community \emph{snapshot} can be obtained by combining information from the questionnaire with reflected community types.
+\item \emph{Evaluate snapshot form:} The properties of the obtained \emph{snapshot} must be evaluated. We found that the snapshot can present a limited number of forms (see Section \ref{res} for additional details).
 \end{enumerate}
+
+At this point, considerations on the snapshot can be associated with quantitative metrics or numbers concerning the company's current organisational performance. This can be useful in both academia and industry. For academic research, it could be useful to find patterns and causal relations between metrics for organisational performance and community snapshots, e.g. to establish the feasibility of certain community layouts for certain organisational goals. For practitioners, this can be useful to reflect on ways in which the current organisational layout could be steered or extended to improve its performance.
 %\begin{itemize}
 %\item explain how the case-study was conducted
 %\item explain what the evidence used to give an answer to the questionnaire
@@ -747,7 +765,7 @@ Therefore, the approach we used, can be generalised into ODeSSA, a method to out
 
 \section{Discussion and Findings}\label{res}
 
-We made three key observations.
+We analysed our results and made three key observations. The following text states the observation and provides an interpretation in \emph{italic}.
 
 %First, the method used during the case-study can be generalised. Second, we found that the questionnaire has many uses other than gathering the needed organisational information. Second, we found that \emph{pivot} points can have multiple answers for the same community, this detail makes them worthy of particular attention. Third, we found that data in the questionnaire can assume five possible forms, each with some interesting properties. Fourth, organisational barriers can either be useful to shape an organisation or harmful to its operations. The text below explains all findings in more detail. In \emph{italic} we provide a discussion of the finding.
 
@@ -775,19 +793,19 @@ We made three key observations.
 %TODO: add example\\
 %TODO: explain how the finding was extracted from our case study and how and why it can be generalized\\
 
-{\bf First, pivot points represent key variation points distinguishing a community from its components.}
+First, pivot points represent key variation points distinguishing a community from its subcomponents. For example, In our case study we found evidence that led to discovering NoPs. Likewise, we discovered evidence that could lead to discovering WGs. The only point of indecision was resting in the DISPERSION node (see part C of Fig. \ref{result}). Referencing both visits with the evidence available we observed that the path leading to WGs was only visitable if we focused on some particular sites within Company X. Conversely, the path leading to NoPs was only visitable if we considered Company X as a whole, without focusing on any single site or unit within. It follows that the DISPERSION node was a key organisational variation point between Company X as a whole and its various sites.
 %More in particular you need to visit the tree once per every possible combination of all \emph{pivots}.
-\emph{Pivots can be used as drivers for the analysis of the community status.}
+\emph{Pivots can be used as drivers for the analysis of the community snapshot. Their presence indicates that there is misalignment between a community as a whole and (some of) its components. In addition, the presence of pivots in our big industry case-study, suggests that presence is connected to organisational complexity. This indicates that pivots are worthy starting-points to analyse the community snapshot.}
 
 %For example, suppose your organisational information suggests the presence of both a Formal Network (FN) and a Network-of-Practice (NoP). The pivot-point in this case is ``formality''. It follows that the community you are observing behaves formally at one level (for example on a global scale, or between sites) and informally at another level (for example between divisions or business units). It's at least something you might want to think about, if the community you are observing exhibits communication problems. Moreover, suppose you are investigating communities that should all behave in the same way. The pivot-points suggest who is diverging. You might want to consider if and why the divergence is a good thing.}
-TODO: use example of pivot from case-study\\
+%TODO: use example of pivot from case-study\\
 
-{\bf Second, we found that the information in the ODeSSA questionnaire can assume five possible forms: (1) \emph{simple} status, represents the presence of a single path; (2) \emph{enriched-community} status, represents the presence of a path blended with attributes from other types; (3) \emph{complex} status, represents the presence of a more than one path; (4) \emph{uncertain} status, represents the presence of sparse attributes that don't represent any path but only broken segments.}
+Second, we found that the information in the ODeSSA questionnaire can assume five possible forms: (1) \emph{simple} status, represents the presence of a single path; (2) \emph{enriched-community} status, represents the presence of a path blended with attributes from other types; (3) \emph{complex} status, represents the presence of a more than one path; (4) \emph{uncertain} status, represents the presence of sparse attributes that don't represent any path but only broken segments.
 \emph{The five types can be used as a metric to evaluate community complexity. If the community matches a single path then it's more controllable, since it refers to a single type known to literature. Steering and management complexity increases the more the type diverges from simple.}
-TODO: finish explaining the fifth status and elaborate on the others; make sure that they are all\\
+TODO: REVISE!!! finish explaining the fifth status and elaborate on the others; make sure that they are all\\
 TODO: add example\\
 
-{\bf Finally, organisational literature defines barriers as mechanisms or circumstances that filter organisational activity \cite{Correia2010}. We found that many barriers are present in software development communities but are not necessarily a bad thing.}\\
+Finally, organisational literature defines barriers as mechanisms or circumstances that filter organisational activity \cite{Correia2010}. We found that many barriers are present in software development communities but are not necessarily a bad thing.\\
 TODO: needs the reasoning about barriers Me+Hans \\
 TODO: Add example\\
 %If they are, then they constrain people's communication. 
