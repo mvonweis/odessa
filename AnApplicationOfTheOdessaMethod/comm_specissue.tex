@@ -24,7 +24,7 @@
 %% $Id: elsarticle-template-num.tex 4 2009-10-24 08:22:58Z rishi $
 %%
 %%
-\documentclass[preprint,12pt]{elsarticle}
+%\documentclass[preprint,10pt]{elsarticle}
 
 %% Use the option review to obtain double line spacing
 %% \documentclass[preprint,review,12pt]{elsarticle}
@@ -32,7 +32,7 @@
 %% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
 %% for a journal layout:
 %% \documentclass[final,1p,times]{elsarticle}
-%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+ \documentclass[final,1p,times,twocolumn]{elsarticle}
 %% \documentclass[final,3p,times]{elsarticle}
 %% \documentclass[final,3p,times,twocolumn]{elsarticle}
 %% \documentclass[final,5p,times]{elsarticle}
@@ -109,7 +109,7 @@
 %% \address{Address\fnref{label3}}
 %% \fntext[label3]{}
 
-\title{Managing Corporate Performance of Development Communities Through ``Snapshots'' of Their State}
+\title{``Snapshooting'' Development Communities to Understand and Steer their Operations}
 
 %% use optional labels to link authors explicitly to addresses:
 %% \author[label1,label2]{<author name>}
@@ -117,9 +117,9 @@
 %% \address[label2]{<address>}
 
 \author[label1]{Damian A. Tamburri}
+\author[label2]{Martin von Weissenberg}
 \author[label1]{Patricia Lago}
 \author[label1]{Hans van Vliet}
-\author[label2]{\\Martin von Weissenberg}
 \address[label1]{Information Management and Software Engineering group, VU University, Amsterdam,
 The Netherlands\\
 $[$d.a.tamburri, p.lago, j.c.van.vliet$]$@vu.nl
@@ -131,11 +131,14 @@ martin.vonweissenberg@hanken.fi
 \begin{abstract}
 %% Text of abstract
 %OLD\\
-{\bf Context:} Engineering software is a social activity. Consequently, measuring and studying the organisational performance of the development community is key to success. Maintaining organisational performance becomes especially delicate when multiple communities have to join forces (e.g. in global software engineering). \\
-{\bf Objective:} So far, software engineering discipline lacks systematic methods to study development communities and their performance. In this paper we present ODeSSA a method to ``Outline Development Social Structures to Analyse''. The method is a refinement of previous work, and is validated on a real-life case-study from a large software development organisation. Applying ODeSSA we show that development communities can be given an intelligible form, which we call \emph{snapshot}. \\
-{\bf Method:} ODeSSA stems from previous work based on grounded-theory. This paper illustrates ODeSSA and validates the method using a real-life industrial case-study.\\
-{\bf Results:} In validating ODeSSA through a case-study, we found that \emph{Snapshot}s can have a limited number of forms, each with their own peculiarities. Finally, we found that ODeSSA helps detecting organisational barriers that hinder the developer community performance.\\
-{\bf Conclusion:} We conclude that ODeSSA determines intelligible forms, or \emph{Snapshots}, for organizations. These forms must be studied, e.g. to determine causes for low organisational performance.\\
+%
+%, measuring and studying the organisational performance of the development community is key to success. Maintaining organisational performance becomes especially delicate when multiple communities have to join forces (e.g. in global software engineering).
+%So far, software engineering discipline lacks systematic methods to study development communities and their performance. In this paper we present ODeSSA a method to ``Outline Development Social Structures to Analyse''. The method is a refinement of previous work, and is validated on a real-life case-study from a large software development organisation. Applying ODeSSA we show that development communities can be given an intelligible form, which we call \emph{snapshot}.
+{\bf Context:} Software engineering is a community endeavour. Diagnosing a software development community requires methods to outline and analyse its configuration. This configuration must feature properties and quantities that can be acted upon, e.g. through specific governance practices. However, software development organisations still lack ways to describe and steer key characteristics of software development communities.\\
+{\bf Objective:} This paper presents a methodology to \emph{``snapshot''} a development community, using observable key community characteristics. The methodology aids diagnosing socio-technical problems of development communities. For example, the method helps in: (a) identifying causes for lack of collaboration across a development community; (b) elaborating strategies to change or steer a community, using key characteristics that describe its current status; (c) identify unwanted communication barriers or deploy ad-hoc communication filtering protocols.\\
+{\bf Method:} To pursue the above objective, we developed ODeSSA, a methodology to ``Outline Development Social Structures to Analyse''. This methodology features: (a) validated results from previous work; (b) foundations lying in organisations research and social-networks analysis; (c) flexible input for its application; (b) output based on relevant community archetypes and properties from literature.\\
+{\bf Results:} In validating ODeSSA through a case-study, we found the methodology allows reliable information about the strengths, weaknesses and inconsistencies of a development community. Moreover, we found that \emph{snapshot}s of a development community can have a limited number of forms, each with their own peculiarities.\\
+{\bf Conclusion:} We conclude that ODeSSA efficiently determines \emph{snapshots} for software development organizations. \emph{snapshots} can be used to understand and govern a software development community.\\
 %
 %
 %%\emph{Snapshot}s are colourings of a development community decision tree. 
@@ -148,7 +151,7 @@ martin.vonweissenberg@hanken.fi
 
 %% MSC codes here, in the form: \MSC code \sep code
 %% or \MSC[2008] code \sep code (2000 is the default)
-Social Structures; Software Development Organisations; Networked Organisations; Organisational Performance; Organisational Complexity;
+Software Engineering; Human Factors; Social Structures; Software Development Communities; Networked Organisations; Community Performance; Community Complexity; Socio-Techincal decisions; Socio-Technical problems;
 \end{keyword}
 
 \end{frontmatter}
@@ -164,14 +167,18 @@ Social Structures; Software Development Organisations; Networked Organisations; 
 %% we have two targets: 1 - Corporate performance management of software development organizations, teams and supply chains; 2 - Visualization of organizational performance and its patterns;
 
 The craft of software is becoming more and more a social activity \cite{specissue}. Several studies suggest that engineers spend between 70 and 85\% of their time working with other people (e.g. end-user focus groups, managers, business sponsors, etc.) \cite{socialbook}. This means that in 70-85\% of times, software engineering success is a community effort, rather than a success of individuals. This figure becomes critical with the increase of diversity and size of the development community. For example, Global Software Engineering (GSE) is a development strategy entailing global teams to collaborate together from different locations in different timezones \cite{gsdbook}. In this circumstance, distances in time, space and culture, magnify project risks connected to failures in the development social structure \cite{empirglob,nachiappan,icgseoss}.
-The problem persists since software practitioners lack a systematic method to visualise and manage the organisational state of development communities. In previous work \cite{specissue} we provided a mechanism to uncover social communities latent emerging during software development.
+The problem persists since software practitioners lack a systematic method to outline the organisational state of development communities and use this ``picture'' to reliably steer the community.
 %, but we found its limit in terms of scalability. The mechanism was only applicable to small and medium-sized development communities with clear-cut organisation and well defined boundaries.
 %As a consequence, there is no way for software engineering practitioners to effectively act upon the development community they are part of.
-Stemming from previous work in \cite{specissue}, this paper proposes ODeSSA a semi-automatic method for ``Outlining Development Social Structures to Analyse''. ODeSSA allows the observers of a development community to capture its key information in the form of analysable ``\emph{snapshots}''. A \emph{snapshot} for a community is obtained mapping answers to a questionnaire onto a community decision-tree \cite{specissue}. The resulting \emph{snapshot} is a ``colouring'' \cite{networks} of the decision-tree from \cite{specissue}. Fig. \ref{snapshot} shows an example of a \emph{snapshot}. The \emph{snapshot} represents the characteristics of text-book software project teams \cite{hansbook}.
+Stemming from previous work, this paper proposes ODeSSA, a semi-automatic method for ``Outlining Development Social Structures to Analyse''. ODeSSA allows the observers of a development community to capture its key information in the form of analysable ``\emph{snapshots}''. 
 
-This paper presents the ODeSSA method and validates through a case-study.
-%
-% Figure \ref{snapshot} outlines our idea of a snapshot.
+The methodology uses a questionnaire/checklist to gather key information. Subsequently, the methodology uses a decision-tree from \cite{specissue} to outline the development community. The outline, or \emph{snapshot}, is obtained as a combination of community archetypes and their properties found in organisations research \cite{ossslr}. This combination of properties is obtained answering to a questionnaire whose questions are designed to identify the presence of said key attributes. Answers can be found flexibly, from many sources of information for example: (a) the questionnaire can be sent to developers; (b) observers of a community can analyse data describing organisational structure and processes of the community. Once the questionnaire is filled-out, answers need to be mapped onto a decision-tree to determine the community types present in the \emph{snapshot}. The mapping results in a ``colouring'' \cite{networks} of the decision-tree from \cite{specissue}. 
+
+For example, imagine a project manager wants to find out how does his development community looks like, after his development company extends it with offshore partners and open-source communities. To ``run'' ODeSSA the project manager can feed the ODeSSA Questionnaire (e.g. through an online surveying tool). Once data is obtained, the project manager can elaborate the \emph{snapshot} represented in the questionnaire mapping the answers on the decision-tree. Finally, with the resulting \emph{snapshot}, the project manager can understand and further analyse the current status of his development community using the discussions presented in this paper. Figure \ref{snapshot} outlines our idea of a \emph{snapshot}.
+
+The benefits of our methodology are manifold: (a) \emph{flexible - }ODeSSA is based on key community characteristics that can be discovered in multiple ways, allowing flexibility to industrial practitioners with diverse information and time available; (b) \emph{lightweight - } ODeSSA is based on filling a questionnaire and colour a decision-tree, it can be used by practitioners coming from very different backgrounds; (c) \emph{multi-purpose - }ODeSSA can be used to understand development communities from multiple angles, e.g. to study the current situation for change-planning or improve development performance by removing hazardous communication barriers. 
+
+This paper presents the ODeSSA methodology and validates it through a real-life industrial case-study. %
 %
 %The method uses the questionnaire in Fig. \ref{quest} to gather and organise necessary information about the observed community. Finally, the method uses the decision-tree form \cite{specissue} to match the information in the questionnaire with community types. 
  \begin{figure}[h!]
@@ -183,7 +190,9 @@ This paper presents the ODeSSA method and validates through a case-study.
 \end{figure}
 Applying ODeSSA, we made three key observations: (a) the method allows uncovering inconsistencies on the observed \emph{snapshot}; (b) the community \emph{snapshot} can have a limited number of possible forms, each with its own particular characteristics; (c) the method allows uncovering of organisational barriers that can hinder communication/collaboration across communities during software development. 
 
-The rest of the paper is structured as follows: Section \ref{mm} explains materials and methods; Section \ref{cs} presents the case-study, while Section \ref{res} discusses results. Finally, Section \ref{conc} concludes the paper with future work.
+While based on previously published work, our paper offers the following novel contributions: (a) the ODeSSA methodology, validated through a large industrial case-study; (b) a questionnaire that features feedback from industrial practitioners; (c) analysis guidelines that allow to interpret the \emph{snapshots} found - guidelines were obtained applying ODeSSA in practice and feature feedback from industrial practitioners. 
+
+The rest of the paper is structured as follows: Section \ref{devcomm} explains related work; Section \ref{mm} explains materials and methods; Section \ref{method} presents the ODeSSA methodology; Section \ref{cs} validates ODeSSA applying it no a large industrial case-study, while Section \ref{res} discusses both contributions, namely the ODeSSA methodology and its application. Finally, Section \ref{conc} concludes the paper with future work.
 
 %these forms are worthy of further study since they could act as proxies for quality of the observed community.
 %In addition we suggest ways to manipulate the community state, e.g. to change community type or its focus. 
@@ -217,7 +226,7 @@ The rest of the paper is structured as follows: Section \ref{mm} explains materi
 %I wish you the best of success.
 %\hfill mds
 
-\subsection{Studying and Supporting Software Development Communities}\label{devcomm}
+\section{Studying and Supporting Software Development Communities}\label{devcomm}
 %\begin{itemize}
 %\item related work from socio-technical congruence
 %\item related work dana damian
@@ -225,12 +234,146 @@ The rest of the paper is structured as follows: Section \ref{mm} explains materi
 %\item other works in ged for social studies
 %\item productivity and agile methods to be adopted in gsd
 %\end{itemize}
-
+TODO:\\
+RESTRUCTURE DIVIDING THE VARIOUS LITERATURE SECTIONS\\
+INCLUDE MORE LITERATURE ON GOVERNANCE AND RELATED WORK\\
+INCLUDE MORE LITERATURE ON HUMAN ASPECTS IN SE\\
+INCLUDE EVIDENCE OF ORGANISATIONAL CHANGE AND GOVERNANCE AS A CONSEQUENCE OF AGILE METHODS\\
 Literature in GSE already recognises the need to study global communities. More in particular, many works such as \cite{nachiappan} have studied empirically the effect of organisational structures on the quality of software. These works motivate further studies to understand, represent and support social structures and communities. In addition, similar works such as \cite{uls,rel9} study the effect of socio-technical congruence on designing global systems as well as the process of global engineering. Such works suggests that understanding how coordination requirements map to their people counterpart is critical to steer information across global communities successfully. Our work is limited to identifying community types, and finding ways to ``format'' and study their observable characteristics. 
 Other works such as \cite{Davenport2001} study the impact of successful communities on socio-technical problems (e.g. coordination, shared understanding, etc.). These works take a more social and organisational approach, pointing out the paramount importance of supporting explicitly the work of communities rather than allocating tasks to single individuals. In previous work \cite{icgseoss,ossslr}, we found that observable \emph{social communities} captured in \cite{Davenport2001} are a composition of known social community types \cite{ossslr}. The work presented in this paper goes one step further in this direction, by reporting on the results of a large industrial real-life scenario. The results led us to develop a method to ``snapshot'' software development communities by using a composition of known social community types.
 %In addition, works such as \cite{scrum} study the impact of agile methods on a large scale distributed software engineering attempt. Understanding the impact and changes on global communities forced in by organisational changes such as agile adoption, is key to successful change, especially on a global scale.
 %Our work in this paper does not go deep in investigating the impact of organisational decisions on the development community, but introduces a method to understand the community by \emph{snapshot}ting its current status. The method can be used to support related organisational decisions such as agile adoption. Moreover, the method enables understanding the negative consequences of change, such as emergent organisational barriers \cite{Correia2010}.
 Finally, works such as \cite{rel,rel4} investigate the impact of organizational decision-making on software development. For example, understanding if the current community \emph{snapshot} is performant (or even compatible) with offshoring is essential for the community to ``go global'' \cite{icsesympo}. The method presented in this paper can be used to support organisational decisions, investigating the current and to-be community \emph{snapshots}. Finally, the method enables understanding the negative consequences of change, such as emergent organisational barriers \cite{Correia2010}.
+
+%
+%
+%TODO: elaborate with the rest of related work, e.g. references on organisational change, other empirical studies in global communities or global communication \\
+%
+%\subsection{Research Questions}\label{rq}
+%
+%This paper reports an empirical study of software development organisations. We pay particular attention on the layout of the organisation. Our work was driven by the following research questions:
+%
+%\begin{center}
+%{\bf What elements of a development community should be made explicit to study its instantaneous state?}
+%\end{center}
+%Previous research in organisational studies, social-networks analysis (SNA) and software engineering, suggest there are many variables at play within a software development community. In previous research \cite{ossslr,specissue}, we provided an extensive specification of attributes that define community types. Table \ref{commtypes} provides an overview of community types. These types were obtained through a Systematic Literature Review on organisations and social-networks research \cite{ossslr}. In this work we present information essential to define a \emph{snapshot} for an observed organisation. By examining interviews and other sources of organisational evidence, we found a way to represent a \emph{snapshot} of an observed community, such that the \emph{snapshot} can be further analysed.
+%
+%\begin{center}
+%{\bf What are the possible forms of the development community \emph{snapshot}?}
+%\end{center}
+%In previous work \cite{icgseoss,specissue} we found many combinations of communities that can represent software development.
+%%Studying interviews and analysing grounded-theory results from available organisational data, we found the possible forms that a community status can assume. Each of these forms manifests with own characteristics and should be acted upon accordingly.
+%In this work we analysed the possible ``colourings'' of the decision-tree in \cite{specissue} using data from a big industrial case-study as a reference. We found there are four possible ``colourings'' that the data can reflect.
+
+%
+%\begin{center}
+%{\bf How does organisational change influence the form of a development community \emph{snapshot}?}
+%\end{center}
+%Much research is aimed at establishing the influence of organisational change on the people and process of software engineering. For example, In previous work \cite{specissue}, we found that the ``shift'' to agile methods could be an organisational change with both positive and negative impact. The organisation we studied was undergoing an organisational ``shift''. Studying the opinions of developers and technicians, and the characteristics of the community \emph{snapshot}, we found barriers that clashed with the success of organisational change.
+
+%\begin{itemize}
+%\item explain impact of the question and importance of answering
+%\end{itemize}
+%%%%%%%%%%Providing an intelligible shape for an observable software development community is the first step towards efficient steering of community operations. 
+%%%%%%%%%%
+%%%%%%%%%%For example, studying \emph{snapshot}s of global communities enables the development of ad-hoc adaptations based on current (or desired) community \emph{snapshot}s. Global software development literature acknowledged that global communication is compromised by the presence of organisational barriers within and between communities \cite{gse,gsdbook}. Given the presence of barriers in certain \emph{snapshot}s, organisations could plan organisational adaptations to those barriers.
+%%%%%%%%%%
+%%%%%%%%%%Moreover, studying \emph{snapshot}s of communities, managers can plot cross-community communication patterns that match exactly the current situation. For example, during a Scrum sprint, Scrum coaches can evaluate \emph{snapshot}s of the development community to understand its productivity and adapt it as needed (e.g. to avoid ``Crunch-times'' in Scrum).
+
+%
+%previous research in software engineering, organisational sciences and systems theory has observed many social community types. Over time, many attributes were observed and used to characterise these community. We analyse empirical evidence with the aim of pinpointing the attributes that are necessary and sufficient to capture the state of a certain community
+%
+%Second, {\bf how can we act on the status of a software development community?}  .\\
+%
+%Finally, {\bf how can practitioners use the state-of-the-art in social communities to improve development collaboration?}  .\\
+
+% 
+%\hfill January 11, 2007
+%
+%\subsection{Subsection Heading Here}
+%Subsection text here.
+%
+%
+%\subsubsection{Subsubsection Heading Here}
+%Subsubsection text here.
+%
+
+\section{Materials and Methods}\label{mm}
+%This paper introduces a method to study a development community using a case-study. 
+The conclusions in this paper are drawn from a real-life industrial case-study. This section explains what materials we used to carry out the case study and how we examined such materials.
+
+\subsection{Materials}
+%TODO: explain that two people conducted the case-study with the same material in parallel with minimal interaction on the case study, as overseen by two senior researchers. when it was finished the results were compared for evaluation. the method can be generalised since both researchers followed the same emergent path and encountered the same probs, that were solved in pretty much the same way.\\
+%The following sections describe materials and methods in more detail.
+
+%\begin{itemize}
+%\item describe work in the SLR
+%\item describe work in ICGSE paper
+%\item describe work in IEEE Sw paper
+%\item related work
+%\end{itemize}
+%
+%\subsection{Materials Used}
+The empirical evidence used in our work, stems from empirical research conducted in a big organisation, active in the mobile technologies market. The organisation (called Company X from now on) is multinational that develops both hardware and software components for end-users' mobile-phones and apps to enrich user experience. Company X employs over 130K people in 16 worldwide sites, with sales in over 160 countries. At the time the empirical research was conducted (early 2012), the organisation had a net market sale of 42.4 billion euros. 
+
+The focus of our data lies in the organisational structure of a product-chain within Company X's corporate portfolio. Our empirical data describes the overall organisation and some of its software development sites. The data also reports on the collaboration between Company X's Scrum development community and a constellation of open-source communities. 
+
+Three key sources of evidence were used:
+\begin{enumerate}
+\item The first key resource (called \emph{\bf Reference 1} from now on) is a research report studying agile and open-source adoption in Company X. The study was conducted using grounded-theory \cite{gt}. The study features six interviews with focus groups from Company X. Focus groups had varied expertise, from areas such as project management to agile coaches to code developers. The focus sessions are analysed through grounded theory. The study offers an overview of the organisational structure of Company X as a whole (i.e. as a global community) as well as explaining its local sites. The research focuses on a division of Company X, working on a specific project release, at the time of investigation. The report is 112 pages long, we use page numbers for the purpose of traceability. 
+
+\item The second key resource (called \emph{\bf Reference 2} from now on) is a research report studying three software engineering teams within Company X. The study features 16 interviews harvested through accidental and snowball sampling \cite{Goodman}. Interviewees had varied backgrounds but an average work experience in Company X of about 10 years. The sample consisted of both sexes, however, with a minority of females. As a result, the organisational details of this report focus around software process, software coding methods, development best-practices adopted, problems found, and ultimately, the people's perspective on all the above. The report is 97 pages long, we use page numbers for the purpose of traceability.
+
+\item The third key resource (called \emph{\bf Agile Slides} from now on) is a set of tutorial slides that agile coaches within Company X used to introduce X's organisational structure/process to newly appointed staff members. The slides provide an overview of the agile process and open-source integration protocols in place within Company X at the time of investigation. The report is 4 pages long, we use page numbers for the purpose of traceability.
+%\item explain unique input by martin
+\end{enumerate}
+
+All of the above sources are dated around 2012 and are protected by non-disclosure agreements \footnote{available upon signed request}. At the time of investigation, Company X was going through many organisational changes and both studies aimed at understanding the impact of organisational change on teams, their production velocity, community productivity and end-product quality. 
+
+\subsection{Methods}
+
+To validate the ODeSSA method we conducted a case-study following guidelines in \cite{runeson}. \\
+ELABORATE\\
+%Given the same input materials, two parallel case-studies were started, with 
+The case-study objective was to evaluate real-life development communities from a big industrial case using results from previous work \cite{specissue}. The work in \cite{specissue} presents a decision-tree that allows to identify community types (summarised on Table \ref{commtypes}) by means of key defining attributes. 
+%
+%The study was intended to validate and enrich the method from our previous work, to make it usable in real-life practice. 
+Besides providing validation to the decision framework in \cite{specissue}, the connotation of our case-study was exploratory and descriptive. We set out to define an intelligible form for the observed development community, such that the outlined form could be further studied, e.g. compared to organisational metrics for Company X. These followup quantitative studies are out of the scope of this work.
+\begin{figure}[h!]
+%\hspace{-.6cm}
+%\begin{sideways}
+\includegraphics[width=5.44in]{quest}%
+%\end{sideways}
+\caption{a questionnaire to study development communities.}\label{question}
+\end{figure}
+%
+%After our analysis was done, we explored the generality of our approach and findings, by comparing results from both parallel studies. We found that both efforts were carried out with the same underlying approach. We concluded that the approach can be generalised into ODeSSA, a method to outline development social structures to analyse them by capturing \emph{snapshots}. 
+
+We used a parallel study and data sources triangulation \cite{stake} to ensure the generalizability of the approach. In addition, the use of a parallel study was meant to minimise bias and unreliability of results through observer triangulation, according to \cite{stake}. While the two studies were started at the same time, both researchers conducting them were prohibited to share increments of partial results. Weekly meetings were planned to assess progress status only. The supervision of two senior researchers was used throughout the duration of the study.
+%
+%Moreover,  was used to aid the generalizability of our results. To this purpose, three different sets of data were used. Two of these were obtained through surveys and other empirical enquiry methods.
+%
+%using questionnaire to gather and organise organisational information needed plus the decision-tree to match with visits and comm. types use the piece below as a start\\
+%
+%
+\section{The ODeSSA Methodology}\label{method}
+
+The ODeSSA method is organised as follows:
+ELABORATE\\
+\begin{enumerate}
+\item \emph{Gather Data:} The questionnaire in Fig. \ref{question} must first be used as a checklist to gather necessary organisational details. Once analysed, these details must enable answering the questions in the questionnaire. Missing data can be gathered by directly surveying (e.g. with online forms) members of the community under observation. Alternatively, other quantitative mechanisms can be used, such as Social-Network Analysis (SNA) \cite{Rosso2009}. 
+\item \emph{Fill-in Questionnaire:} The questionnaire must then be filled out using the gathered data. The questionnaire is a lightweight mechanism to analysing observable development communities, rather than using complex coding schemes on available evidence, as seen previously in literature \cite{Hustad2010,Rosso2009}.
+\item \emph{Identify Pivots:} Pivot points are points in the questionnaire that have both YES and NO answers. These points deserve further attention since the indicate one of two things: (a) there is a conflict or inconsistency in the analysed snapshot; (b) there is a sub-community within the analysed community.
+\item \emph{Map to Decision-Tree:} Once organisational evidence is ready, the decision-tree can be mapped on the questionnaire to uncover community types. A community \emph{snapshot} can be obtained by combining information from the questionnaire with reflected community types.
+\item \emph{Evaluate snapshot form:} The properties of the obtained \emph{snapshot} must be evaluated using the forms presented in Section \ref{res}.
+\end{enumerate}
+
+
+DRAW A PICTURE OF THE METHODOLOGY AND SYNCH THE STRUCTURE OF THE SECTION ON THE PICTURE\\
+FOLLOW THE STRUCTURE OF THE METHODOLOGY TO FURTHER INTRODUCE ITS COMPONENTS\\
+EXPLAIN CONSTRUCTION AND RATIONALE OF QUESTIONNAIRE\\
+IN A SEPARATE SUBSECTION EXPLAIN TYPES AND THEIR IDENTIFYING PROPERTIES\\
+EXPLAIN RELATIONS AND CONSTRUCTION OF THE TREE\\
 
 \begin{table}
 \vspace{-4cm}
@@ -326,129 +469,12 @@ communities \cite{Cross2005}.} \tabularnewline
 \caption{social community types, an overview.}\label{commtypes}
 \end{table}
 
-%
-%
-%TODO: elaborate with the rest of related work, e.g. references on organisational change, other empirical studies in global communities or global communication \\
+\section{ODeSSA: a Case-Study}\label{cs}
 
-\subsection{Research Questions}\label{rq}
+To apply the ODeSSA method on our case-study, we analysed available evidence. \\
 
-This paper reports an empirical study of software development organisations. We pay particular attention on the layout of the organisation. Our work was driven by the following research questions:
-
-\begin{center}
-{\bf What elements of a development community should be made explicit to study its instantaneous state?}
-\end{center}
-Previous research in organisational studies, social-networks analysis (SNA) and software engineering, suggest there are many variables at play within a software development community. In previous research \cite{ossslr,specissue}, we provided an extensive specification of attributes that define community types. Table \ref{commtypes} provides an overview of community types. These types were obtained through a Systematic Literature Review on organisations and social-networks research \cite{ossslr}. In this work we present information essential to define a \emph{snapshot} for an observed organisation. By examining interviews and other sources of organisational evidence, we found a way to represent a \emph{snapshot} of an observed community, such that the \emph{snapshot} can be further analysed.
-
-\begin{center}
-{\bf What are the possible forms of the development community \emph{snapshot}?}
-\end{center}
-In previous work \cite{icgseoss,specissue} we found many combinations of communities that can represent software development.
-%Studying interviews and analysing grounded-theory results from available organisational data, we found the possible forms that a community status can assume. Each of these forms manifests with own characteristics and should be acted upon accordingly.
-In this work we analysed the possible ``colourings'' of the decision-tree in \cite{specissue} using data from a big industrial case-study as a reference. We found there are four possible ``colourings'' that the data can reflect.
-
-%
-%\begin{center}
-%{\bf How does organisational change influence the form of a development community \emph{snapshot}?}
-%\end{center}
-%Much research is aimed at establishing the influence of organisational change on the people and process of software engineering. For example, In previous work \cite{specissue}, we found that the ``shift'' to agile methods could be an organisational change with both positive and negative impact. The organisation we studied was undergoing an organisational ``shift''. Studying the opinions of developers and technicians, and the characteristics of the community \emph{snapshot}, we found barriers that clashed with the success of organisational change.
-
-%\begin{itemize}
-%\item explain impact of the question and importance of answering
-%\end{itemize}
-%%%%%%%%%%Providing an intelligible shape for an observable software development community is the first step towards efficient steering of community operations. 
-%%%%%%%%%%
-%%%%%%%%%%For example, studying \emph{snapshot}s of global communities enables the development of ad-hoc adaptations based on current (or desired) community \emph{snapshot}s. Global software development literature acknowledged that global communication is compromised by the presence of organisational barriers within and between communities \cite{gse,gsdbook}. Given the presence of barriers in certain \emph{snapshot}s, organisations could plan organisational adaptations to those barriers.
-%%%%%%%%%%
-%%%%%%%%%%Moreover, studying \emph{snapshot}s of communities, managers can plot cross-community communication patterns that match exactly the current situation. For example, during a Scrum sprint, Scrum coaches can evaluate \emph{snapshot}s of the development community to understand its productivity and adapt it as needed (e.g. to avoid ``Crunch-times'' in Scrum).
-
-%
-%previous research in software engineering, organisational sciences and systems theory has observed many social community types. Over time, many attributes were observed and used to characterise these community. We analyse empirical evidence with the aim of pinpointing the attributes that are necessary and sufficient to capture the state of a certain community
-%
-%Second, {\bf how can we act on the status of a software development community?}  .\\
-%
-%Finally, {\bf how can practitioners use the state-of-the-art in social communities to improve development collaboration?}  .\\
-
-% 
-%\hfill January 11, 2007
-%
-%\subsection{Subsection Heading Here}
-%Subsection text here.
-%
-%
-%\subsubsection{Subsubsection Heading Here}
-%Subsubsection text here.
-%
-
-\section{Materials and Methods}\label{mm}
-%This paper introduces a method to study a development community using a case-study. 
-The conclusions in this paper are drawn from a real-life industrial case-study. This section explains what materials we used to carry out the case study and how we examined such materials.
-
-\subsection{Materials}
-%TODO: explain that two people conducted the case-study with the same material in parallel with minimal interaction on the case study, as overseen by two senior researchers. when it was finished the results were compared for evaluation. the method can be generalised since both researchers followed the same emergent path and encountered the same probs, that were solved in pretty much the same way.\\
-%The following sections describe materials and methods in more detail.
-
-%\begin{itemize}
-%\item describe work in the SLR
-%\item describe work in ICGSE paper
-%\item describe work in IEEE Sw paper
-%\item related work
-%\end{itemize}
-%
-%\subsection{Materials Used}
-The empirical evidence used in our work, stems from empirical research conducted in a big organisation, active in the mobile technologies market. The organisation (called Company X from now on) is multinational that develops both hardware and software components for end-users' mobile-phones and apps to enrich user experience. Company X employs over 130K people in 16 worldwide sites, with sales in over 160 countries. At the time the empirical research was conducted (early 2012), the organisation had a net market sale of 42.4 billion euros. 
-
-The focus of our data lies in the organisational structure of a product-chain within Company X's corporate portfolio. Our empirical data describes the overall organisation and some of its software development sites. The data also reports on the collaboration between Company X's Scrum development community and a constellation of open-source communities. 
-
-Three key sources of evidence were used:
-\begin{enumerate}
-\item The first key resource (called REF1 from now on) is a research report studying agile and open-source adoption in Company X. The study was conducted using grounded-theory \cite{gt}. The study features six interviews with focus groups from Company X. Focus groups had varied expertise, from areas such as project management to agile coaches to code developers. The focus sessions are analysed through grounded theory. The study offers an overview of the organisational structure of Company X as a whole (i.e. as a global community) as well as explaining its local sites. The research focuses on a division of Company X, working on a specific project release, at the time of investigation. The report is 112 pages long, we use page numbers for the purpose of traceability. 
-
-\item The second key resource (called REF2 from now on) is a research report studying three software engineering teams within Company X. The study features 16 interviews harvested through accidental and snowball sampling \cite{Goodman}. Interviewees had varied backgrounds but an average work experience in Company X of about 10 years. The sample consisted of both sexes, however, with a minority of females. As a result, the organisational details of this report focus around software process, software coding methods, development best-practices adopted, problems found, and ultimately, the people's perspective on all the above. The report is 97 pages long, we use page numbers for the purpose of traceability.
-
-\item The third key resource (called AGILE SLIDES from now on) is a set of tutorial slides that agile coaches within Company X used to introduce X's organisational structure/process to newly appointed staff members. The slides provide an overview of the agile process and open-source integration protocols in place within Company X at the time of investigation. The report is 4 pages long, we use page numbers for the purpose of traceability.
-%\item explain unique input by martin
-\end{enumerate}
-
-All of the above sources are dated around 2012 and are protected by non-disclosure agreements \footnote{available upon signed request}. At the time of investigation, Company X was going through many organisational changes and both studies aimed at understanding the impact of organisational change on teams, their production velocity, community productivity and end-product quality. 
-
-\subsection{Methods}
-
-The ODeSSA method is organised as follows:
-\begin{enumerate}
-\item \emph{Gather Data:} The questionnaire in Fig. \ref{question} must first be used as a checklist to gather necessary organisational details. Once analysed, these details must enable answering the questions in the questionnaire. Missing data can be gathered by directly surveying (e.g. with online forms) members of the community under observation. Alternatively, other quantitative mechanisms can be used, such as Social-Network Analysis (SNA) \cite{Rosso2009}. 
-\item \emph{Fill-in Questionnaire:} The questionnaire must then be filled out using the gathered data. The questionnaire is a lightweight mechanism to analysing observable development communities, rather than using complex coding schemes on available evidence, as seen previously in literature \cite{Hustad2010,Rosso2009}.
-\item \emph{Identify Pivots:} Pivot points are points in the questionnaire that have both YES and NO answers. These points deserve further attention since the indicate one of two things: (a) there is a conflict or inconsistency in the analysed snapshot; (b) there is a sub-community within the analysed community.
-\item \emph{Map to Decision-Tree:} Once organisational evidence is ready, the decision-tree can be mapped on the questionnaire to uncover community types. A community \emph{snapshot} can be obtained by combining information from the questionnaire with reflected community types.
-\item \emph{Evaluate snapshot form:} The properties of the obtained \emph{snapshot} must be evaluated using the forms presented in Section \ref{res}.
-\end{enumerate}
-
-To validate the ODeSSA method we conducted a case-study following guidelines in \cite{runeson}. 
-%Given the same input materials, two parallel case-studies were started, with 
-The case-study objective was to evaluate real-life development communities from a big industrial case using results from previous work \cite{specissue}. The work in \cite{specissue} presents a decision-tree that allows to identify community types (summarised on Table \ref{commtypes}) by means of key defining attributes. 
-%
-%The study was intended to validate and enrich the method from our previous work, to make it usable in real-life practice. 
-Besides providing validation to the decision framework in \cite{specissue}, the connotation of our case-study was exploratory and descriptive. We set out to define an intelligible form for the observed development community, such that the outlined form could be further studied, e.g. compared to organisational metrics for Company X. These followup quantitative studies are out of the scope of this work.
-\begin{figure}[h!]
-%\hspace{-.6cm}
-%\begin{sideways}
-\includegraphics[width=5.44in]{quest}%
-%\end{sideways}
-\caption{a questionnaire to study development communities.}\label{question}
-\end{figure}
-%
-%After our analysis was done, we explored the generality of our approach and findings, by comparing results from both parallel studies. We found that both efforts were carried out with the same underlying approach. We concluded that the approach can be generalised into ODeSSA, a method to outline development social structures to analyse them by capturing \emph{snapshots}. 
-
-We used a parallel study and data sources triangulation \cite{stake} to ensure the generalizability of the approach. In addition, the use of a parallel study was meant to minimise bias and unreliability of results through observer triangulation, according to \cite{stake}. While the two studies were started at the same time, both researchers conducting them were prohibited to share increments of partial results. Weekly meetings were planned to assess progress status only. The supervision of two senior researchers was used throughout the duration of the study.
-%
-%Moreover,  was used to aid the generalizability of our results. To this purpose, three different sets of data were used. Two of these were obtained through surveys and other empirical enquiry methods.
-%
-%using questionnaire to gather and organise organisational information needed plus the decision-tree to match with visits and comm. types use the piece below as a start\\
-%
-%
-
-\section{Results}\label{cs}
-
-To apply the ODeSSA method on our case-study, we analysed available evidence. 
+INCREMENTALLY EXPLAIN THE RESULTS FOR EACH STEP OF THE METHODOLOGY\\
+USE SIMILAR PAPER AS A REFERENCE TO RESTRUCTURE THIS SECTION AND THE PREVIOUS SECTION\\
 %The method allows associating a single community type to multiple observable attributes, through a decision-tree (see Fig. \ref{tree}). 
 %%%%%%%
 %%%%%%%From the work in \cite{specissue} we learned the approach had a limitation in terms of scalability.
@@ -460,6 +486,10 @@ The evidence available reflected the following scenario:
 \begin{center}
 \emph{Company X works with an integrated Scrum model, using many divisions of work, e.g. business units, or product teams. Communication takes place informally only during certain phases. Other phases (such as stakeholder reviews, corporate progress meetings, product release plans, etc.) are regulated by rigid governance policies and protocols. New personnel is formally evaluated and selected to integrate the community. Both Company X and its clients actively encourage and motivate the development community to increase engagement and cohesion. Organisational culture (such as best-practices, recurrent product requirements, collaboration patterns, etc.) is neither collected nor maintained. Rather, the experience of personnel is established during evaluation of background and skills (i.e. during personnel review and initial evaluation before employment). Finally, Company X doesn't employ any mechanism to visualise product development process but leaves it up to Scrum masters and other leadership to disseminate results and increase their visibility.}
 \end{center}
+REVISE\\
+INTEGRATE\\
+EXTEND WITH SNAPSHOT FOR THE CASE STUDY\\
+DESCRIBE SITUATION AT COMPANY X AND HOW THE SNAPSHOT IS CONSISTENT WITH REALITY AND EMPIRICAL EVIDENCEÉ MARTIN?\\
 %%%%%% Martin!!! please revise/integrate!!! :)
 %
 %All available evidence pointed to the identification of two community types to describe Company X, a NoP (globally) and various WGs (in Company X's sites).
@@ -610,8 +640,15 @@ The evidence available reflected the following scenario:
 % Note that IEEE typically puts floats only at the top, even when this
 % results in a large percentage of a column being occupied by floats.
 
-\section{Discussion and Findings}\label{res}
+\section{Analysis of Results and Lessons Learned}\label{res}
 TODO:\\
+REVISE\\
+EXTEND\\
+MARTIN WILL ADD FINDING ABOUT COMPARISON WITH THE CYNEFIN MODEL\\
+ADD FINDING ABOUT BARRIERS\\
+ADD FINDING ABOUT DIFFERENT PIVOT POINT FROM TWO DISTINCT OBSERVERS\\
+
+
 We analysed our results and made three key observations. The following text states the observation and provides an interpretation in \emph{italic}.
 
 %First, the method used during the case-study can be generalised. Second, we found that the questionnaire has many uses other than gathering the needed organisational information. Second, we found that \emph{pivot} points can have multiple answers for the same community, this detail makes them worthy of particular attention. Third, we found that data in the questionnaire can assume five possible forms, each with some interesting properties. Fourth, organisational barriers can either be useful to shape an organisation or harmful to its operations. The text below explains all findings in more detail. In \emph{italic} we provide a discussion of the finding.
@@ -763,7 +800,7 @@ Finally, we plan to integrate quality or process-improvement metrics in software
 % use section* for acknowledgement
 \section*{Acknowledgment}
 
-The authors would like to thank Dr. Ossi Korhonen and Dr. Minna Raisanen for providing empirical evidence in the form of well-defined reports, for us to elaborate the results in this paper. We acknowledge the contribution of all employees in Company X that offered their time to confirm the results contained in this paper. 
+The authors would like to thank Mr. Ossi Korhonen M.Sc. and Mrs. Minna Raisanen M.Sc. for providing empirical evidence in the form of well-defined reports, for us to elaborate the results in this paper. We acknowledge the contribution of all employees in Company X that offered their time to confirm the results contained in this paper. 
 
 %% The Appendices part is started with the command \appendix;
 %% appendix sections are then done as normal sections
