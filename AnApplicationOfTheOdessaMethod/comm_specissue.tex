@@ -174,7 +174,7 @@ Stemming from previous work, this paper proposes ODeSSA, a semi-automatic method
 
 The method uses a questionnaire/checklist to gather key information needed. Subsequently, the method uses a decision-tree from \cite{specissue} to outline the development community. The outline, or \emph{\emph{snapshot}}, is obtained as a combination of community archetypes and their properties \cite{ossslr}. This combination of properties is obtained answering to a questionnaire whose questions are designed to identify the presence of said key attributes. Answers can be found flexibly, from many sources of information for example: (a) the questionnaire can be sent to developers; (b) observers of a community can analyse data describing organisational structure and processes of the community. Once the questionnaire is filled-out, answers need to be mapped onto a decision-tree to determine the community types present in the \emph{\emph{snapshot}}. The mapping results in a ``colouring'' \cite{networks} of the decision-tree from \cite{specissue}. 
 
-For example, imagine a project manager wants to find out how does his development community looks like, after his development company extends it with offshore partners and open-source communities. To ``run'' ODeSSA the project manager can feed the ODeSSA Questionnaire (e.g. through an online surveying tool). Once data is obtained, the project manager can elaborate the \emph{\emph{snapshot}} represented in the questionnaire mapping the answers on the decision-tree. Finally, with the resulting \emph{\emph{snapshot}}, the project manager can understand and further analyse the current status of his development community using the discussions presented in this paper. Figure \ref{snapshot} outlines our idea of a \emph{\emph{snapshot}}. The figure represents what results if ODeSSA is applied to analyse text-book project teams in closed and clear-cut organisational boundaries.
+For example, imagine a project manager wants to find out how does his development community looks like, after his development company extends it with offshore partners and open-source communities. To ``run'' ODeSSA the project manager can feed the ODeSSA Questionnaire (e.g. through an online surveying tool). Once data is obtained, the project manager can elaborate the \emph{\emph{snapshot}} represented in the questionnaire mapping the answers on the decision-tree. Finally, with the resulting \emph{\emph{snapshot}}, the project manager can understand and further analyse the current status of his development community using the discussions presented in this paper. Figure \ref{snapshot} outlines our idea of a \emph{\emph{snapshot}}. The figure represents what results if ODeSSA is applied to analyse text-book project teams (represented by the complete path in Fig. \ref{snapshot}) in closed and clear-cut organisational boundaries.
 
 The benefits of our method are manifold: (a) \emph{flexible - }ODeSSA is based on key community characteristics that can be discovered in multiple ways, allowing flexibility to industrial practitioners with diverse information and time available; (b) \emph{straightforward - }ODeSSA is based on filling a questionnaire and colour a decision-tree, it can be used by practitioners coming from very different backgrounds; (c) \emph{multi-purpose - }ODeSSA can be used to understand development communities from multiple angles, e.g. to study the current situation for change-planning or improve development performance by removing hazardous communication barriers. 
 %TODO: TO BE EXPLAINED BETTER THE MULTIPURPOSE
@@ -444,7 +444,6 @@ TODO:\\
 ALSO SPECIFY HOW WE ARRIVED TO THE ODESSA METHOD\\
 BTW HOW DID WE ARRIVE TO THE ODESS METHOD?\\
 CYNEFIN TO CROSSREFERENCE RESULTS AND FINDINGS\\
-PREVIOUS WORK\\
 
 To validate the ODeSSA method we conducted a case-study following guidelines in \cite{runeson}. \\
 ELABORATE\\
@@ -469,6 +468,14 @@ We used a parallel study and data sources triangulation \cite{stake} to ensure t
 
 ODeSSA entails using four practical tools: (a) a questionnaire; (b) a checklist; (c) a decision-tree; (d) an analysis framework. The remainder of this section introduces the ODeSSA method in phases. Sections \ref{quest} to \ref{fw} provide additional details on the questionnaire, checklist, decision-tree and evaluation framework.
 %
+
+ \begin{figure}[h!]
+%\hspace{-.6cm}
+%\begin{sideways}
+\includegraphics[width=5.3in]{odessamethod}%
+%\end{sideways}
+\caption{The ODeSSA Method: Tools and Phases.}\label{odessa}
+\end{figure}
 %First, a checklist is used to gather the essential organisational data to characterise an observable community.  The questionnaire can also be fed to members of the observed community to gather the needed data.
 %\subsection{Method Phases}
 %ELABORATE\\
@@ -483,25 +490,18 @@ Missing data can be gathered by directly surveying (e.g. with online forms) memb
 The checklist must then be filled out using the data gathered through our questionnaire. The checklist is a lightweight mechanism to analysing observable development communities, rather than using complex coding schemes on available evidence, as seen previously in literature \cite{Hustad2010,Rosso2009}.Fig. \ref{checklist} shows the list. Each item within the checklist is a key defining attribute for a community type (see Table \ref{commtypes}), according to data in \cite{ossslr}. Available data must enable answering all the questions in the questionnaire.
 
 \item \emph{\bf Pivoting:} \emph{Double-check questionnaire and checklist to identify multiple answers.}
-Pivot-points are points in the checklist that can have multiple answers. A community is a fluid, dynamically evolving emergent property of cooperating organisations. We found in practice that multiple community archetypes can emerge at the same time, e.g. where managers assumed there were none. Pivot-points indicate either: (a) there is a conflict or inconsistency in the analysed community \emph{snapshot}; (b) there is another community (or sub-community) blended within the observed community. For example an observed community might show both ``dispersed'' sites and ``non-dispersed'' sites. This means that the community is the sum of multiple communities, based on the remaining attributes.
+Pivot-points are points in the checklist that can have multiple answers. A community is a fluid, dynamically evolving emergent property of cooperating organisations. We found in practice multiple community archetypes emerging at the same time where managers assumed there were none. Pivot-points indicate either: (a) there is a conflict or inconsistency in the analysed community \emph{snapshot}; (b) there is another community (or sub-community) blended within the observed community. For example an observed community might show both ``dispersed'' sites and ``non-dispersed'' sites. This means that the community is the sum of multiple communities, based on the remaining attributes.
 
 \item \emph{\bf Coloring:} \emph{Use checklist vector to ``color'' the ODeSSA decision-tree.}
 Answers from the checklist allow immediate mapping to the decision-tree to uncover community types and additional attributes present in the observed community. A community \emph{\emph{snapshot}} has been obtained.
 
 \item \emph{\bf Evaluating:} \emph{Use evaluation framework to analyse the \emph{snapshot} found.}
-The framework shown in Fig. \ref{fwfig} provides a lens to interpret the \emph{\emph{snapshot}s} from multiple angles. More in particular, the framework allows to pinpoint hazardous organisational barriers and assist in organisational decision-making by means of the \emph{\emph{snapshot}}. For example, the evaluation framework allowed us to discover a hazardous communication barrier and the means to mitigate it.
+The framework shown in Fig. \ref{fwpic} provides a lens to interpret the \emph{\emph{snapshot}s} from multiple angles. More in particular, the framework allows to pinpoint hazardous organisational barriers and assist in organisational decision-making by means of the \emph{\emph{snapshot}}. For example, the evaluation framework allowed us to discover a hazardous communication barrier and the means to mitigate it.
 
 \item \emph{\bf Tuning:} \emph{Use evaluation and literature \cite{ossslr} to act on the community.}
 \emph{\emph{snapshot}s} can be evaluated to steer community operations. ODeSSA allows to pinpoint critical information with which to act on the community, by ``tuning'' desired properties. For example, in practice we found an organisational barrier that can be mitigated by adding a knowledge community within the analysed \emph{snapshot}.
 
 \end{enumerate}
-
-Figure \ref{odessa} provides an overview of OdeSSA. The method starts by using the questionnaire, proceeds by applying a checklist and map results to a decision-tree. Finally, the method allows analysis and action on the obtained snapshot.
-TODO:\\
-FIGURE IS IN PROGRESS\\
-%%%%% SONO ARRIVATO QUI
-
-\subsection{ODeSSA: The Questionnaire}\label{quest}
 \begin{table}
 \hspace{1cm}
 %\begin{sideways}
@@ -550,31 +550,91 @@ by your organisation? } & \tabularnewline
 \caption{ODeSSA Questionnaire.}\label{question}
 \end{table}
 
+Figure \ref{odessa} provides an overview of OdeSSA. The method starts by using the questionnaire, proceeds by applying a checklist and map results to a decision-tree. Finally, the method assumes analysis and action are performed through the obtained snapshot.
+%%TODO:\\
+%%FIGURE IS IN PROGRESS\\
+%%%%% SONO ARRIVATO QUI
+
+\subsection{ODeSSA: The Questionnaire}\label{quest}
+
+We produced and refined a questionnaire that can be used to gather necessary details directly from the members of the observed community. Questions were elaborated stemming from lessons learned in \cite{specissue} and refined through feedback by industrial and academic partners. Each question in the list produces data to pinpoint the existence of key community attributes.
 
 
 \subsection{ODeSSA: The Checklist}
 
-\begin{wrapfigure}{r}{0.35\textwidth}
-%  \begin{center}
-    \includegraphics[width=0.35\textwidth]{checklist.pdf}    %
-%  \end{center}
-\vspace{-.3cm}
-\caption{\footnotesize ODeSSA: a checklist for essential community information}\label{checklist}
-\end{wrapfigure}
+As part of the work in \cite{ossslr} we analysed 143 articles discussing social communities in the areas of software engineering, organisational studies and social networks. We found many different definitions for social community types. Some articles discussed a type X as defined in previous literature, but added new attributes for that type. Other articles introduced new values for an attribute of X. 
 
+To characterise different social community types using this empirical evidence, we studied and compared all definitions available for each type. 
+We began this process by isolating attributes common to all articles discussing a certain type. 
+Then we divided common attributes of each type into two groups: (a) attributes with more than one possible value; (b) attributes whose value was fixed. 
+We found that, for most types, group (a) counted many elements and many values. Conversely, group (b) were populated by a single element for each type. 
+From this, we made two key observations. 
+First, the singletons in groups (b) uniquely identify a type.
+Second, combining groups (a) and (b) together characterises the community type. We named the singletons in groups (b) as \emph{key-defining} attributes.
+
+The checklist in \ref{checklist} contains \emph{key-defining} attributes for community types. Filling the checklist (using data in the questionnaire) allows using it to ``colour'' the decision-tree.
+
+The checklist begins with the STRUCTURE attribute. This attribute is the \emph{key-defining} of social-networks \cite{ossslr}. We found that a community can be seen as a specialised version of a social-network for which certain conditions and social arrangements are constantly true. This is why the first decision node ascertains the presence of a (organisational) structure among the observed set of people. This first property is keyed in a very simple, yet fundamental, axiom: ``a \emph{social community} is an emergent property, i.e. a characteristic by virtue of which, the \emph{whole} might be different than the sum of its \emph{parts}''. To decide this property you need to be able to distinctly observe a ``whole'' (called macrostructure) and its ``parts'' (called microstructures). However trivial it might seem, without this essential precondition, the observer would be faced with an unorganised crowd of people, without a structure, goal or observable characteristics. This notion could be assimilated with a demi-social-network made of nodes without links.
+
+\begin{figure}[h!]
+%\begin{wrapfigure}{r}{0.30\textwidth}
+%  \begin{center}
+    \includegraphics[width=5.3in]{checklist.pdf}    %
+%  \end{center}
+%\vspace{-.3cm}
+\caption{\footnotesize ODeSSA: a checklist for essential community information.}\label{checklist}
+%\end{wrapfigure}
+\end{figure}
 \subsection{ODeSSA: The Decision-Tree}\label{dectree}
+
+The notion of \emph{key-defining} attribute is not applicable to all cases. What happens if we observe multiple \emph{key-defining} attributes together in a real-life situation? We must then be able to relate this observation to the corresponding social community types. For this reason, ODeSSA blends the checklist in Fig. \ref{checklist} with the decision-tree in Fig. \ref{tree}, from previous work \cite{specissue}.
+
+Analysing the \emph{key-defining} attributes we found many relations between them: for example, some implied or mutually-excluded others. The relations formed a partial-order function for \emph{key-defining} attributes. A partial-order function associates an ordering or sequencing to the elements of a set. A real-life example of a partially-ordered set is a family genealogical tree, where some pairs of people bear the descendant-ancestor relationship, but not all pairs.
+
+The decision-tree (see Fig. \ref{tree}) is a representation of the partial-order relationship between \emph{key-defining} attributes. All the relations can be found online \footnote{\url{http://www.fileden.com/files/2012/3/7/3275239/OSSdecision.pdf}}.
+
+The nodes on the tree are labelled with \emph{key-defining} attributes (e.g. if a ``STRUCTURE'' and ``DISPERSION'' are observable then type NoP is identified). When visiting the tree, the observer needs to decide wether the key defining attributes are present or not. Each decision can be formulated in terms of a question (e.g. ``Do community members use informal communication only?''). These questions can be easily answered by observing any organisation, be it a single development effort, or an entire enterprise. 
+
+The edges of the tree are Yes/No decisions made for each node, from the checklist (see Fig. \ref{checklist}). 
+The leaves of the tree are social community types (see Table \ref{commtypes}).
+
+\begin{figure}[h!]
+%\begin{wrapfigure}{r}{0.30\textwidth}
+%  \begin{center}
+    \includegraphics[width=5.3in]{tree.pdf}    %
+%  \end{center}
+%\vspace{-.3cm}
+\caption{\footnotesize ODeSSA: a checklist for essential community information.}\label{tree}
+%\end{wrapfigure}
+\end{figure}
 
 \subsection{ODeSSA: An Analysis Framework}\label{fw}
 
-%The properties of the obtained \emph{\emph{snapshot}} must be evaluated using the forms presented in Section \ref{res}.
-We found that ODeSSA \emph{\emph{snapshot}s} can assume four possible forms: 
+Inheriting from strategic SWOT evaluation approaches such as \cite{swot}, we elaborated an initial analysis framework for ODeSSA \emph{snapshots}. To understand strengths, weaknesses, opportunities and threats using ODeSSA \emph{snapshots}, there are two key analyses that can be performed. Figure \ref{fwpic} shows the resulting evaluations that can be performed (on the left-hand side) using either decision-tree forms or desirable properties (right-hand side).
+
+First, observers must evaluate the ``form'' of the snapshot. ODeSSA \emph{\emph{snapshot}s} can assume three possible forms: 
 \begin{enumerate}
-\item \emph{simple}: the answers in the questionnaire reflect a single, clear-cut path on the decision tree. The community is well delineated and reflected by a type which is clearly investigated in organisational literature. Practitioners can use results from organisational literature to steer the community or improve its performance. 
-\item \emph{enriched-community}: the answers in the questionnaire reflect one (or more) path blended with additional ``enriching'' attributes. The enrichments indicate the need of additional communities. Practitioners can use state-of-the-art organisational design techniques, e.g. to explicitly support the identified community needs. For example, suppose the ``visibility'' attribute is discovered in mix with the Formal Networks community type. Formality within formal networks might have forced the organisation to adopt mechanisms to increase the visibility of projects, people or artefacts. Refinement and explicit support to such technologies includes the adoption of Information Management or Social Networking technologies \cite{eis,eim} to support development community.
-\item \emph{complex}: The answers in the questionnaire reflect more than one path, i.e. more than one community. This form reflects the presence of pivots. The \emph{snapshot} can be used to identify reasons for failing organisational performance. For example, in our case, many interviews suggested performance was hindered by an organisational barrier \cite{Correia2010}, ``lack of visibility of the whole'' (e.g. lack of visibility of people, artefacts, processes, etc.). We found the \emph{\emph{snapshot}} of Company X was in \emph{complex} form but the ``VISIBILITY'' attribute was set to NO. In these circumstances the creation of a Knowledge Community within Company X is beneficial to increase visibility. 
+\item \emph{simple}: the answers in the questionnaire reflect a single, clear-cut path on the decision-tree. The community is well delineated and reflected by a type from literature. Additional attributes in the checklist are not present. The scenario exemplified earlier in Section \ref{intro} represents an instance of a simple community \emph{snapshot}. This form evidences a \textbf{strength} of the community.
+\item \emph{enriched-community}: the answers in the questionnaire reflect one (or more) path(s) blended with additional ``enriching'' attributes (including pivots) but no additional paths. This form evidences a \textbf{threat} for the community.
+The enrichments can indicate reasons for failing organisational performance. Practitioners can use the evidence to fill-in with missing support. For example, suppose the ``visibility'' attribute is discovered in mix with the Formal Networks community type. Formality within formal networks might have forced the organisation to adopt mechanisms to increase the visibility of projects, people or artefacts, perhaps it is wise to foster the generation of a Knowledge Community jointly with the Formal Network. Refinement and explicit support to such technologies includes the adoption of Information Management or Social Networking technologies \cite{eis,eim} to support development community.
+\item \emph{complex}: The answers in the questionnaire reflect more than one path through one (or more) pivot points. The \emph{snapshot} can be used to identify and support explicitly sub-communities. This form evidences possible \textbf{opportunities} for the community. Sub-communities can be identified by analysing deeper available pivots. Information leading to the ``multiple'' answer could be referred only to a specific division or location within the community. For example, suppose you analyse a Global Software Development organisation. Suppose you find a WG and DISPERSION is a pivot-point, that leads to the identification of a NoP. Details leading to a NoP however, when analysed further, are only referred to a single site in the GSD organisation. In case sub-communities are identified, managers can use the snapshot to plan explicit support to their attributes.
+%
+%Pivot-points can also indicate reasons for an inefficient community. Community members show attributes of other communities that were not explicitly planned nor supported.
 %\item \emph{complex}: The answers in the questionnaire reflect more than one path and additional attributes.
-\item \emph{chaotic}: The answers in the questionnaire reflect sparse attributes that don't represent any path but only broken segments. This indicates that the community is in some disarray, since it doesn't show any clear organisational form. The community is not representable with known organisational types. The \emph{snapshot} form can be used to identify the attributes that remain unsupported (i.e. the broken links). For example, suppose you are observing a set of people working almost as a Workgroup but are not required to show any benefit on investments. This shortcoming can be made explicit and further investigated.
+%\item \emph{chaotic}: The answers in the questionnaire reflect sparse attributes that don't represent any path but only broken segments. This indicates that the community is in some disarray, since it doesn't show any clear organisational form. The community is not representable with known organisational types. The \emph{snapshot} form can be used to identify the attributes that remain unsupported (i.e. the broken links). For example, suppose you are observing a set of people working almost as a Workgroup but are not required to show any benefit on investments. This shortcoming can be made explicit and further investigated.
 \end{enumerate}
+
+Second, observers must find desirable properties, i.e. items in the checklist that were desired (or aimed for) but were not discovered. For example imagine you found the VISIBILITY attribute to be set to NO but expected your community to exhibit increased visibility of its members and resources. This analysis reveals possible \textbf{weaknesses} of the community. Additional properties can be fostered with explicit supportive services (e.g. using knowledge-bases or enterprise social networks to foster VISIBILITY).
+
+\begin{figure}[h!]
+%\begin{wrapfigure}{r}{0.30\textwidth}
+%  \begin{center}
+    \includegraphics[width=5.3in]{fw.pdf}    %
+%  \end{center}
+%\vspace{-.3cm}
+\caption{\footnotesize ODeSSA: an initial analysis framework.}\label{fwpic}
+%\end{wrapfigure}
+\end{figure}
 
 %
 %DRAW A PICTURE OF THE METHOD AND SYNCH THE STRUCTURE OF THE SECTION ON THE PICTURE\\
@@ -585,7 +645,7 @@ We found that ODeSSA \emph{\emph{snapshot}s} can assume four possible forms:
 
 \section{ODeSSA: a Case-Study}\label{cs}
 
-To apply the ODeSSA method on our case-study, we analysed available evidence. \\
+To apply the ODeSSA method on our case-study, we analysed all evidence introduced in Section \ref{mm}.
 
 INCREMENTALLY EXPLAIN THE RESULTS FOR EACH STEP OF THE METHOD\\
 USE SIMILAR PAPER AS A REFERENCE TO RESTRUCTURE THIS SECTION AND THE PREVIOUS SECTION\\
@@ -613,6 +673,10 @@ Organisational culture (such as best-practices, recurrent product requirements, 
 The experience of personnel is established during evaluation of background and skills (i.e. during personnel review and initial evaluation before employment).
 On higher levels (products for customers), Company X employs centralised models for product development process and for tracking progress. On the more practical (component or non-functional) levels, Scrum masters and other leadership disseminate the direct results and increase their visibility.}
 \end{quote}
+
+
+DESIRABLE PROPERTIES:\\
+In our case, many interviews suggested performance was hindered by an organisational barrier \cite{Correia2010}, ``lack of visibility of the whole'' (e.g. lack of visibility of people, artefacts, processes, etc.). We found the \emph{\emph{snapshot}} of Company X was in \emph{complex} form but the ``VISIBILITY'' attribute was set to NO. In these circumstances the creation of a Knowledge Community within Company X is beneficial to increase visibility. 
 
 %%%%%% Martin!!! please revise/integrate!!! :)
 %
