@@ -81,6 +81,7 @@
 
 % \biboptions{}
 \usepackage{wrapfig}
+\usepackage{rotating}
 
 \journal{Information and Software Technology}
 
@@ -142,7 +143,7 @@ martin.vonweissenberg@hanken.fi
 
 {\bf Context:} Software development is a community endeavour. Diagnosing a software development community requires methods to outline and analyse its configuration. This configuration features properties (e.g.~situatedness, dispersion, goals, etc.) that can be acted upon, e.g.~through specific governance practices. However, software development organisations still lack ways to describe and steer key properties of software development communities.
 
-{\bf Objective:} This paper presents a method to diagnose a development community by ``\emph{snapshot}ing'' a community by capturing its observable key characteristics in an intelligible form. The method aids diagnosing socio-technical problems of development communities. For example, the method helps: (a) identifying causes for lack of collaboration across a development community; (b) elaborating strategies to change or steer a community, using key characteristics that describe its (current) status; (c) identify unwanted communication barriers or deploy ad-hoc communication filtering protocols.
+{\bf Objective:} This paper presents a method to diagnose a development community by ``\emph{snapshot}ing'' a community by capturing its observable key characteristics in an intelligible form. The method aids diagnosing socio-technical problems of development communities. For example, the method helps: (a) identifying causes for lack of collaboration across a development community; (b) elaborating strategies to change or steer a community, using key characteristics that describe its (current) status; (c) identify unwanted properties or deploy ad-hoc communication filtering protocols.
 
 {\bf Method:} To pursue the above objective, we developed SEEDS, a method for ``\emph{snapshots}-based Evaluation and Evolution of Development communitieS''. This method features: (a) validated results from previous work; (b) foundations lying in organisations research and social-networks analysis; (c) adaptable data-gathering; (b) output based on community archetypes and properties.
 
@@ -199,7 +200,7 @@ This paper presents the SEEDS method and validates it through a real-life indust
 %\end{sideways}
 \caption{an example \emph{snapshot} for text-book project teams.}\label{snapshot}
 \end{figure}
-Applying SEEDS, we made three key observations: (a) the method allows uncovering inconsistencies on the observed \emph{snapshot}; (b) the community \emph{snapshot} can have a limited number of possible forms, each with its own particular characteristics; (c) the method allows uncovering of organisational barriers that can hinder communication/collaboration across communities during software development. 
+Applying SEEDS, we made three key observations: (a) the method allows uncovering inconsistencies on the observed \emph{snapshot}; (b) the community \emph{snapshot} can have a limited number of possible forms, each with its own particular characteristics; (c) the method allows uncovering circumstances that can hinder communication/collaboration across communities during software development. 
 
 While based on previously published work, our paper offers the following novel contributions: (a) the SEEDS method, validated through a large industrial case-study; (b) a questionnaire that features feedback from industrial practitioners; (c) analysis guidelines that allow to interpret the \emph{\emph{snapshots}} found - guidelines were obtained applying SEEDS in practice and feature feedback from industrial practitioners. 
 
@@ -504,14 +505,14 @@ The checklist must then be filled out using the data gathered through our questi
 \item \emph{\bf Pivoting:} \emph{Double-check questionnaire and checklist to identify multiple answers.}
 Pivot-points are points in the checklist that can have multiple answers. A community is a fluid, dynamically evolving emergent property of cooperating organisations. We found in practice multiple community archetypes emerging at the same time where managers assumed there were none. Pivot-points indicate either: (a) there is a conflict or inconsistency in the analysed community \emph{snapshot}; (b) there is another community (or sub-community) blended within the observed community. For example an observed community might show both ``dispersed'' sites and ``non-dispersed'' sites. This means that the community is the sum of multiple communities, based on the remaining attributes.
 
-\item \emph{\bf Coloring:} \emph{Use checklist vector to ``color'' the SEEDS decision-tree.}
+\item \emph{\bf Coloring:} \emph{Use checklist to ``color'' the SEEDS decision-tree.}
 Answers from the checklist allow immediate mapping to the decision-tree to uncover community types and additional attributes present in the observed community. A community \emph{snapshot} has been obtained.
 
 \item \emph{\bf Evaluating:} \emph{Use evaluation framework to analyse the \emph{snapshot} found.}
 The framework shown in Fig.~\ref{fwpic} provides a lens to interpret the \emph{\emph{snapshots}} from multiple angles. More in particular, the framework allows to pinpoint hazardous organisational barriers and assist in organisational decision-making by means of the \emph{snapshot}. For example, the evaluation framework allowed us to discover a hazardous communication barrier and the means to mitigate it.
 
 \item \emph{\bf Tuning:} \emph{Use evaluation and literature \cite{ossslr} to act on the community.}
-\emph{\emph{snapshots}} can be evaluated to steer community operations. SEEDS allows to pinpoint critical information with which to act on the community, by ``tuning'' desired properties. For example, in practice we found an organisational barrier that can be mitigated by adding a knowledge community within the analysed \emph{snapshot}.
+\emph{\emph{Snapshots}} can be evaluated to steer community operations. SEEDS allows to pinpoint critical information with which to act on the community, by ``tuning'' desired properties. For example, in practice we found an organisational barrier that can be mitigated by adding a knowledge community within the analysed \emph{snapshot}.
 
 \end{enumerate}
 \begin{table}
@@ -572,7 +573,7 @@ Figure \ref{SEEDS} provides an overview of SEEDS. The method starts by using the
 We produced and refined a questionnaire that can be used to gather necessary details directly from the members of the observed community. Questions were elaborated stemming from lessons learned in \cite{specissue} and refined through feedback by industrial and academic partners. Each question in the list produces data to pinpoint the existence of key community attributes.
 
 
-\subsection{The SEEDS Checklist}
+\subsection{The SEEDS Checklist}\label{cl}
 
 As part of the work in \cite{ossslr} we analysed 143 articles discussing social communities in the areas of software engineering, organisational studies and social networks. We found many different definitions for social community types. Some articles discussed a type X as defined in previous literature, but added new attributes for that type. Other articles introduced new values for an attribute of X. 
 
@@ -632,11 +633,11 @@ First, observers must evaluate the \emph{\emph{snapshot} form}; second, observer
 First, SEEDS \emph{\emph{snapshots}} can assume three possible forms:
 
 \begin{enumerate}
-\item \emph{simple}: the answers in the questionnaire reflect a single, clear-cut path on the decision-tree. The community is well delineated and reflected by a type from literature. Additional attributes in the checklist are not present. The scenario exemplified earlier in Section \ref{intro} represents an instance of a simple community \emph{snapshot}. This form evidences a \textbf{strength} and \textbf{opportunity} of the community. The community is well defined and can be ``enriched'' with additional communities (or attributes) in a controlled fashion, e.g.~using additional SEEDS \emph{\emph{snapshots}}. This level of control delivers an advantage compared to other forms. Also, the company can expand the community as needed, using extensions to its advantage.
+\item \emph{Simple}: the answers in the questionnaire reflect a single, clear-cut path on the decision-tree. The community is well delineated and reflected by a type from literature. Additional attributes in the checklist are not present. The scenario exemplified earlier in Section \ref{intro} represents an instance of a simple community \emph{snapshot}. This form evidences a \textbf{strength} and \textbf{opportunity} of the community. The community is well defined and can be ``enriched'' with additional communities (or attributes) in a controlled fashion, e.g.~using additional SEEDS \emph{\emph{snapshots}}. This level of control delivers an advantage compared to other forms. Also, the company can expand the community as needed, using extensions to its advantage.
 
-\item \emph{enriched-community}: the answers in the questionnaire reflect one path blended with additional attributes (including pivots) but no additional paths. This form evidences attributes that ``enrich'' the community, and can represent a \textbf{threat} for the community. The additional attributes can be caused by positive emergent circumstances but also harmful ``deviations''. This form can require additional study.
+\item \emph{Enriched-Community}: the answers in the questionnaire reflect one path blended with additional attributes (including pivots) but no additional paths. This form evidences attributes that ``enrich'' the community, and can represent a \textbf{threat} for the community. The additional attributes can be caused by positive emergent circumstances but also harmful ``deviations''. This form can require additional study.
 For example, suppose the ``visibility'' attribute is discovered in mix with the Formal Networks community type. Formality within formal networks might have forced the organisation to adopt mechanisms to increase the visibility of projects, people or artefacts, perhaps it is wise to foster the generation of a Knowledge Community jointly with the Formal Network. The enrichments indicate reasons for insufficient communities support. Practitioners can use the evidence to fill-in with missing support. Refinement and explicit support to such technologies includes the adoption of Information Management or Social Networking technologies \cite{eis,eim} to support development community.
-\item \emph{complex}: The answers in the questionnaire reflect more than one path through one (or more) pivot points. The \emph{snapshot} can be used to identify and support explicitly sub-communities. This form evidences possible \textbf{opportunities} for the community. Sub-communities can be identified by analysing deeper available pivots. Information leading to the ``multiple'' answer could be referred only to a specific division or location within the community. For example, suppose you analyse a Global Software Development organisation. Suppose you find a WG and DISPERSION is a pivot-point, that leads to the identification of a NoP. Details leading to a NoP however, when analysed further, are only referred to a single site in the GSD organisation. In case sub-communities are identified, managers can use the \emph{snapshot} to plan explicit support to their attributes.
+\item \emph{Complex}: The answers in the questionnaire reflect more than one path through one (or more) pivot points. The \emph{snapshot} can be used to identify and support explicitly sub-communities. This form evidences possible \textbf{opportunities} for the community. Sub-communities can be identified by analysing deeper available pivots. Information leading to the ``multiple'' answer could be referred only to a specific division or location within the community. For example, suppose you analyse a Global Software Development organisation. Suppose you find a WG and DISPERSION is a pivot-point, that leads to the identification of a NoP. Details leading to a NoP however, when analysed further, are only referred to a single site in the GSD organisation. In case sub-communities are identified, managers can use the \emph{snapshot} to plan explicit support to their attributes.
 
 %%% MARTIN, add a REFERENCE to the Cynefin model, which has the first three forms but also a fourth form, chaos.
 
@@ -706,6 +707,8 @@ Organisational culture (such as best-practices, recurrent product requirements, 
 The experience of personnel is established during evaluation of background and skills (i.e.~during personnel review and initial evaluation before employment).
 On higher levels (products for customers), Company X employs centralised models for product development process and for tracking progress. On the more practical (component or non-functional) levels, Scrum masters and other leadership disseminate the direct results and increase their visibility.}
 \end{quote}
+
+\subsection{Answering the SEEDS Questionnaire}
 
 Answers to the SEEDS questionnaire are summarised on Table \ref{questionnaire}, for the two parallel case-studies. Column 1 reports the question needed to gather necessary information. Column 2 and 3 present answers that we found in our two parallel case-studies.
 
@@ -810,7 +813,11 @@ teams to self-manage and organise themselves.}\tabularnewline
 \caption{SEEDS case-study: answers to the questionnaire.}\label{questionnaire}
 \end{table}
 
-While the industrial partner was able to answer all questions, we did not hold enough data to give an answer to question 11. Data from Table \ref{questionnaire} is consistent with the checklist in Fig.~\ref{list}. The checklist contains answers based on available data, from both our parallel case-studies. Answers are marked with the label ``[\emph{x}]'' where \emph{x} is either of our two \emph{Sub-studies}. From the checklist it is possible to spot attributes for which we did not have enough data to answer. For example, in our case, none of our data sources contained evidence to describe Company X' FORMALITY. Our industrial partner however, was able to fill-in for \emph{Sub-study 2}, using own data and experience within Company X. 
+While the industrial partner was able to answer all questions, we did not hold enough data to give a clear-cut answer to question 11. 
+
+\subsection{Applying the SEEDS Checklist}
+
+Data from Table \ref{questionnaire} is consistent with the checklist in Fig.~\ref{list}. The checklist contains answers based on available data, from both our parallel case-studies. Answers are marked with the label ``[\emph{x}]'' where \emph{x} is either of our two \emph{Sub-studies}. From the checklist it is possible to spot attributes for which we did not have enough data to answer. For example, in our case, none of our data sources contained evidence to clearly describe Company X' s FORMALITY practices as present or absent. Our industrial partner however, was able to fill-in for \emph{Sub-study 2}, using own data and experience within Company X. 
 %This leads that SEEDS works if fed to industrial community members or people directly inside the community. 
 
 \begin{figure}[h!]
@@ -824,21 +831,65 @@ While the industrial partner was able to answer all questions, we did not hold e
 %\end{wrapfigure}
 \end{figure}
 
-A rapid analysis of the checklist in Fig.~\ref{list} reveals two \emph{pivots} for Company X. These reside, namely, in the DISPERSION and FORMALITY nodes. Based on our data, the first \emph{pivot} identifies a sub community present
+A deeper analysis of the checklist in Fig.~\ref{list} comparing with data from Table \ref{questionnaire} reveals two \emph{pivots} for Company X. Pivots reside, namely, in the DISPERSION and FORMALITY nodes. 
+Digging deeper in the data, we found that the first \emph{pivot} DISPERSION identifies a sub-community while the second pivot identifies an inconsistency.
 
+The first pivot, DISPERSION, is caused by the presence of two different sets of data to answer. The first set refers to Company X as a whole, describing the overall structure and operations. The second set refers to specific sites within Company X, describing their own operations, and their collaboration with open-source communities. Consequently, the specific sites work in a way different than Company X as a whole.
 
-DESIRABLE PROPERTIES:\\
-In our case, many interviews suggested performance was hindered by an organisational barrier \cite{Correia2010}, ``lack of visibility of the whole'', meaning lack of visibility into organizational microstructures, artefacts, processes, etc. We found the \emph{snapshot} of Company X was in \emph{complex} form but the ``VISIBILITY'' attribute was set to NO. In these circumstances the creation of a Knowledge Community within Company X is beneficial to increase visibility. 
+The second pivot, FORMALITY, is caused by an inconsistency within the observed community. While the industrial partner gave a straight YES answer to the FORMALITY question, parts of the data at our disposal led us to find that Company X did not adopt formal evaluation of members. Other parts led us to find that Company X did infact use formal procedures and background checks to enroll members in teams or other project development units. When presented with the snapshot, the industrial partner acknowledged the inconsistency. The inconsistency was due to the collaboration between open- and closed-source developers. While people directly appointed by Company X were formally evaluated, people from open-source never went through any background or experience checks.
+
+\subsection{Applying the SEEDS Decision-tree}
+
+Using data from the checklist (see Fig. \ref{list}) we were able to colour the SEEDS decision-tree to find emerging community types. Figure \emph{result} shows the colouring. The colouring evidences the two pivot points, namely DISPERSION and FORMALITY as well as three social communities, namely, a plain Social Network (SN), Formal Networks (FNs) and Informal Communities (ICs). Pivot points are shown in ovals, while identified social community types are shown in circles.
+%(WGs - part A of Fig.~\ref{result})
+
+According to our data, Company X is organised as a globally dispersed (i.e.~separated by distance in time and space) set of sites. No joint work sessions are planned or supported in any one site. Rather, work stays dispersed and relies on dedicated digital means for sharing and synchronisation. Overall, Company X looks like a SN, self-organising and open to collaboration with other communities. In our case, for example, some (parts of) sites, were explicitly collaborating with (and connected to) open-source communities.
+
+The first pivot point in the DISPERSION node identifies a sub-community. The colouring reveals the sub-community to be Informal Communities (ICs), emerging in single sites. Enthusiastic engagement and collaboration both from open- and closed-source contributors are key characteristics. Frequent and formal collocated meetings are used to verify productivity. 
+
+The second pivot point in the FORMALITY node identifies an inconsistency. Some sites work as FNs if they have no collaboration with open-source.
+
+Our data also suggests the presence of additional ``enriching'' attributes for Company X, namely GOVERNANCE practices and DURATION.
+
+\begin{figure}
+\hspace{-.2cm}
+\includegraphics[width=13.4cm]{results}%
+%\begin{sideways}\includegraphics[width=7in]{results}\end{sideways}
+\caption{SEEDS Snapshot for Company X, ovals are pivots while circles are communities found.}\label{result}
+\end{figure}
+
+\subsection{Applying the SEEDS Evaluation Framework to Diagnose Company X}
+
+To evaluate the \emph{snapshot} we applied the SEEDS evaluation framework introduced in Section \ref{fw}. We found that Company X's \emph{snapshot} has a \emph{complex} form. The \emph{complex} form allows to identify (or confirm the identification of) the IC sub-community, involving sites that collaborate with open-source. ENGAGEMENT is the key-defining attribute of ICs. Management can explicitly support ENGAGEMENT in sites where ICs were identified.
+
+In addition, thanks to our analysis framework we found a desirable property. The \emph{snapshot} evidences the VISIBILITY attribute set to NO. Conversely, empirical evidence from \textbf{Reference 1} and \textbf{2} indicates that members of Company X, from multiple sites, identified the need for increased VISIBILITY of practices, results, artefacts and people.
+
+Finally, the \emph{snapshot} evidences attributes in all higher-order areas of the SEEDS decision-tree. The community at Company X does not seem to require additional steering to include missing foci.
+
+In summary, the \emph{snapshot} allows associating Company X with the following ``diagnosis'':
+
+\begin{enumerate}
+\item \emph{\bf Three social community types are present: SNs, ICs and FNs}. While Company X looks like a SN as a whole, some sites (specifically, sites working jointly with open-source people) work as ICs. Compared to IC sites, other sites work as FNs, this can  cause inconsistencies or lack of communication/collaboration.
+\item \emph{\bf Empirical evidence points to VISIBILITY as a desirable property}. Management can foster VISIBILITY as a desirable property and ENGAGEMENT as a key-defining attribute of ICs, in sites where open-source collaboration is employed.
+\end{enumerate}
+
+Using the above ``diagnosis'' and the connected \emph{snapshot}, management at Company X can have a more in-depth understanding of its social community characteristics,e.g. strengths and weaknesses.
+
+%Based on our data, the first \emph{pivot} identifies a sub-community.
+%%%% SONO ARRIVATO QUI
+
+%%%%%%%DESIRABLE PROPERTIES:\\ USE AS EVIDENCE FOR THE LAST STEP
+%%%%%%%In our case, many interviews suggested performance was hindered by an organisational barrier \cite{Correia2010}, ``lack of visibility of the whole'', meaning lack of visibility into organizational microstructures, artefacts, processes, etc. We found the \emph{snapshot} of Company X was in \emph{complex} form but the ``VISIBILITY'' attribute was set to NO. In these circumstances the creation of a Knowledge Community within Company X is beneficial to increase visibility. 
 
 %%%%%% Martin!!! please revise/integrate!!! :)
 %
-All available evidence pointed to the identification of two community types to describe Company X, a NoP (globally) and various WGs (in Company X's sites).
-
-We were able to answer most questions except questions 3 and 11.
-
-For question 3 ``do all community members exhibit a different location?'', we found organisational information leading to both a ``YES'' or a ``NO''. Moreover, we noticed that organisational information leading to ``YES'' was related to Company X as a whole. Conversely, organisational information leading to ``NO'' was referring to only a few sites within Company X. We found that the point of indecision, i.e.~the DISPERSION node (part C of Fig.~\ref{result}) acts as a \emph{pivot} between the two community types. Attributes for the identification of a NoP were referred to global details of Company X (for these, DISPERSION was set to YES). Conversely, attributes leading to the identification of a WG were referred to localised divisions within Company X (for these, there was NO DISPERSION). 
-
-For question 11 ``do community members require formal status evaluation?'', it was impossible for us to answer, given the lack of available information.
+%%All available evidence pointed to the identification of two community types to describe Company X, a NoP (globally) and various WGs (in Company X's sites).
+%%
+%%We were able to answer most questions except questions 3 and 11.
+%%
+%%For question 3 ``do all community members exhibit a different location?'', we found organisational information leading to both a ``YES'' or a ``NO''. Moreover, we noticed that organisational information leading to ``YES'' was related to Company X as a whole. Conversely, organisational information leading to ``NO'' was referring to only a few sites within Company X. We found that the point of indecision, i.e.~the DISPERSION node (part C of Fig.~\ref{result}) acts as a \emph{pivot} between the two community types. Attributes for the identification of a NoP were referred to global details of Company X (for these, DISPERSION was set to YES). Conversely, attributes leading to the identification of a WG were referred to localised divisions within Company X (for these, there was NO DISPERSION). 
+%%
+%%For question 11 ``do community members require formal status evaluation?'', it was impossible for us to answer, given the lack of available information.
 
 %TODO: put figure of the answered questionnaire. on the figure, the pivot answers need to be with interrogation marks\\
 %TODO: explain the answers\\
@@ -918,20 +969,7 @@ For question 11 ``do community members require formal status evaluation?'', it w
 %The point of indecision is a \emph{pivot} decision-tree visits.
 %TODO: then proceed with showing the tree visit.\\
 
-Finally, we concluded the case-study by applying the decision-tree from previous work \cite{specissue}. 
-
-The mapping allows to determine the communities emerging within Company X. Figure \emph{result} shows results of this application. Two social communities were identified, namely, Networks of Practice (NoPs - part B of Fig.~\ref{result}) and Workgroups (WGs - part A of Fig.~\ref{result}). 
-
-According to our data, Company X is organised as a globally dispersed (i.e.~separated by distance in time and space) set of sites. No collocated work sessions are planned or supported in any one site. Rather, work stays dispersed and relies on dedicated digital means for sharing and synchronisation. The NoP is self-organising and open to collaboration with other communities. In our case, for example, some (parts of) sites, were explicitly collaborating with (and connected to) open-source communities.
-
-Moreover, sites within Company X, are organised as tight Workgroups. Internal cohesion and enthusiastic collaboration are key characteristics. Frequent collocated Workgroup meetings are used to verify productivity. Workgroups in Company X have a wide business agenda and are focused on delivering valuable products rather than delivering time-bound projects. 
-
-\begin{figure*}
-\hspace{-.2cm}
-\includegraphics[width=12cm]{results}%
-%\begin{sideways}\includegraphics[width=7in]{results}\end{sideways}
-\caption{Company X, a case-study: decision-tree visits.}\label{result}
-\end{figure*}
+%%Finally, we concluded the case-study by applying the decision-tree from previous work \cite{specissue}. 
 
 %\subsection{Replication}
 
@@ -981,14 +1019,14 @@ Moreover, sites within Company X, are organised as tight Workgroups. Internal co
 % results in a large percentage of a column being occupied by floats.
 
 \section{Analysis of Results and Lessons Learned}\label{disc}
-TODO:\\
-REVISE\\
-EXTEND\\
-MARTIN WILL ADD FINDING ABOUT COMPARISON WITH THE CYNEFIN MODEL\\
-ADD FINDING ABOUT BARRIER\\
-ADD FINDING ABOUT DIFFERENT PIVOT POINT FROM TWO DISTINCT OBSERVERS\\
+%TODO:\\
+%REVISE\\
+%EXTEND\\
+%MARTIN WILL ADD FINDING ABOUT COMPARISON WITH THE CYNEFIN MODEL\\
+%ADD FINDING ABOUT BARRIER\\
+%ADD FINDING ABOUT DIFFERENT PIVOT POINT FROM TWO DISTINCT OBSERVERS\\
 
-We analysed our results and made three key observations. The following text states the observation and provides an interpretation in \emph{italic}.
+We analysed our results and made five key observations. The following text states the observation and provides an interpretation in \emph{italic}.
 
 %First, the method used during the case-study can be generalised. Second, we found that the questionnaire has many uses other than gathering the needed organisational information. Second, we found that \emph{pivot} points can have multiple answers for the same community, this detail makes them worthy of particular attention. Third, we found that data in the questionnaire can assume five possible forms, each with some interesting properties. Fourth, organisational barriers can either be useful to shape an organisation or harmful to its operations. The text below explains all findings in more detail. In \emph{italic} we provide a discussion of the finding.
 
@@ -1016,9 +1054,13 @@ We analysed our results and made three key observations. The following text stat
 %TODO: add example\\
 %TODO: explain how the finding was extracted from our case study and how and why it can be generalized\\
 
-First, pivot points represent key variation points distinguishing a community from its subcomponents. For example, In our case study we found evidence that led to discovering NoPs. Likewise, we discovered evidence that could lead to discovering WGs. The only point of indecision was resting in the DISPERSION node (see part C of Fig.~\ref{result}). Referencing both visits with the evidence available we observed that the path leading to WGs was only visitable if we focused on some particular sites within Company X. Conversely, the path leading to NoPs was only visitable if we considered Company X as a whole, without focusing on any single site or unit within. It follows that the DISPERSION node was a key organisational variation point between Company X as a whole and its various sites.
+First, Pivots can be used as drivers for the analysis of the community complexity. For example, in our case study we found evidence that led to discovering two pivot points. However, only one of them was ``by design'', i.e. was a consequence of explicit choices within the organisational structure at Company X.
 %More in particular you need to visit the tree once per every possible combination of all \emph{pivots}.
-\emph{Pivots can be used as drivers for the analysis of the community \emph{snapshot}. Their presence indicates to practitioners that there is misalignment between a community as a whole and (some of) its components. This misalignment suggests organisational complexity. Practitioners can use them to investigated further into the complexity, e.g.~to verify if complexity is indicator of low organisational performance.}
+\emph{This circumstance differs than finding pivots caused by explicit decisions. The more pivots are connected to implicit causes the more the community is complex and can become unmanageable, since its ``health'' is connected to circumstances and decisions that cannot be controlled or acted upon. This leads that identified pivots deserve more in-depth study by observers.}
+
+Second, the attributes' value in the decision-tree can be determined through quantitative metrics rather than qualitative data. More complex social-network analysis (SNA) and social sensing techniques can be employed to determine more reliably or further confirm the value of attributes as needed. \emph{Snapshots are valuable tools to determine which attributes might be worthy of additional investment, e.g. through SNA. Management can delineate and ``diagnose'' their community status and use snapshots to determine which attributes should be focused-on with additional studies.}
+
+Third, the SEEDS framework allows to uncover (un-)desirable properties and higher-order needs of a community. We found that organisational and social-networks literature defines these properties and needs as ``organisational barriers''. Barriers are mechanisms or circumstances that filter activity within a community \cite{Correia2010}. In literature \cite{ossslr} we have found evidence of many ``organisational barriers''. Further research is needed to formalise barriers to allow their detection and mitigation. The work presented in this paper can be used as a lens to analyse and formalise barriers. To this purpose, for example, the SEEDS analysis framework can be improved with snapshot patterns (e.g. multiple pivots in particular points, or mismatching combinations of communities) associated to barriers.
 
 %%%%%%%%%%%%%%%%REVISE%%%%%%%%%%%%%%%%%%%%
 % Far capire nei findings dell'articolo che cosa significano
@@ -1028,15 +1070,15 @@ First, pivot points represent key variation points distinguishing a community fr
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %For example, suppose your organisational information suggests the presence of both a Formal Network (FN) and a Network-of-Practice (NoP). The pivot-point in this case is ``formality''. It follows that the community you are observing behaves formally at one level (for example on a global scale, or between sites) and informally at another level (for example between divisions or business units). It's at least something you might want to think about, if the community you are observing exhibits communication problems. Moreover, suppose you are investigating communities that should all behave in the same way. The pivot-points suggest who is diverging. You might want to consider if and why the divergence is a good thing.}
 %TODO: use example of pivot from case-study\\
-
-Second, mention proof of concept since the industrial partner and our case the two sub cases revealed consistent findings and the information was correctly harvested and used, leading to the same result.
+%
+%Second, mention proof of concept since the industrial partner and our case the two sub cases revealed consistent findings and the information was correctly harvested and used, leading to the same result.
 
 %
 %\emph{These five forms can be used as a means to measure and analyse community complexity. If the community matches a single path then it's more controllable, since it refers to a single type known to literature. Steering and management complexity increases the more the observed community diverges from a simple form.}
 %TODO: REVISE!!! finish explaining the fifth status and elaborate on the others; make sure that they are all\\
 %TODO: add example\\
-
-Finally, organisational literature defines barriers as mechanisms or circumstances that filter organisational activity \cite{Correia2010}. We found that many barriers are present in software development communities but are not necessarily a bad thing. In our case, for example, we found the limited ``visibility of the whole'' to be an organisational barrier. In literature \cite{ossslr} we have found evidence that this circumstance is often used by organisations to limit the circulation of industrial secrets across communities. This is consistent with the community we observed in Company X. We observed a strong cooperation between Company X and open-source communities. The mechanisms we provide in this paper can aid the discovery or deployment of organisational barriers, e.g.~to increase or limit communication across (sub-)communities.
+%
+%Finally, organisational literature defines . We found that many barriers are present in software development communities but are not necessarily a bad thing. In our case, for example, we found the limited ``visibility of the whole'' to be an organisational barrier.  This is consistent with the community we observed in Company X. We observed a strong cooperation between Company X and open-source communities. The mechanisms we provide in this paper can aid the discovery or deployment of organisational barriers, e.g.~to increase or limit communication across (sub-)communities.
 %\\
 %TODO: needs the reasoning about barriers Me+Hans \\
 %TODO: Add example\\
@@ -1098,17 +1140,19 @@ Finally, organisational literature defines barriers as mechanisms or circumstanc
 % footnotes above bottom floats. This can be corrected via the \fnbelowfloat
 % command of the stfloats package.
 
-\subsection{Approach Limitations and Threats to Validity}
+\subsection{Method Limitations and Threats to Validity}
 %%%%\begin{itemize}
 %%%%\item Minna and Ossi are two different situations in two different points of Company X and different levels of abstraction. results confirmed by executing the case-study twice, contemporarily by two different researchers.
 %%%%\item observations are made on only a single case-study.
 %%%%\end{itemize}
 
-Based on the taxonomy in \cite{wohlin}, there are four potential validity threat areas, namely: external, construct, internal, and conclusion validity. 
+While we were able to carry out a complete case-study applying SEEDS, this also taught us that the method still has many limitations. First of all, SEEDS is currently based on qualitative evidence alone. To give statistical validity to the approach, quantitative metrics should be evaluated and developed. In addition, the SEEDS analysis framework is still very preliminary and based on organisational research, rather than focused to the benefits of development communities. Testing it on working development communities gave us many insights for improvement, however much work still needs to be done. Moreover, the validation of our method through a large industrial case study, validates snapshots-based evaluation of a community, but says little or nothing about validating its evolution. Many critical research questions still remain open. For example, what is the period of time to which a snapshot should be associated? how should the SEEDS feedback loop for tuning be instrumented? Even with these limitations, our results are encouraging.
 
-\emph{``External Validity''} concerns the applicability of the results in a more general context. The validity of our conclusions could be limited to the investigated organisation. To make sure our results were generalizable we carried out a confirmatory study, focused on confirming our observations with people from Company X. The confirmatory study was also focused on assessing the (re-)applicability of our results in different contexts, based on the experience of the interviewees.
+Finally, while evaluating and applying SEEDS we found some threats to validity. Based on the taxonomy in \cite{wohlin}, there are four potential validity threat areas, namely: external, construct, internal, and conclusion validity. 
 
-\emph{``Construct Validity''} and \emph{``Internal Validity''} concern the generalizability of the constructs under study, as well as the methods used to study and analyse data (e.g.~the types of bias involved). To mitigate these threats, our methods were tailored to use multiple triangulation as much as possible. A representative from the case company verified our interpretations of the data and provided clarifications and corrections where necessary. Partial results and incremental analysis was conducted to gather constant feedback by two senior researchers, experienced in empirical methods.
+\emph{``External Validity''} concerns the applicability of the results in a more general context. The validity of our conclusions could be limited to the investigated organisation. To make sure our results were generalizable we carried out a confirmatory study, focused on confirming our observations with people from Company X. The confirmatory study was also focused on assessing the (re-)applicability of our results in different contexts, based on the experience of the interviewees. The parallel confirmatory study successfully confirmed results.
+
+\emph{``Construct Validity''} and \emph{``Internal Validity''} concern the generalizability of the constructs under study, as well as the methods used to study and analyse data (e.g.~the types of bias involved). To mitigate these threats, our methods were tailored to use multiple triangulation of data sources. A representative from Company X verified our interpretations of the data and provided clarifications and corrections where necessary. Partial results and incremental analysis was conducted to gather constant independent feedback by two senior researchers, experienced in empirical methods.
 
 \emph{``Conclusion Validity''} concerns the degree to which our conclusions are reasonable based on our data. Our conclusions were drawn by an analysis of empirical evidence using known and confirmed methods from literature such as gap and taxonomy analysis. The approach and instruments that we used to gather such evidence were presented and validated in previous work \cite{icgseoss,icsesympo,specissue}. 
 
