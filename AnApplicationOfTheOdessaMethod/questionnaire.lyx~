@@ -63,9 +63,9 @@
 \begin_inset Tabular
 <lyxtabular version="3" rows="14" columns="3">
 <features tabularvalignment="middle">
-<column alignment="left" valignment="top" width="5.5cm">
 <column alignment="left" valignment="top" width="4cm">
-<column alignment="left" valignment="top" width="4cm">
+<column alignment="left" valignment="top" width="6cm">
+<column alignment="left" valignment="top" width="6cm">
 <row>
 <cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -110,6 +110,7 @@ Sub-case 2 Answer
 
 \begin_layout Plain Layout
 
+\size footnotesize
 \emph on
 Can you distinguish an organised structure across yourself and your colleagues?
 \end_layout
@@ -120,6 +121,8 @@ Can you distinguish an organised structure across yourself and your colleagues?
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Evidence available in REF3 points out to a non-trivial structure for professiona
 ls within Company X.
 \end_layout
@@ -130,6 +133,8 @@ ls within Company X.
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 The organization was clearly delinated into a matrix structure including
  project organizations, business divisions and supporting functions.
  
@@ -144,6 +149,7 @@ The organization was clearly delinated into a matrix structure including
 
 \begin_layout Plain Layout
 
+\size footnotesize
 \emph on
 Do you and the colleagues you work with work in the same single site?
 \end_layout
@@ -154,6 +160,8 @@ Do you and the colleagues you work with work in the same single site?
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 In page 68 of REF 2, authors stress that many people worked off-site on
  the same product.
  
@@ -165,6 +173,8 @@ In page 68 of REF 2, authors stress that many people worked off-site on
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 No, the organisation is highly dispersed over dozens of sites.
  At least five major sites in three timezones.
  Many sites comprise only one or two people.
@@ -180,6 +190,7 @@ No, the organisation is highly dispersed over dozens of sites.
 
 \begin_layout Plain Layout
 
+\size footnotesize
 \emph on
 Do you work in a highly-distributed setting with few teams or colleagues
  per location?
@@ -191,6 +202,8 @@ Do you work in a highly-distributed setting with few teams or colleagues
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 In page 69 of REF 2 and following, data states that a technology for localizatio
 n and involvement of people from off-site was used.
  However, some conflicting statements on REF 1 suggest that division of
@@ -203,6 +216,8 @@ n and involvement of people from off-site was used.
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 The organization was dispersed over dozens of sites, with at least five
  major sites in three timezones.
  Many sites had one or two people only.
@@ -218,6 +233,7 @@ The organization was dispersed over dozens of sites, with at least five
 
 \begin_layout Plain Layout
 
+\size footnotesize
 \emph on
 Do you and your fellow colleagues interact informally only?
 \end_layout
@@ -228,6 +244,8 @@ Do you and your fellow colleagues interact informally only?
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Selection and governance protocols are still in action to request additional
  people to work on certain tasks (page 84 of REF 2 + AGILE SLIDES).
 \end_layout
@@ -238,6 +256,8 @@ Selection and governance protocols are still in action to request additional
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 There were lots of organization-wide intranet and internet tools that (semi-)for
 malized the interaction around certain topics like product management and
  defect tracking 
@@ -252,6 +272,7 @@ malized the interaction around certain topics like product management and
 
 \begin_layout Plain Layout
 
+\size footnotesize
 \emph on
 Do you work on time-bound projects?
 \end_layout
@@ -262,6 +283,8 @@ Do you work on time-bound projects?
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 In page 2 of AGILE SLIDES the strategic portfolio duration (i.e.
  the set of projects planned) is fixed to increments of 2-5 years.
 \end_layout
@@ -272,6 +295,8 @@ In page 2 of AGILE SLIDES the strategic portfolio duration (i.e.
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Teams were responsible for a technology domain, such as “multimedia” or
  “connectivity” over a long period of time.
  Components and technologies changed but the team remained.
@@ -287,6 +312,7 @@ Teams were responsible for a technology domain, such as “multimedia” or
 
 \begin_layout Plain Layout
 
+\size footnotesize
 \emph on
 Do you and your colleagues disseminate or increase the visibility of your
  work? 
@@ -298,6 +324,8 @@ Do you and your colleagues disseminate or increase the visibility of your
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 In page 59 states that all items and backlogs and all operations are explicitly
  planned to be visible and transparent.
  Therefore visibility is actively pursued NOT by members but by hand of
@@ -310,6 +338,8 @@ In page 59 states that all items and backlogs and all operations are explicitly
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Unfortunately, the teams formed their own information silos regarding project
  and product metadata.
  Teams were reactive rather than proactive in dissipating information.
@@ -325,6 +355,7 @@ Unfortunately, the teams formed their own information silos regarding project
 
 \begin_layout Plain Layout
 
+\size footnotesize
 \emph on
 Do you and your colleagues actively try to team-build? 
 \end_layout
@@ -335,6 +366,8 @@ Do you and your colleagues actively try to team-build?
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 In page 30 and 65, REF 1 authors note that anywhere in the organizational
  structure, the intervention of senior management is needed to provide attention
  for quality, value and encouragement/bonding.
@@ -347,6 +380,8 @@ In page 30 and 65, REF 1 authors note that anywhere in the organizational
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 The organization didn’t explicitly promote cohesion, this involves all team-buil
 ding exercises.
  None of such exercises were proposed nor promoted.
@@ -364,6 +399,7 @@ ding exercises.
 
 \begin_layout Plain Layout
 
+\size footnotesize
 \emph on
 Do you need to explicitly demonstrate ROI to your organization? 
 \end_layout
@@ -374,6 +410,8 @@ Do you need to explicitly demonstrate ROI to your organization?
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 In page 64 and subsequent, REF 2 states that demos were acting as checkpoints
  for customers to evaluate ROI.
 \end_layout
@@ -384,6 +422,8 @@ In page 64 and subsequent, REF 2 states that demos were acting as checkpoints
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Software development projects only indirectly contributed to the product.
  As a new R&D project, ROI requirements were postponed.
  
@@ -398,6 +438,7 @@ Software development projects only indirectly contributed to the product.
 
 \begin_layout Plain Layout
 
+\size footnotesize
 \emph on
 Does the success of your community depend on your engagement? 
 \end_layout
@@ -408,6 +449,8 @@ Does the success of your community depend on your engagement?
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 In page 74, REF 2 reports that an interviewee has had a reduced engagement
  in the project, caused by a reduced set of roles and responsibilities.
  This however, did not reduce productivity (page 64 and following).
@@ -419,6 +462,8 @@ In page 74, REF 2 reports that an interviewee has had a reduced engagement
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 The product was 80% open source software.
  From some of the interviews: “It’s fantastic that I can work on my open
  source hobby project and get paid for it!” 
@@ -433,6 +478,7 @@ The product was 80% open source software.
 
 \begin_layout Plain Layout
 
+\size footnotesize
 \emph on
 Do you and your colleagues actively gather and share organisational culture
  (e.g.
@@ -445,6 +491,8 @@ Do you and your colleagues actively gather and share organisational culture
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 There is no indication of harvesting and management of organizational culture
  (e.g.
  best-practices).
@@ -456,6 +504,8 @@ There is no indication of harvesting and management of organizational culture
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 The organization members didn’t work to create an organizational culture.
  As previously stated, teams consisted of their own knowledge silos.
  
@@ -470,6 +520,7 @@ The organization members didn’t work to create an organizational culture.
 
 \begin_layout Plain Layout
 
+\size footnotesize
 \emph on
 Were you and your colleagues formally evaluated and qualified when enrolled
  in the organisation? 
@@ -481,6 +532,8 @@ Were you and your colleagues formally evaluated and qualified when enrolled
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 ?
 \end_layout
 
@@ -490,6 +543,8 @@ Were you and your colleagues formally evaluated and qualified when enrolled
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 People are formally appointed when they are hired.
  However, some people collaborate as part of the open-source collaboration
  initialtive.
@@ -508,6 +563,7 @@ People are formally appointed when they are hired.
 
 \begin_layout Plain Layout
 
+\size footnotesize
 \emph on
 Do you and your colleagues work against the same specific organisational
  problem? 
@@ -519,6 +575,8 @@ Do you and your colleagues work against the same specific organisational
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 In page 24 of REF 1 there is a clear-cut definition of the mission/problem
  statement.
  This constrains the operativeness of the community to achieving the described
@@ -531,6 +589,8 @@ In page 24 of REF 1 there is a clear-cut definition of the mission/problem
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 The organization appoints people or groups to solve specific problems as
  needed, when specific organizational problems present themselves.
  Little guidance was given to groups and operational efficiency was left
@@ -547,6 +607,7 @@ The organization appoints people or groups to solve specific problems as
 
 \begin_layout Plain Layout
 
+\size footnotesize
 \emph on
 Do you and your colleagues undergo rigid governance models imposed by your
  organisation? 
@@ -558,6 +619,8 @@ Do you and your colleagues undergo rigid governance models imposed by your
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 REF 1 authors state in page 30 and subsequent that teams are self-managing,
  self-organizing, cross-functional and responsible.
  This means that there are fixed and formally agreed governance guidelines
@@ -570,6 +633,8 @@ REF 1 authors state in page 30 and subsequent that teams are self-managing,
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 There are formally agreed guidelines but these leave teams to self-manage
  and organise themselves.
 \end_layout

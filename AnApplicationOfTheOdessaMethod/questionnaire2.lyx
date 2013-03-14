@@ -85,7 +85,7 @@ SEEDS Question
 
 \series bold
 \emph on
-Sub-case 1 Answer
+Sub-case 2 Answer
 \end_layout
 
 \end_inset
@@ -110,8 +110,9 @@ Can you distinguish an organised structure across yourself and your colleagues?
 \begin_layout Plain Layout
 
 \size footnotesize
-Evidence available in REF3 points out to a non-trivial structure for professiona
-ls within Company X.
+The organization was clearly delinated into a matrix structure including
+ project organizations, business divisions and supporting functions.
+ 
 \end_layout
 
 \end_inset
@@ -136,8 +137,9 @@ Do you and the colleagues you work with work in the same single site?
 \begin_layout Plain Layout
 
 \size footnotesize
-In page 68 of REF 2, authors stress that many people worked off-site on
- the same product.
+No, the organisation is highly dispersed over dozens of sites.
+ At least five major sites in three timezones.
+ Many sites comprise only one or two people.
  
 \end_layout
 
@@ -164,10 +166,10 @@ Do you work in a highly-distributed setting with few teams or colleagues
 \begin_layout Plain Layout
 
 \size footnotesize
-In page 69 of REF 2 and following, data states that a technology for localizatio
-n and involvement of people from off-site was used.
- However, some conflicting statements on REF 1 suggest that division of
- work was organised by assigning products and product lines to single sites.
+The organization was dispersed over dozens of sites, with at least five
+ major sites in three timezones.
+ Many sites had one or two people only.
+ 
 \end_layout
 
 \end_inset
@@ -192,8 +194,9 @@ Do you and your fellow colleagues interact informally only?
 \begin_layout Plain Layout
 
 \size footnotesize
-Selection and governance protocols are still in action to request additional
- people to work on certain tasks (page 84 of REF 2 + AGILE SLIDES).
+There were lots of organization-wide intranet and internet tools that (semi-)for
+malized the interaction around certain topics like product management and
+ defect tracking 
 \end_layout
 
 \end_inset
@@ -218,8 +221,10 @@ Do you work on time-bound projects?
 \begin_layout Plain Layout
 
 \size footnotesize
-In page 2 of AGILE SLIDES the strategic portfolio duration (i.e.
- the set of projects planned) is fixed to increments of 2-5 years.
+Teams were responsible for a technology domain, such as “multimedia” or
+ “connectivity” over a long period of time.
+ Components and technologies changed but the team remained.
+ 
 \end_layout
 
 \end_inset
@@ -245,10 +250,10 @@ Do you and your colleagues disseminate or increase the visibility of your
 \begin_layout Plain Layout
 
 \size footnotesize
-In page 59 states that all items and backlogs and all operations are explicitly
- planned to be visible and transparent.
- Therefore visibility is actively pursued NOT by members but by hand of
- their organizational sponsor.
+Unfortunately, the teams formed their own information silos regarding project
+ and product metadata.
+ Teams were reactive rather than proactive in dissipating information.
+ 
 \end_layout
 
 \end_inset
@@ -273,10 +278,12 @@ Do you and your colleagues actively try to team-build?
 \begin_layout Plain Layout
 
 \size footnotesize
-In page 30 and 65, REF 1 authors note that anywhere in the organizational
- structure, the intervention of senior management is needed to provide attention
- for quality, value and encouragement/bonding.
- These are consistent with increasing the cohesion of the Scrum team.
+The organization didn’t explicitly promote cohesion, this involves all team-buil
+ding exercises.
+ None of such exercises were proposed nor promoted.
+ However, the Scrum working model proposes reasoning and reflection sessions
+ that increase cohesion.
+ 
 \end_layout
 
 \end_inset
@@ -301,8 +308,9 @@ Do you need to explicitly demonstrate ROI to your organization?
 \begin_layout Plain Layout
 
 \size footnotesize
-In page 64 and subsequent, REF 2 states that demos were acting as checkpoints
- for customers to evaluate ROI.
+Software development projects only indirectly contributed to the product.
+ As a new R&D project, ROI requirements were postponed.
+ 
 \end_layout
 
 \end_inset
@@ -327,9 +335,9 @@ Does the success of your community depend on your engagement?
 \begin_layout Plain Layout
 
 \size footnotesize
-In page 74, REF 2 reports that an interviewee has had a reduced engagement
- in the project, caused by a reduced set of roles and responsibilities.
- This however, did not reduce productivity (page 64 and following).
+The product was 80% open source software.
+ From some of the interviews: “It’s fantastic that I can work on my open
+ source hobby project and get paid for it!” 
 \end_layout
 
 \end_inset
@@ -356,9 +364,9 @@ Do you and your colleagues actively gather and share organisational culture
 \begin_layout Plain Layout
 
 \size footnotesize
-There is no indication of harvesting and management of organizational culture
- (e.g.
- best-practices).
+The organization members didn’t work to create an organizational culture.
+ As previously stated, teams consisted of their own knowledge silos.
+ 
 \end_layout
 
 \end_inset
@@ -384,7 +392,13 @@ Were you and your colleagues formally evaluated and qualified when enrolled
 \begin_layout Plain Layout
 
 \size footnotesize
-?
+People are formally appointed when they are hired.
+ However, some people collaborate as part of the open-source collaboration
+ initialtive.
+ These people are members of the organizational structure without being
+ evaluated formally.
+ Their contribution is their evaluation.
+ 
 \end_layout
 
 \end_inset
@@ -410,10 +424,11 @@ Do you and your colleagues work against the same specific organisational
 \begin_layout Plain Layout
 
 \size footnotesize
-In page 24 of REF 1 there is a clear-cut definition of the mission/problem
- statement.
- This constrains the operativeness of the community to achieving the described
- directives.
+The organization appoints people or groups to solve specific problems as
+ needed, when specific organizational problems present themselves.
+ Little guidance was given to groups and operational efficiency was left
+ to experience.
+ 
 \end_layout
 
 \end_inset
@@ -439,10 +454,8 @@ Do you and your colleagues undergo rigid governance models imposed by your
 \begin_layout Plain Layout
 
 \size footnotesize
-REF 1 authors state in page 30 and subsequent that teams are self-managing,
- self-organizing, cross-functional and responsible.
- This means that there are fixed and formally agreed governance guidelines
- that arrange and constrain the work of teams.
+There are formally agreed guidelines but these leave teams to self-manage
+ and organise themselves.
 \end_layout
 
 \end_inset
