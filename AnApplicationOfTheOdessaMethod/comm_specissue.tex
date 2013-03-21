@@ -143,7 +143,7 @@ martin.vonweissenberg@hanken.fi
 
 {\bf Context:} Software development is a community endeavour. Understanding a software development community requires methods to outline and analyse its configuration. This configuration features properties (e.g.~situatedness, dispersion, goals, etc.) that can be acted upon, e.g.~through specific governance practices. However, software development organisations still lack ways to describe and steer key properties of software development communities.
 
-{\bf Objective:} This paper presents a method to understand a development community by ``\emph{snapshoot}ing'' its configuration with observable key characteristics in an intelligible form. The method aids, for example, diagnosis of socio-technical problems in the community: (a) identifying unwanted circumstances within community that can be causing trouble; (b) elaborating strategies to change or steer a community, using key characteristics that describe its (current) status; (c) identify conflicting properties within the community.
+{\bf Objective:} This paper presents a method to understand a development community by ``\emph{snapshoot}ing'' its configuration with observable key characteristics in an intelligible form. The method aids, for example: (a) diagnosis of socio-technical problems in the community: (b) identifying unwanted circumstances within community that can be causing trouble; (c) elaborating strategies to change or steer a community, using key characteristics that describe its (current) status; (d) identify conflicting properties within the community.
 
 {\bf Method:} To pursue our objective, we developed SEEDS, a method for ``\emph{Snapshots}-based Evaluation and Evolution of Development communitieS''. This method features: (a) results from previous work; (b) foundations lying in organisations research and social-networks analysis; (c) flexible input options; (b) output based on community archetypes and properties from literature.
 
@@ -181,11 +181,12 @@ The craft of software development is becoming more and more a social activity \c
 The problem persists since software practitioners lack a systematic method to outline the organisational state of development communities and use this ``picture'' to reliably steer the community.
 %, but we found its limit in terms of scalability. The mechanism was only applicable to small and medium-sized development communities with clear-cut organisation and well defined boundaries.
 %As a consequence, there is no way for software engineering practitioners to effectively act upon the development community they are part of.
+
 This paper proposes SEEDS, a semi-automatic method for ``Snapshot-based Evaluation and Evolution of Development communitieS''. SEEDS allows the observers of a development community to capture its key properties in the form of analysable ``\emph{snapshots}''. The purpose of the method is plotting the configuration of a community to analyse and reason on its properties.
 
 The method stems from previous work. In \cite{specissue} we introduced a decision-tree to uncover social communities observable in an organisation, e.g. a global software project. The decision-tree uses a partial-order relation among social communities to pinpoint the community type emerging in the observed case. Through this partial relation it's possible to distinguish one (or more) community from others. Observers need only assess the presence of certain attributes together (e.g. by asking community members), to distinguish between social community types.
 
-To confirm the validity of this framework we embarked on a case-study featuring a large, real-life industry. Initially trying to ``visit'' \cite{networks} the decision-tree from \cite{specissue}, we found that the size and complexity of the case at hand required a more structured approach. To give an answer to all decision-nodes in the tree we introduced a questionnaire/checklist. On one hand, the introduction of a questionnaire eased our data-gathering. On the other hand, the introduction of a checklist allowed us to discover many decision-nodes with multiple answers. Analysing deeper the multiple answers, we found they tell more information about the observed community and its current ``configuration'' (e.g. by suggesting the presence of a community mix). We also found that ``configurations'' can assume a limited number of forms, that can change over time. This led us to elaborate the notion of a \emph{snapshot}, i.e. a set of observed key community properties from literature \cite{ossslr}, that describe the instantaneous configuration of a development community.
+To confirm the validity of this framework we embarked on a case-study featuring a large, real-life industry. Initially trying to ``visit'' \cite{networks} the decision-tree from \cite{specissue}, we found that the size and complexity of the case at hand required a more structured approach. To give an answer to all decision-nodes in the tree we introduced a questionnaire/checklist. On one hand, the introduction of a questionnaire eased our data-gathering. On the other hand, the introduction of a checklist allowed us to discover many decision-nodes with multiple answers. Analysing deeper the multiple answers, we found they tell more information about the observed community and its current ``configuration'' (e.g. by suggesting the presence of mixed community types). We also found that ``configurations'' can assume a limited number of forms, that can change over time. This led us to elaborate the notion of a \emph{snapshot}, i.e. a set of observed key community properties from literature \cite{ossslr}, that describe the instantaneous configuration of a development community.
 
 %
 %Subsequently, the method uses a checklist and decision-tree from \cite{specissue} to outline the development community. The decision-tree is the result of a partial-order relation among key attributes of communities. Through this partial relation it's possible to distinguish one (or more) community from others. 
@@ -252,7 +253,7 @@ The rest of the paper is structured as follows: Section \ref{devcomm} explains r
 
 \section{Previous and Related work: Supporting Software Development Communities}\label{devcomm}
 
-This section outlines previous work building the foundation of the method presented in this paper. In addition, we investigate on relevant research efforts related to our own.
+This section discusses previous work in building the foundations of the method presented in this paper.  This discussion is necessary to understand SEEDS and its theoretical underpinnings. In addition, we  discuss on relevant research efforts related to our own.
 %\begin{itemize}
 %\item related work from socio-technical congruence
 %\item related work dana damian
@@ -415,7 +416,7 @@ communities \cite{Cross2005}.} \tabularnewline
 
 \subsection{Related work: Organizational Structures and their Impact on Software Quality}
 Literature in GSE already recognises the need to study global communities. In particular, many works such as \cite{nachiappan} have studied empirically the effect of organisational structures on the quality of software. These works motivate further studies to understand, represent and support social communities. In addition, similar works \cite{uls,rel9} study the effect of socio-technical congruence on designing global systems as well as the process of global engineering. Such works suggests that understanding how coordination requirements map to their people counterpart is critical to steer information across global communities successfully. Our work is limited to identifying community types, and finding ways to ``format'' and study their observable characteristics. 
-Other works such as \cite{Davenport2001} study the impact of successful communities on socio-technical problems (e.g.~coordination, shared understanding, etc.). These works take a more social and organisational approach, pointing out the paramount importance of explicitly supporting the work of communities rather than allocating tasks to individuals in a team. 
+Other works such as \cite{Davenport2001} study the impact of successful communities on socio-technical problems (e.g.~coordination \cite{congruence}, shared understanding, etc.). These works take a more social and organisational approach, pointing out the paramount importance of explicitly supporting the work of communities rather than allocating tasks to individuals in a team. 
 %In addition, works such as \cite{scrum} study the impact of agile methods on a large scale distributed software engineering attempt. Understanding the impact and changes on global communities forced in by organisational changes such as agile adoption, is key to successful change, especially on a global scale.
 %Our work in this paper does not go deep in investigating the impact of organisational decisions on the development community, but introduces a method to understand the community by \emph{snapshot}ting its current status. The method can be used to support related organisational decisions such as agile adoption. Moreover, the method enables understanding the negative consequences of change, such as emergent organisational barriers \cite{Correia2010}.
 Finally, works such as \cite{rel,rel4} investigate the impact of organizational decision-making on software development. For example, understanding if the current community \emph{snapshot} is performant (or even compatible) with offshoring is essential for the community to ``go global'' \cite{icsesympo}. The method presented in this paper can be used to support organisational decisions, investigating the current and to-be community \emph{\emph{snapshots}}. Finally, SEEDS enables understanding the negative consequences of change to the development community. For example the adoption of a different process model or agile methods can cause distress within the community and incite the emergence of organisational barriers \cite{Correia2010}.
@@ -897,7 +898,7 @@ Our data also suggests the presence of additional ``enriching'' attributes for C
 
 The above description, represents the instantaneous configuration of the organisation at Company X, plotted using key attributes from literature. This configuration is therefore a \emph{snapshot}.
 
-\subsection{Habemus Configuration… So What?}
+\subsection{Habemus Configuration... So What?}
 %Applying the SEEDS Evaluation Framework to Diagnose Company X
 
 So we got to \emph{snapshots}. It is then that the industrial partner asked us: ``now what?''. 
@@ -917,7 +918,7 @@ More than trivially showing that Company X was a complex organisation, we decide
 We found that the \emph{snapshot} evidenced the VISIBILITY attribute set to NO. Conversely, empirical evidence from \textbf{Reference 1} and \textbf{2} indicated that members of Company X, from multiple sites, identified the need for increased VISIBILITY of practice, artefacts and people. Management at Company X can now plan for practices to explicitly support VISIBILITY across their sites.
 
 \begin{center}
-\emph{Concerning Steering Directions}
+\emph{Concerning Steering Directions.}
 \end{center}
 
 Finally, after many hours inspecting the decision-tree, we also found that it can be divided in three higher-order sets, or areas. 
@@ -1234,7 +1235,7 @@ The SEEDS model lacks an anarchic form, which is not that surprising as anarchy 
 
 % TODO MARTIN: expand. The 
 
-\subsection{SEEDS Limitations and Threats to Validity}
+\subsection{SEEDS Limitations and Threats to Validity}\label{ttv}
 %%%%\begin{itemize}
 %%%%\item Minna and Ossi are two different situations in two different points of Company X and different levels of abstraction. results confirmed by executing the case-study twice, contemporarily by two different researchers.
 %%%%\item observations are made on only a single case-study.
@@ -1260,14 +1261,17 @@ In this paper we introduced a method to ``diagnose'' software development commun
 %We answered research question 2 (``What are the possible forms of the development community status, or \emph{snapshot}?''), by further analysing the possible combinations that the \emph{snapshot} could present. With data from our case-study we understood what these forms meant, so that practitioners can re-apply SEEDS for their own benefit.
 %We answered research question 3 (``How does organisational change influence the form of a development community \emph{snapshot}''), by sensing the presence of an organisational barrier that inhibited the effectiveness of change within Company X. 
 
-Applying SEEDS on a large industry case-study we concluded that the method elaborates information to produce an ``actionable'' state of the community, i.e. a picture of the community that eases acting upon community characteristics. Applying the method in practice, we also recognised its many limitations. In future work we plan to explore deep into the limitations of the method, in search of improvement.
+Applying SEEDS on a large industry case-study we concluded that the method elaborates information to produce an ``actionable'' state of the community, i.e. a picture of the community that eases acting upon community characteristics. Applying the method in practice, we also recognised its many limitations and some threats to its validity. 
 
-First, all our results are based on qualitative research and were applied to a single case-study. The validity of all results would benefit greatly by the presence of accompanying quantitative evidence in conjunction with multiple case-studies to increase external validity. Much work is still needed to carry out these followup studies.
-We plan to establish quantitative metrics that map on the organisational complexity framework introduced in this paper. These metrics could be used by practitioners to understand community performance in numbers, e.g.~to evaluate the effectiveness of their process model in combination with the resulting community.
+Stemming from the discussion in section \ref{ttv}, in future work we plan to explore deeper into the limitations of the method, in search of improvement.
 
-Moreover, additional work could be invested in demonstrating the Conway effect \cite{conway}, e.g.~by studying communities of designers and their resulting design, in a vein much similar to \cite{nachiappan}. This could be helpful in the management of architectural knowledge on a global scale.
+Our results are based on qualitative research and were applied to a single case-study. The external validity of all results would benefit greatly by the presence of accompanying quantitative evidence in conjunction with multiple case-studies. Much work is still needed to carry out these followup studies. Moreover, a higher diversity of communities is needed to assess if the method actually detects all possible community blends in practice. Finally, a deeper understanding of what SEEDS \emph{snapshots} mean in terms of people's performance in certain scenarios is yet to be established.
 
-Finally, we plan to integrate quality or process-improvement metrics in software engineering (e.g.~CMMI) with metrics and approaches to improve the development community jointly with its process. These mechanisms could be beneficial to software project management.
+First, we plan to establish quantitative metrics that map on the organisational complexity framework introduced in this paper as part of SEEDS. These metrics could be used by practitioners to understand community performance in numbers, e.g.~to evaluate the effectiveness of their process model in combination with the resulting community. This track of studies likely requires extensive action research in closed-, open- and mixed scenarios. 
+
+Moreover, additional work could be invested in demonstrating the Conway effect \cite{conway}, e.g.~by studying communities of designers and their resulting design, in a vein much similar to \cite{nachiappan}. This could be helpful in the management of architectural knowledge on a global scale, e.g. with the final goal of improving socio-technical congruence \cite{congruence}. This study necessitates more focus on software architectures in global software engineering. These make more explicit the Conway effect. Applying SEEDS on the organizations around certain software architectures, observers can investigate wether any continuity exists between (evolving) snapshots and (evolving) software architectures. If so, perhaps congruence between organisation and architecture can prove helpful. Empirical inquiry methods and systematic approaches are needed to investigate this intriguing theoretical scenario.
+
+Finally, stemming from the ability to ``measure'' the status of development communities we plan to integrate quality or process-improvement frameworks in software engineering (e.g.~CMMI) with metrics and approaches to improve the development community jointly with its process. These mechanisms could be beneficial to software project planning, management and software engineering in general.
 
 %TODO: explain possible followup studies, connected to the notion of community \emph{snapshot}.\\
 % conference papers do not normally have an appendix
