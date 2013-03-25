@@ -285,6 +285,8 @@ This section discusses previous work in building the foundations of the method p
 %%%RESTRUCTURE DIVIDING THE VARIOUS LITERATURE SECTIONS\\
 \subsection{Previous Work}\label{nodes}
 
+% MARTIN COMMENT: I find that the following paragraphs (down to the list of decision nodes) could use a rewrite, as there's some repetition and lack of clarity. This is not a critical problem.
+
 In previous work we found that observable \emph{social communities}, e.g.~as captured in \cite{Davenport2001} are a composition of known social community archetypes \cite{ossslr}. Each community type can be given a distinct characterisation through key observable properties.
 The combination of these properties can be used to ``plot'' a community configuration (by representing together its ``current'' properties and attribute values) as well as study its performance (by comparing over time different ``configurations'').
 In \cite{ossslr} we presented an overview of the state of the art in social communities, offering a distinct characterisation for each type. The state of the art is summarized in Table \ref{commtypes}. The table presents name and description of community archetypes from \cite{ossslr}. In the description, we also discuss the key defining attribute for each type.
@@ -294,22 +296,26 @@ As part of the work in \cite{ossslr} we analysed 143 articles discussing social 
 
 To characterise different social community types using this empirical evidence, we studied and compared all definitions available for each type. 
 We began this process by isolating attributes common to all articles discussing a certain type. 
-Then we divided common attributes of each type into two groups: (a) attributes with more than one possible value; (b) attributes whose value was fixed. 
-We found that, for most types, group (a) counted many elements and many values. Conversely, group (b) were populated by a single element for each type. 
+Then we divided common attributes of each type into two groups: (a) attributes which had only one value, and (b) attributes that had a number of different values. 
+We found that, for most types, group (b) counted many elements and many values. Conversely, group (a) were populated by a single element for each type. 
 From this, we made two key observations. 
-First, the singletons in groups (b) uniquely identify a type.
-Second, combining groups (a) and (b) together characterises the community type. We named the singletons in groups (b) as \emph{key-defining} attributes.
+First, the singletons in groups (a) uniquely identify a type.
+Second, combining groups (a) and (b) together characterises the community type. We named the singletons in group (a) as \emph{key-defining} attributes.
 
-%Also, the method was inferred by trying to validate the decision-tree from \cite{specissue}. 
-The decision-tree is now an essential part of SEEDS. 
+%Also, the method was inferred by trying to validate the decision-tree from \cite{specissue}.  
 %The notion of \emph{key-defining} attribute is not applicable to all cases. What happens if we observe multiple \emph{key-defining} attributes together in a real-life situation? We must then be able to relate this observation to the corresponding social community types. 
+
+
+Analysing the \emph{key-defining} attributes we found many relations between them: for example, some implied or mutually-excluded others. The relations formed a partial-order function for \emph{key-defining} attributes. A partial-order function associates an ordering or sequencing to the elements of a set. A real-life example of a partially-ordered set is a family genealogical tree, where some pairs of people bear the descendant-ancestor relationship, but not all pairs.
+
+% MARTIN COMMENT: The following paragraphs are only fragments.
 
 The decision-tree stems from the need to differentiate between community types in the (realistic) case more key-defining attributes are observed together.
 %SEEDS blends the checklist in Fig.~\ref{checklist} with the decision-tree in Fig.~\ref{tree}, from previous work \cite{specissue}.
 
-Analysing the \emph{key-defining} attributes we found many relations between them: for example, some implied or mutually-excluded others. The relations formed a partial-order function for \emph{key-defining} attributes. A partial-order function associates an ordering or sequencing to the elements of a set. A real-life example of a partially-ordered set is a family genealogical tree, where some pairs of people bear the descendant-ancestor relationship, but not all pairs.
-
 The decision-tree (see Fig.~\ref{tree}) is a representation of the partial-order relationship between \emph{key-defining} attributes. All the relations can be found online\footnote{\url{http://www.fileden.com/files/2012/3/7/3275239/OSSdecision.pdf}}.
+
+The decision-tree is now an essential part of SEEDS.
 
 The nodes on the tree are labelled with \emph{key-defining} attributes (e.g.~if a ``STRUCTURE'' and ``DISPERSION'' are observable then type NoP is identified). When visiting the tree, the observer needs to decide wether the key defining attributes are present or not. Each decision can be formulated in terms of a question (e.g.~``Do community members use informal communication only?''). These questions can be easily answered by observing any organisation, be it a single development effort, or an entire enterprise. 
 
@@ -439,15 +445,20 @@ or common interest on a problem. SNs act as a gateway to communicating
 communities \cite{Cross2005}.} \tabularnewline
 \hline 
 \end{tabular}
-\caption{social community types, summary from \cite{ossslr,specissue}.}\label{commtypes}
+\caption{Social community types, summary from \cite{ossslr,specissue}.}\label{commtypes}
 \end{table}
 
 \subsection{Related work: Organizational Structures and their Impact on Software Quality}
-Literature in GSE already recognises the need to study global communities. In particular, many works such as \cite{nachiappan} have studied empirically the effect of organisational structures on the quality of software. These works motivate further studies to understand, represent and support social communities. In addition, similar works \cite{uls,rel9} study the effect of socio-technical congruence on designing global systems as well as the process of global engineering. Such works suggests that understanding how coordination requirements map to their people counterpart is critical to steer information across global communities successfully. Our work is limited to identifying community types, and finding ways to ``format'' and study their observable characteristics. 
+
+Literature in GSE already recognises the need to study global communities. In particular, many works such as \cite{nachiappan} have studied empirically the effect of organisational structures on the quality of software. These works motivate further studies to understand, represent and support social communities. In addition, similar works \cite{uls,rel9} study the effect of socio-technical congruence on designing global systems as well as the process of global engineering.
+
+Such works suggests that understanding how coordination requirements map to their people counterpart is critical to steer information across global communities successfully. Our work is limited to identifying community types, and finding ways to ``format'' and study their observable characteristics. 
+
 Other works such as \cite{Davenport2001} study the impact of successful communities on socio-technical problems (e.g.~coordination \cite{congruence}, shared understanding, etc.). These works take a more social and organisational approach, pointing out the paramount importance of explicitly supporting the work of communities rather than allocating tasks to individuals in a team. 
 %In addition, works such as \cite{scrum} study the impact of agile methods on a large scale distributed software engineering attempt. Understanding the impact and changes on global communities forced in by organisational changes such as agile adoption, is key to successful change, especially on a global scale.
 %Our work in this paper does not go deep in investigating the impact of organisational decisions on the development community, but introduces a method to understand the community by \emph{snapshot}ting its current status. The method can be used to support related organisational decisions such as agile adoption. Moreover, the method enables understanding the negative consequences of change, such as emergent organisational barriers \cite{Correia2010}.
-Finally, works such as \cite{rel,rel4} investigate the impact of organizational decision-making on software development. For example, understanding if the current community \emph{snapshot} is performant (or even compatible) with offshoring is essential for the community to ``go global'' \cite{icsesympo}. The method presented in this paper can be used to support organisational decisions, investigating the current and to-be community \emph{snapshots}. Finally, SEEDS enables understanding the consequences of change to the development community. For example the adoption of a different process model or agile methods can cause distress within the community and incite the emergence of organisational barriers \cite{Correia2010}.
+
+Finally, works such as \cite{rel,rel4} investigate the impact of organizational decision-making on software development. For example, understanding if the current community \emph{snapshot} is performant (or even compatible) with offshoring is essential for the community to ``go global'' \cite{icsesympo}. The method presented in this paper can be used to support organisational decisions, investigating the current and to-be community \emph{snapshots}. SEEDS enables understanding the consequences of change to the development community. For example the adoption of a different process model or agile methods can cause distress within the community and incite the emergence of organisational barriers \cite{Correia2010}.
 
 %%\subsection{Related work: Organizational Governance for (Global) Software Development Communities}
 %%MARTIN CAN YOU ADD ANYTHING TO THIS SECTION?
@@ -530,21 +541,23 @@ The conclusions in this paper are drawn from a large industrial case-study. This
 %\end{itemize}
 %
 %\subsection{Materials Used}
-The evidence used in our work, stems from empirical research conducted in a big organisation, active in the mobile technologies market. The organisation (called Company X from now on) is a multinational that develops both hardware and software components for end-users' mobile-phones and apps to enrich user experience. Company X employs over 130K people in 16 worldwide sites, with sales in over 160 countries. At the time our study was conducted (early 2012), the organisation had a net market sale of 42.4 billion euros. 
+The evidence used in our work, stems from empirical research conducted in a big organisation, active in the mobile technologies market.
+%The organisation (called Company X from now on) is a multinational that develops both hardware and software components for end-users' mobile-phones and apps to enrich user experience. Company X employs over 130K people in 16 worldwide sites, with sales in over 160 countries. At the time our study was conducted (early 2012), the organisation had a net market sale of 42.4 billion euros. 
+The organisation (called Company X from now on) is a multinational that develops both hardware and software components for end-users' mobile-phones and apps to enrich user experience. Company X employs over 100~000 people with sales in over 160 countries. At the time our study was conducted (early 2012), the organisation had a net market sale of over 40 billion euros.
 
 The focus of our data lies in the organisational structure of a product-chain within Company X's corporate portfolio. Our empirical data describes the overall organisation and some of its software development sites. The data also reports on the collaboration between Company X's Scrum development community and a constellation of open-source communities. 
 
-Three key sources of evidence were used:
+Three key sources of evidence were used, as described below. We use page numbers to trace answers to the SEEDS questionnaire back to the data.
+
 \begin{enumerate}
-\item The first key resource (called \emph{\bf Reference~1}) is a research report studying agile and open-source adoption in Company X. The study was conducted using grounded-theory \cite{gt}. The report features six interviews with focus groups from Company X. Focus groups had varied expertise, from areas such as project management to agile coaches to code developers. The focus sessions are analysed through grounded theory. The study offers an overview of the organisational structure of Company X as a whole (i.e.~as a global community) as well as explaining its local sites. The research focuses on a division of Company X, working on a specific project release, at the time of investigation. The report is 112 pages long, we use page numbers to trace answers to the SEEDS questionnaire back to the data. 
+\item The first key resource (called \emph{\bf Reference~1}) is a 112-page research report studying agile and open-source adoption in Company X. The study was conducted using grounded-theory \cite{gt}. The report features six interviews with focus groups from Company X. Focus groups had varied expertise, from areas such as project management to agile coaches to code developers. The focus sessions are analysed through grounded theory. The study offers an overview of the organisational structure of Company X as a whole (i.e.~as a global community) as well as explaining its local sites. The research focuses on a division of Company X, working on a specific project release, at the time of investigation. 
 
-\item The second key resource (called \emph{\bf Reference~2}) is a research report studying three software engineering teams within Company X. The study features 16 interviews harvested through random and snowball sampling \cite{Goodman}. Interviewees had varied backgrounds but an average work experience in Company X of about 10 years. The sample consisted of both sexes, however, with a minority of females. As a result, the organisational details of this paper focus on software process, software coding methods, development best-practices adopted, problems found, and ultimately, the people's perspective on all the above. The report is 97 pages long, we use page numbers answers to the SEEDS questionnaire back to the data.
+\item The second key resource (called \emph{\bf Reference~2}) is a 97-page research report studying three software engineering teams within Company X. The study features 16 interviews harvested through random and snowball sampling \cite{Goodman}. The sample consisted of both sexes, however, with a minority of females. Interviewees had varied backgrounds but an average work experience in Company X of about 10 years. As a result, the organisational details of this paper focus on software process, software coding methods, development best-practices adopted, problems found, and ultimately, the people's perspective on all the above.
 
-\item The third key resource (called \emph{\bf Agile Slides}) is a set of tutorial slides that agile coaches within Company X used to introduce X's organisational structure/process to newly appointed staff members. The slides provide an overview of the agile process and open-source integration protocols in place within Company X at the time of investigation. The report is 4 pages long, we use page numbers to trace answers to the SEEDS questionnaire back to the data.
-
+\item The third key resource (called \emph{\bf Agile Slides}) is a four-page subset of the tutorial presentation that agile coaches within Company X used to introduce X's organisational structure/process to newly appointed staff members. The slides provide a visually oriented overview of the agile process and open-source integration protocols in place within Company X at the time of investigation.
 \end{enumerate}
 
-One of the agile coaches in the case organisation was able to give continuous feedback throughout the research and the writing of this report. This person clarified the structures and working modes inside Company X and provided deeper insight into one of the departments (the same covered by Reference~2). 
+One of the organisational coaches in the case organisation was able to give continuous feedback throughout the research and the writing of this report. This person clarified the structures and working modes inside Company X and provided deeper insight into one of the departments.
 %We are therefore confident that our interpretations of the key sources of evidence are essentially correct.
 
 All of the above sources are dated around 2012 and describe the company as it was in 2010 or 2011. The sources are protected by non-disclosure agreements\footnote{Available upon signed request.}. At the time of investigation, Company X was going through many organisational changes and both studies aimed at understanding the impact of organisational change on teams, their production velocity, community productivity and end-product quality. 
@@ -552,7 +565,7 @@ All of the above sources are dated around 2012 and describe the company as it wa
 \subsection{Research Methods}
 %TODO:\\
 %ALSO SPECIFY HOW WE ARRIVED TO THE SEEDS METHOD\\
-%BTW HOW DID WE ARRIVE TO THE ODESS METHOD?\\
+%BTW HOW DID WE ARRIVE TO THE ODESSA METHOD?\\
 %CYNEFIN TO CROSSREFERENCE RESULTS AND FINDINGS\\
 %We started the work reported in this paper to define an intelligible form for the observed development community such that the outlined form could be further studied, e.g. compared to organisational metrics for Company X. These followup quantitative studies are out of the scope of this work.
 
