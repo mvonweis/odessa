@@ -118,9 +118,9 @@
 %% \address[label2]{<address>}
 
 \author[label1]{Damian A. Tamburri}
-\author[label2]{Martin von Weissenberg}
 \author[label1]{Patricia Lago}
 \author[label1]{Hans van Vliet}
+\author[label2]{Martin von Weissenberg}
 \address[label1]{Information Management and Software Engineering group, VU University, Amsterdam,
 The Netherlands\\
 $[$d.a.tamburri, p.lago, j.c.van.vliet$]$@vu.nl
@@ -632,7 +632,7 @@ The vivid scenario introducing Section \ref{cs} reflects a large quantity of dat
 %Given this sheer amount of data to answer nodes in the decision-tree we noticed that many visits to the decision-tree were needed to exhaust all the information available. This would have introduced a fundamental flaw in our validation attempt, since we would be applying a partially validated framework over and over again.
 to interpret this data, we initially tried to visit the decision-tree in a top-down fashion. Given the sheer amount and disorganisation of data, immediately we found that this approach was not working.
 
-This led us to switching our course of action. Rather than visiting the decision-tree top-down, looking for data to answer each node, we prepared a list of questions representing nodes in the decision-tree. Analysing available data twice, we were able to exactly pinpoint areas of text explicitly and unmistakably answering questions. This delayed decision-tree visits until data was properly organised in a questionnaire.
+This led us to switching our course of action. Rather than visiting the decision-tree top-down, looking for data to answer each node, we prepared a list of questions representing nodes in the decision-tree. This allowed us to ``visit'' all nodes in parallel, delaying the decision-tree until data was properly organised in a questionnaire. Analysing available data twice, we were able to exactly pinpoint areas of text explicitly and unmistakably answering questions. This delayed
 % SAY EXPLICITLY THAT WE TRIED TO VISIT THE TREE TOP DOWN BUT THAT WAS NOT WORKING AND WE HAD TO VISIT ALL NODES AT THE SAME TIME IN A SENSE
 
 Answers to this questionnaire are summarised on Table \ref{questionnaire1} for Study 1, and on Table~\ref{questionnaire2} for Study 2. Column 1 reports the question needed to gather necessary information. Column 2 presents answers that we found in our two studies.
@@ -895,6 +895,9 @@ We found that these points deserved further investigation.
 
 Brainstorming with the industrial partner and digging deeper in the data, we found that the first point, DISPERSION, identified a sub-community. The second point, FORMALITY, identified an inconsistency. Both these points were variation points within the observed community. Based on this nature, we named them \emph{pivots}.
 
+\emph{Pivots} however, were not explicit in our questionnaire. Rather they resided in the multiple versions of the same questionnaire, e.g. answered with different sets of data. To make \emph{pivots} explicit we decided to use a Checklist.
+
+The checklist in Fig.~\ref{list} contains answers from both our parallel studies. Answers are marked with the label ``[\emph{x}]'' where \emph{x} is either of our two \emph{Sub-studies}. The checklist also makes it possible to spot attributes for which we did not have enough data to answer. For example, in our case, none of our data sources contained evidence to clearly describe Company X' s FORMALITY practices as present or absent. Our industrial partner however, was able to fill-in for \emph{Sub-study 2}, using own data and experience within Company X. 
 %To emphasise the multiple nature of these key-points in our ``picture'' we used the term  , since they are points of indecision that distinctively characterise the configuration for Company X.
 
 The first \emph{pivot}, DISPERSION, is caused by the presence of two different sets of data to answer. The first set refers to Company X as a whole, describing the overall structure and operations. The second set refers to specific sites within Company X, describing their own operations, and their collaboration with open-source communities. Consequently, the specific sites work in a way different than Company X as a whole.
@@ -902,11 +905,8 @@ The first \emph{pivot}, DISPERSION, is caused by the presence of two different s
 The second \emph{pivot}, FORMALITY, is caused by an inconsistency within the observed community. While the industrial partner gave a straight YES answer to the FORMALITY question, parts of the data at our disposal led us to find that Company X did not adopt formal evaluation of members. Other parts led us to find that Company X did use formal procedures and background checks to enrol members in teams or other project development units. When presented with the snapshot, the industrial partner identified the inconsistency. The inconsistency was due to the collaboration between open- and closed-source developers. While people directly appointed by Company X were formally evaluated, people from open-source never went through any background or experience checks.
 
 %\emph{Pivots} however, were not explicit in our questionnaire. Rather they resided in the multiple versions of the same questionnaire, answered with different sets of data. 
-
-To make \emph{pivots} explicit we decided to use a Checklist.
-
 %Data from Tables \ref{questionnaire1} and \ref{questionnaire2} is consistent with the checklist in Fig.. 
-The checklist in Fig.~\ref{list} contains answers based on available data, from both our parallel case-studies. Answers are marked with the label ``[\emph{x}]'' where \emph{x} is either of our two \emph{Sub-studies}. The checklist also makes it possible to spot attributes for which we did not have enough data to answer. For example, in our case, none of our data sources contained evidence to clearly describe Company X' s FORMALITY practices as present or absent. Our industrial partner however, was able to fill-in for \emph{Sub-study 2}, using own data and experience within Company X. 
+
 %This leads that SEEDS works if fed to industrial community members or people directly inside the community. 
 
 \begin{figure}[h!]
@@ -936,10 +936,10 @@ According to our data, Company X is organised as a globally dispersed (i.e.~sepa
 
 The first pivot point in the DISPERSION node identifies a sub-community. The colouring reveals the sub-community to be Informal Communities (ICs), emerging in individual sites. Enthusiastic engagement and collaboration both from open- and closed-source contributors are key characteristics. Frequent and formal collocated meetings are used to verify productivity. 
 
-The second pivot point in the FORMALITY node identifies an inconsistency. Some sites work as FNs if they have no collaboration with open-source. 
+The second pivot point in the FORMALITY node identifies an inconsistency. Some sites worked as FNs, adhering to strict and closed governance guidelines, precluding formal evaluation of people and their results. This was inconsistent with management's expectations for informality, given the potential collaboration with open-source communities. 
 % ASK MARTIN TO EXPLAIN THE INCONSISTENCY BETTER
 
-Our data also leads to the presence of additional ``enriching'' attributes for Company X, namely GOVERNANCE practices and DURATION.
+Our data also leads to the presence of additional attributes for Company X, namely GOVERNANCE practices and DURATION. These attributes elaborate further on the observed configuration for Company X.  
 % EXPLAIN WHY THIS IS ENRICHING
 
 %%%%% EXPLAIN WHY ONE IS ENRICHING AND THE FNs ONE IS AN INCONSISTENCY
@@ -959,37 +959,47 @@ The above description, represents the instantaneous configuration of the organis
 So we got to \emph{snapshots}. It is then that the industrial partner asked us: ``now what?''. 
 Across many brainstorming sessions we came up with ways to investigate the \emph{snapshot} to really understand the community configuration it represented. 
 
-\begin{center}
-\emph{Concerning Complexity.}
-\end{center}
+%\begin{center}
+\subsubsection{Concerning Community Complexity.}
+%\end{center}
 
- we found that Company X's \emph{snapshot} had a rather \emph{complex} form, i.e. a blend of multiple community types and multiple additional attributes. Conversely, a simpler form could have exhibited a single path and a few attributes. Moreover, the simplest form could have exhibited a single path and no additional attributes. Finally, a ``chaotic'' form could have shown \emph{pivots} only.
+We found that Company X's \emph{snapshot} had a rather \emph{complex} form, i.e. a blend of multiple community types and multiple additional attributes. Conversely, a simpler form could have exhibited a single path and a few attributes. Moreover, the simplest form could have exhibited a single path and no additional attributes. Finally, a ``chaotic'' form could have shown \emph{pivots} only.
 
-\begin{center}
-\emph{Concerning Desirable Attributes.}
-\end{center}
+%\begin{center}
+\subsubsection{Concerning Attributes.}
+%\end{center}
 %%%%%%%% ENRICH THE DISCUSSION WITH DETAILS AND WHY AND DESCRIBE THAT IT COMES FROM THE SWOT MODE - WHICH YES ANSWERS DO YOU EXPECT?? YOU HAVE YESSES WHERE YOU EXPECT AND YOU HAVE YESSES WHERE YOU DONT
 
-The IC sub-community was identified in sites that collaborate with open-source. We know that ENGAGEMENT is the key-defining attribute of ICs. Management at Company X can now explicitly support ENGAGEMENT in sites where ICs were identified.
+The complex form at Company X is reflected in three community types (SNs, ICs and FNs), two pivots and additional attributes. To analyse this form we searched for three things: (a) the key-defining attributes of communities found; (b) attributes that were desirable but were not found; (c) conversely, attributes that were undesirable but were indeed found. 
 
-More than trivially showing that Company X was a complex organisation, we decided to use our \emph{snapshot} to look for desirable properties. This meant posing the questions: ``was there anything that you found and you did not want?'' or conversely ``was there anything you did not find but would have liked?''.
+First, SNs were found globally for Company X. The goal for the SN was maintaining (updated) social links across Company X. With the \emph{snapshot} at hand, management can now decide better how to support this goal.
 
-We found that the \emph{snapshot} evidenced the VISIBILITY attribute set to NO. Conversely, empirical evidence from \textbf{Reference 1} and \textbf{2} indicated that members of Company X, from multiple sites, identified the need for increased VISIBILITY of practice, artefacts and people. Management at Company X can now plan for practices to explicitly support VISIBILITY across their sites.
+Second, ICs were found in sites collaborating strongly with open-source. From \cite{ossslr} we know that ENGAGEMENT is the key-defining attribute of ICs (see Section \ref{rel}). Management at Company X must explicitly support ENGAGEMENT in sites where ICs were identified.
 
-\begin{center}
-\emph{Concerning Steering Directions.}
-\end{center}
+Third, FNs were found in sites not currently collaborating with open-source. This contrasted with corporate policies of strong collaboration with open-source. FORMALITY in this case is an undesirable attribute. Rather than fostering FORMALITY, management must lift some formal evaluation/governance procedures to allow a more informal community to thrive.
+%
+%More than trivially showing that Company X was a complex organisation, we decided to use our \emph{snapshot} to look for desirable properties. This meant posing the questions:  or conversely ``was there anything you did not find but would have liked?''.
 
-Finally, inspecting the decision-tree, we also found that it can be divided in three higher-order sets, or areas. 
+Finally, found that the \emph{snapshot} evidenced the VISIBILITY attribute set to NO. Conversely, empirical evidence from \textbf{Reference 1} and \textbf{2} indicated that members of Company X, from multiple sites, identified the need for increased VISIBILITY of practice, artefacts and people. Management at Company X can now plan for practices to explicitly support VISIBILITY across their sites.
+
+%\begin{center}
+\subsubsection{Concerning Steering Directions.}
+%\end{center}
+
+Finally, inspecting the decision-tree, we also found that it can be divided in three higher-order sets of attributes. 
 
 \begin{enumerate} 
 \item \emph{structure:} the first three nodes of the tree, namely STRUCTURE, SITUATEDNESS and DISPERSION, focus on the structure of your community, e.g.~whether it has a situated or dispersed practice.
 \item \emph{networking:} the YES-branch out of the DISPERSION node, identifies community archetypes whose purpose is increasing the networking within your organisation or across partner organisations. The community's focus is networking, either autonomously or on-purpose.
-\item \emph{goals:} the NO-branch out of the DISPERSION node, identifies community archetypes whose purpose is pursue a particular goal, under certain conditions. The community's focus is its goal (e.g.~an organisational problem or Return-on-Investments).
+\item \emph{goals:} the NO-branch out of the DISPERSION node, identifies community archetypes whose purpose is to pursue a particular goal, under certain conditions. The community's focus is its goal (e.g.~an organisational problem or Return-on-Investments).
 \end{enumerate}
 
-The three areas or ``foci'' above, are higher-order properties of your community. 
+The three areas or ``foci'' above, are higher-order properties of a community. 
+
+The community at Company X did not seem to require any additional focus.
 %We analysed \emph{Snapshots} to identify the missing focus, i.e.~a \emph{Higher-order need}. However, we found the complex community at Company X does not seem to require additional steering to include missing foci.
+
+\subsection{Evaluating the status of Company X}
 
 In summary, the \emph{snapshot} allows associating Company X with the following status:
 
@@ -1177,7 +1187,6 @@ This section discusses our results and key observations. The section starts by d
 %\emph{This suggests that observable organisational information is overloaded with data. A questionnaire is an essential piece to organise and contain only the necessary and sufficient information to uncover a community type. In addition, this finding also suggests that some organisational information might be missing or incomplete. The questionnaire can also be used as a checklist to make sure all needed information is actually available. Finally, this finding implies that our method for community detection cannot be fully automated.}
 %TODO: make examples of each of the above statements.\\
 
-
 %A community \emph{snapshot} can be obtained by combining two key informations: (a) answers to the questionnaire in Fig.~\ref{quest}; (b) visits to the decision-tree from \cite{specissue}. 
 %
 %{\bf First, the questionnaire part of the SEEDS method… }
@@ -1194,6 +1203,8 @@ Second, the attributes' value in the decision-tree can be determined through qua
 Third, the SEEDS evaluation framework allows to uncover (un-)desirable properties and higher-order needs of a community. We found that organisational and social-networks literature defines these properties and needs as ``organisational barriers''. Barriers are mechanisms or circumstances that filter activity within a community, rephrasing Correia et al. \cite{Correia2010}. In a previous systematic literature study \cite{ossslr} we have found evidence of many ``organisational barriers''. Further research is needed to formalise barriers to allow their detection and mitigation. \emph{The work presented in this paper can be used as a lens to analyse and formalise barriers. To this purpose, for example, the SEEDS analysis framework can be improved with snapshot patterns (e.g. multiple pivots in particular points, or mismatching combinations of communities) associated to ``organisational barriers''.}
 
 Fourth, the SEEDS method allows to spot community characteristics for which the observers cannot give a conclusive answer. For example in our case, we were not able to give an answer to Question 11, representing the FORMALITY decision-node. \emph{These points deserve further attention. Assuming the questionnaire was used to gather data, the existence of these points marks the lack of shared understanding within the community. This lacking can cause serious problems in community performance \cite{commperf,perf1}.}
+
+Fifth, finally, there are many dimensions to be found using SEEDS. While formulating decision-tree foci, we assumed that organisations would globally focus on communities that fostered ``networking'' (right-hand side of the decision-tree). Conversely we assumed that organisations would concentrate on certain ``goals'' (left-hand side of the decision-tree) locally in individual sites. We found that Company X exhibits an opposite behaviour. Company X focuses globally on a particular goal, i.e. maintaining aligned the organisational structure on a particular goal. Moreover, Company X focuses locally on networking and informally collaborating with open-source. \emph{Our data was insufficient to make any conclusive statement. However, we noticed that SEEDS and the decision-tree have much more to tell us about understanding and interpreting communities and we have barely scratched the surface.}
 
 %%%%%%%%%%%%%%%%REVISE%%%%%%%%%%%%%%%%%%%%
 % Far capire nei findings dell'articolo che cosa significano
