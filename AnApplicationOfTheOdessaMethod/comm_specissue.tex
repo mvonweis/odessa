@@ -189,9 +189,8 @@ The craft of software development has always been a social activity \cite{naur19
 
 This figure becomes critical with the increase of diversity and size of the development community.
 For example, Global Software Engineering (GSE) is a development strategy entailing global teams to collaborate from different locations in different timezones \cite{gsdbook}. In this circumstance, distances in time, space and culture magnify project risks connected to attributes of the development social structure \cite{empirglob,nachiappan,icgseoss}.
-The problem persists since software practitioners lack a systematic method to outline the organisational state of development communities and use this ``picture'' to reliably steer the community.
+The problem persists since software practitioners lack a systematic method to outline the organisational state of development communities and use this ``picture'' to understand them.
 % MARTIN COMMENT: Ref needed above!
-
 
 To tackle this problem, this paper proposes SEEDS, a semi-automatic method for ``Snapshot-based Evaluation and Evolution of Development communitieS''. SEEDS allows the observers of a development community to capture its key properties in the form of analysable ``\emph{snapshots}''. The purpose of the method is to plot the configuration of a community so that its properties can be analysed and reasoned on.
 
@@ -217,7 +216,7 @@ The mapping results in a ``colouring'' \cite{networks} of the decision-tree from
 
 To get an understanding of SEEDS in practice, imagine that a manager wants to find out what his development community looks like, after his development company extends it with offshore partners and open-source communities. To ``run'' SEEDS the project manager needs only use four tools, in sequence: (1) a questionnaire; (2) a checklist; (3) a decision-tree; (4) and finally, a simple evaluation framework.
 
-First, management can feed the SEEDS questionnaire (e.g.~through an online surveying tool) to all sites involved. Second, once data is obtained, management can use the SEEDS checklist to structure the data (e.g. revealing multiple/inconsistent answers). Third, management can understand community types mapping the checklist on the SEEDS decision-tree, obtaining a \emph{snapshot} of the observed community. Fourth, management can apply the SEEDS framework on the resulting \emph{snapshot} to analyse the current status of the observed development community. 
+First, management can feed the SEEDS questionnaire (e.g.~through an online surveying tool) to all sites involved. Second, with data from the questionnaire, management can use the SEEDS checklist to structure the data (e.g. to reveal multiple-answer points). Third, management can understand community types mapping the checklist on the SEEDS decision-tree, obtaining a \emph{snapshot} of the observed community. Fourth, management can apply the SEEDS framework on the resulting \emph{snapshot} to analyse the current status of the observed development community. 
 % TODO ELABORATE MORE ON THE PART ABOVE HERE AND MAP COMPLETELY WITH THE STEPS IN SECTION OF SEEDS
 
 The benefits of our method are manifold: it is (a) \emph{flexible} - SEEDS is based on key community characteristics that can be discovered in multiple ways, allowing flexibility to industrial practitioners with diverse information and time available; (b) \emph{straightforward} - SEEDS is based on filling a questionnaire and colour a decision-tree, it can be used by practitioners coming from very different backgrounds; (c) \emph{multi-purpose} - SEEDS can be used to understand development communities from multiple angles, e.g.~to study the current situation for change-planning or improve development performance by removing communication barriers. 
@@ -234,8 +233,8 @@ The benefits of our method are manifold: it is (a) \emph{flexible} - SEEDS is ba
 \caption{an example \emph{snapshot} for text-book project teams.}\label{snapshot}
 \end{figure}
 Applying SEEDS, we made three key observations: (a) the method allows uncovering inconsistencies on the observed \emph{snapshot}; (b) the community \emph{snapshot} can have a limited number of possible forms, each with its own particular characteristics; (c) the method allows uncovering properties that can hinder communication/collaboration across communities during software development. 
-
-Building on previously published work, our paper offers the following novel contributions: (a) the SEEDS method, validated through a large industrial case-study; (b) a questionnaire and checklist that feature feedback from industrial practitioners; (c) analysis guidelines that allow interpretation of the \emph{snapshots} found. These guidelines were obtained applying SEEDS in practice and feature feedback from industrial practitioners. 
+%
+%Building on previously published work, our paper offers the following novel contributions: (a) the SEEDS method, validated through a large industrial case-study; (b) a questionnaire and checklist that feature feedback from industrial practitioners; (c) analysis guidelines that allow interpretation of the \emph{snapshots} found. These guidelines were obtained applying SEEDS in practice and feature feedback from industrial practitioners. 
 
 The rest of the paper is structured as follows: Section \ref{devcomm} explains related work; Section \ref{mm} explains materials and methods; Section \ref{method} presents SEEDS; Section \ref{cs} validates SEEDS applying it no a large industrial case-study, while Section \ref{disc} discusses both contributions, namely SEEDS and its application. Finally, Section \ref{conc} concludes the paper with future work.
 
@@ -309,8 +308,8 @@ Second, combining groups (a) and (b) together characterises the community type. 
 Analysing the \emph{key-defining} attributes we found many relations between them: for example, some implied or mutually-excluded others. The relations formed a partial-order function for \emph{key-defining} attributes. A partial-order function associates an ordering or sequencing to the elements of a set. A real-life example of a partially-ordered set is a family genealogical tree, where some pairs of people bear the descendant-ancestor relationship, but not all pairs.
 
 % MARTIN COMMENT: The following paragraphs are only fragments.
-
-The decision-tree stems from the need to differentiate between community types in the (realistic) case more key-defining attributes are observed together.
+%
+%The decision-tree stems from the need to differentiate between community types in the (realistic) case more key-defining attributes are observed together.
 %SEEDS blends the checklist in Fig.~\ref{checklist} with the decision-tree in Fig.~\ref{tree}, from previous work \cite{specissue}.
 
 The decision-tree (see Fig.~\ref{tree}) is a representation of the partial-order relationship between \emph{key-defining} attributes. All the relations can be found online\footnote{\url{http://www.fileden.com/files/2012/3/7/3275239/OSSdecision.pdf}}.
@@ -629,12 +628,14 @@ On higher levels (products for customers), Company X employs centralised models 
 
 \subsection{Using a Questionnaire to Gather Data}
 
-The vivid scenario introducing Section \ref{cs} reflects a large quantity of data from our resources. Given this sheer amount of data to answer nodes in the decision-tree we noticed that many visits to the decision-tree were needed to exhaust all the information available. This would have introduced a fundamental flaw in our validation attempt, since we would be applying a partially validated framework over and over again.
+The vivid scenario introducing Section \ref{cs} reflects a large quantity of data from our resources. 
+%Given this sheer amount of data to answer nodes in the decision-tree we noticed that many visits to the decision-tree were needed to exhaust all the information available. This would have introduced a fundamental flaw in our validation attempt, since we would be applying a partially validated framework over and over again.
+to interpret this data, we initially tried to visit the decision-tree in a top-down fashion. Given the sheer amount and disorganisation of data, immediately we found that this approach was not working.
 
-This reasoning led us to switching our course of action: instead of visiting the decision-tree, incrementally looking for data to answer each node whilst preparing for more visits, we prepared a list of questions representing nodes in the decision-tree. This move made our approach more focused. After analysing available data twice, we were able to exactly pinpoint areas of text explicitly and unmistakably answering questions.
+This led us to switching our course of action. Rather than visiting the decision-tree top-down, looking for data to answer each node, we prepared a list of questions representing nodes in the decision-tree. Analysing available data twice, we were able to exactly pinpoint areas of text explicitly and unmistakably answering questions. This delayed decision-tree visits until data was properly organised in a questionnaire.
 % SAY EXPLICITLY THAT WE TRIED TO VISIT THE TREE TOP DOWN BUT THAT WAS NOT WORKING AND WE HAD TO VISIT ALL NODES AT THE SAME TIME IN A SENSE
 
-Answers to the questionnaire are summarised on Table \ref{questionnaire1} (for Study 1), and on Table~\ref{questionnaire2} (for Study 2). Column 1 reports the question needed to gather necessary information. Column 2 and 3 present answers that we found in our two parallel case-studies.
+Answers to this questionnaire are summarised on Table \ref{questionnaire1} for Study 1, and on Table~\ref{questionnaire2} for Study 2. Column 1 reports the question needed to gather necessary information. Column 2 presents answers that we found in our two studies.
 
 \begin{table}
 \vspace{-4cm}
@@ -888,9 +889,11 @@ While the industrial partner was able to answer all questions, we found much con
 \subsection{Using a Checklist to Structure the Data}
 %%% CAUSED BY MORE THAN ONE ANSWER WE NEEDED TO STRUCTURE THE DATA, EXPLAIN PIVOTS IN A BRIEF SHORT SENTENCE
 
-After answering questions to gather data about communities at Company X, we felt like something was missing. In particular, while most data confirmed many answers over and over again, some data revealed conflicts or multiple possible answers to some questions. For example, our case revealed two points with multiple answers, namely, in the DISPERSION and FORMALITY nodes. 
+After answering questions to gather data about communities at Company X, we felt like something was missing. In particular, we missed a way to express variable answers to questions in the questionnaire. While most data confirmed many answers over and over again, some data revealed conflicts or multiple possible answers to some questions. For example, our case revealed two points with multiple answers, namely, in the DISPERSION and FORMALITY nodes. 
 
-Digging deeper in the data, we found that the first point, DISPERSION identifies a sub-community. The second point was identified as an inconsistency by our industrial partner.
+We found that these points deserved further investigation. 
+
+Brainstorming with the industrial partner and digging deeper in the data, we found that the first point, DISPERSION, identified a sub-community. The second point, FORMALITY, identified an inconsistency. Both these points were variation points within the observed community. Based on this nature, we named them \emph{pivots}.
 
 %To emphasise the multiple nature of these key-points in our ``picture'' we used the term  , since they are points of indecision that distinctively characterise the configuration for Company X.
 
@@ -898,10 +901,12 @@ The first \emph{pivot}, DISPERSION, is caused by the presence of two different s
 
 The second \emph{pivot}, FORMALITY, is caused by an inconsistency within the observed community. While the industrial partner gave a straight YES answer to the FORMALITY question, parts of the data at our disposal led us to find that Company X did not adopt formal evaluation of members. Other parts led us to find that Company X did use formal procedures and background checks to enrol members in teams or other project development units. When presented with the snapshot, the industrial partner identified the inconsistency. The inconsistency was due to the collaboration between open- and closed-source developers. While people directly appointed by Company X were formally evaluated, people from open-source never went through any background or experience checks.
 
-\emph{Pivots} however, were not explicit in our questionnaire. Rather they resided in the multiple versions of the same questionnaire, answered with different sets of data. We decided at this point, to use a Checklist, as a mechanism to make \emph{Pivots} explicit.
+%\emph{Pivots} however, were not explicit in our questionnaire. Rather they resided in the multiple versions of the same questionnaire, answered with different sets of data. 
+
+To make \emph{pivots} explicit we decided to use a Checklist.
 
 %Data from Tables \ref{questionnaire1} and \ref{questionnaire2} is consistent with the checklist in Fig.. 
-The checklist in Fig.~\ref{list} contains answers based on available data, from both our parallel case-studies. Answers are marked with the label ``[\emph{x}]'' where \emph{x} is either of our two \emph{Sub-studies}. From the checklist it is also possible to spot attributes for which we did not have enough data to answer. For example, in our case, none of our data sources contained evidence to clearly describe Company X' s FORMALITY practices as present or absent. Our industrial partner however, was able to fill-in for \emph{Sub-study 2}, using own data and experience within Company X. 
+The checklist in Fig.~\ref{list} contains answers based on available data, from both our parallel case-studies. Answers are marked with the label ``[\emph{x}]'' where \emph{x} is either of our two \emph{Sub-studies}. The checklist also makes it possible to spot attributes for which we did not have enough data to answer. For example, in our case, none of our data sources contained evidence to clearly describe Company X' s FORMALITY practices as present or absent. Our industrial partner however, was able to fill-in for \emph{Sub-study 2}, using own data and experience within Company X. 
 %This leads that SEEDS works if fed to industrial community members or people directly inside the community. 
 
 \begin{figure}[h!]
