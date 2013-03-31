@@ -110,7 +110,7 @@
 %% \address{Address\fnref{label3}}
 %% \fntext[label3]{}
 
-\title{Making Snapshots of Development Communities}
+\title{Taking Snapshots of Development Communities}
 
 %% use optional labels to link authors explicitly to addresses:
 %% \author[label1,label2]{<author name>}
@@ -149,7 +149,7 @@ martin.vonweissenberg@hanken.fi
 
 {\bf Results:} In validating SEEDS through a case-study, we found the method allows reliable information about the strengths, weaknesses and inconsistencies of a development community. 
 
-{\bf Conclusion:} We conclude that \emph{snapshots} for software development communities as determined by SEEDS, help understanding development communities.
+{\bf Conclusion:} We conclude that \emph{snapshots} for software development communities, as determined by SEEDS, help understanding development communities.
 %
 %
 %%\emph{snapshots} are colourings of a development community decision tree. 
@@ -194,7 +194,7 @@ The problem persists since software practitioners lack a systematic method to ou
 
 To tackle this problem, this paper proposes SEEDS, a semi-automatic method for ``Snapshot-based Evaluation and Evolution of Development communitieS''. SEEDS allows the observers of a development community to capture its key properties in the form of analysable ``\emph{snapshots}''. The purpose of the method is to plot the configuration of a community so that its properties can be analysed and reasoned on.
 
-The SEEDS method stems from previous work \cite{specissue}, in which we made a literature review to identify a number of social community types and their attributes. We found that each community type has a unique \emph{key-defining} attribute and that the partial-order relation between community-attribute pairs form a decision-tree. This decision-tree can be used to pinpoint the relevant community type of an observed case organisation, e.g.~a global software project.
+The SEEDS method stems partially from previous work \cite{specissue}, in which we made a literature review to identify a number of social community types and their attributes. We found that each community type has a unique \emph{key-defining} attribute and that the partial-order relation between community-attribute pairs form a decision-tree. This decision-tree can be used to pinpoint the relevant community type of an observed case organisation, e.g.~a global software project.
 
 To validate the framework we mapped an actual software development organisation onto the decision tree. The mapping itself and the mapping process turned out to be non-trivial, and the case study and the SEEDS process that emerged now forms the basis of this paper.
 
@@ -318,7 +318,7 @@ The decision-tree (see Fig.~\ref{tree}) is a representation of the partial-order
 
 The decision-tree is now an essential part of SEEDS.
 
-The nodes on the tree are labelled with \emph{key-defining} attributes (e.g.~if a ``STRUCTURE'' and ``DISPERSION'' are observable then type NoP is identified). When visiting the tree, the observer needs to decide wether the key defining attributes are present or not. Each decision can be formulated in terms of a question (e.g.~``Do community members use informal communication only?''). These questions can be easily answered by observing any organisation, be it a single development effort, or an entire enterprise. 
+The nodes on the tree are labelled with \emph{key-defining} attributes (e.g.~if a ``STRUCTURE'' and ``DISPERSION'' are observable then type NoP is identified, i.e. we answer YES to just those attributes in the path from root to leaf nodes). When visiting the tree, the observer needs to decide wether the key defining attributes are present or not. Each decision can be formulated in terms of a question (e.g.~``Do community members use informal communication only?''). These questions can be easily answered by observing any organisation, be it a single development effort, or an entire enterprise. 
 
 The edges of the tree are Yes/No decisions made for each node, from the checklist (see Fig.~\ref{checklist}). 
 The leaves of the tree are social community types (see Table \ref{commtypes}).
@@ -453,13 +453,13 @@ communities \cite{Cross2005}.} \tabularnewline
 
 Literature in GSE already recognises the need to study global communities. In particular, many works such as \cite{nachiappan} have studied empirically the effect of organisational structures on the quality of software. These works motivate further studies to understand, represent and support social communities. In addition, similar works \cite{uls,rel9} study the effect of socio-technical congruence on designing global systems as well as the process of global engineering.
 
-Such works suggests that understanding how coordination requirements map to their people counterpart is critical to steer information across global communities successfully. Our work is limited to identifying community types, and finding ways to ``format'' and study their observable characteristics. 
+Clearly expressed in this line of research is that understanding how coordination requirements map to their human counterpart is critical to successfully steer information across global communities. Our work is limited to identifying community types, and finding ways to ``format'' and study their observable characteristics. 
 
 Other works such as \cite{Davenport2001} study the impact of successful communities on socio-technical problems (e.g.~coordination \cite{congruence}, shared understanding, etc.). These works take a more social and organisational approach, pointing out the paramount importance of explicitly supporting the work of communities rather than allocating tasks to individuals in a team. 
 %In addition, works such as \cite{scrum} study the impact of agile methods on a large scale distributed software engineering attempt. Understanding the impact and changes on global communities forced in by organisational changes such as agile adoption, is key to successful change, especially on a global scale.
 %Our work in this paper does not go deep in investigating the impact of organisational decisions on the development community, but introduces a method to understand the community by \emph{snapshot}ting its current status. The method can be used to support related organisational decisions such as agile adoption. Moreover, the method enables understanding the negative consequences of change, such as emergent organisational barriers \cite{Correia2010}.
 
-Finally, works such as \cite{rel,rel4} investigate the impact of organizational decision-making on software development. For example, understanding if the current community \emph{snapshot} is performant (or even compatible) with offshoring is essential for the community to ``go global'' \cite{icsesympo}. The method presented in this paper can be used to support organisational decisions, investigating the current and to-be community \emph{snapshots}. SEEDS enables understanding the consequences of change to the development community. For example the adoption of a different process model or agile methods can cause distress within the community and incite the emergence of organisational barriers \cite{Correia2010}.
+Finally, works such as \cite{rel,rel4} investigate the impact of organizational decision-making on software development. For example, understanding if the current community \emph{snapshot} is performant (or even compatible) with offshoring is essential for the community to ``go global'' \cite{icsesympo}. The method presented in this paper can be used to support organisational decisions, investigating the current and to-be community \emph{snapshots}. SEEDS enables understanding the consequences of change to the development community. For example the adoption of agile methods can cause distress within the community and incite the emergence of organisational barriers \cite{Correia2010}.
 
 %%\subsection{Related work: Organizational Governance for (Global) Software Development Communities}
 %%MARTIN CAN YOU ADD ANYTHING TO THIS SECTION?
@@ -542,7 +542,7 @@ The conclusions in this paper are drawn from a large industrial case-study. This
 %\end{itemize}
 %
 %\subsection{Materials Used}
-The evidence used in our work, stems from empirical research conducted in a big organisation, active in the mobile technologies market.
+The evidence used in our work stems from empirical research conducted in a big organisation active in the mobile technologies market.
 %The organisation (called Company X from now on) is a multinational that develops both hardware and software components for end-users' mobile-phones and apps to enrich user experience. Company X employs over 130K people in 16 worldwide sites, with sales in over 160 countries. At the time our study was conducted (early 2012), the organisation had a net market sale of 42.4 billion euros. 
 The organisation (called Company X from now on) is a multinational that develops both hardware and software components for end-users' mobile-phones and apps to enrich user experience. Company X employs over 100~000 people with sales in over 160 countries. At the time our study was conducted (early 2012), the organisation had a net market sale of over 40 billion euros.
 
@@ -551,11 +551,11 @@ The focus of our data lies in the organisational structure of a product-chain wi
 Three key sources of evidence were used, as described below. We use page numbers to trace answers to the SEEDS questionnaire back to the data.
 
 \begin{enumerate}
-\item The first key resource (called \emph{\bf Reference~1}) is a 112-page research report studying agile and open-source adoption in Company X. The study was conducted using grounded-theory \cite{gt}. The report features six interviews with focus groups from Company X. Focus groups had varied expertise, from areas such as project management to agile coaches to code developers. The focus sessions are analysed through grounded theory. The study offers an overview of the organisational structure of Company X as a whole (i.e.~as a global community) as well as explaining its local sites. The research focuses on a division of Company X, working on a specific project release, at the time of investigation. 
+\item The first key resource (called \emph{\bf Reference~1}) is a 112-page research report on agile and open-source adoption in Company X. The study was conducted using grounded-theory \cite{gt}. The report features six interviews with focus groups from Company X. Focus groups had varied expertise, from areas such as project management to agile coaches to code developers. The focus sessions are analysed through grounded theory. The study offers an overview of the organisational structure of Company X as a whole (i.e.~as a global community) as well as explaining its local sites. The research focuses on a division of Company X, working on a specific project release at the time of investigation. 
 
-\item The second key resource (called \emph{\bf Reference~2}) is a 97-page research report studying three software engineering teams within Company X. The study features 16 interviews harvested through random and snowball sampling \cite{Goodman}. The sample consisted of both sexes, however, with a minority of females. Interviewees had varied backgrounds but an average work experience in Company X of about 10 years. As a result, the organisational details of this paper focus on software process, software coding methods, development best-practices adopted, problems found, and ultimately, the people's perspective on all the above.
+\item The second key resource (called \emph{\bf Reference~2}) is a 97-page research report on three software engineering teams within Company X. The report features 16 interviews harvested through random and snowball sampling \cite{Goodman}. The sample consisted of both sex, however, with a minority of females. Interviewees had varied backgrounds but an average work experience in Company X of about 10 years. As a result, the organisational details of this paper focus on software process, software coding methods, development best-practices adopted, problems found, and ultimately, the people's perspective on all the above.
 
-\item The third key resource (called \emph{\bf Agile Slides}) is a four-page subset of the tutorial presentation that agile coaches within Company X used to introduce X's organisational structure/process to newly appointed staff members. The slides provide a visually oriented overview of the agile process and open-source integration protocols in place within Company X at the time of investigation.
+\item The third key resource (called \emph{\bf Reference 3}) is a four-page subset of the tutorial presentation that agile coaches within Company X used to introduce X's organisational structure/process to newly appointed staff members. The slides provide a visually oriented overview of the agile process and open-source integration protocols in place within Company X at the time of investigation.
 \end{enumerate}
 
 Additionally, one of the organisational coaches (called the \emph{\bf Industrial Partner}) in the case organisation was able to give continuous feedback throughout the research and the writing of this report. The Industrial Partner clarified the structures and working modes inside Company X and provided deeper insight into one of the departments. The Industrial Partner had twenty years of experience in the ICT industry and five years of experience in Company X.
@@ -570,7 +570,8 @@ All of the written sources mentioned above are dated around 2012 and describe th
 %CYNEFIN TO CROSSREFERENCE RESULTS AND FINDINGS\\
 %We started the work reported in this paper to define an intelligible form for the observed development community such that the outlined form could be further studied, e.g. compared to organisational metrics for Company X. These followup quantitative studies are out of the scope of this work.
 
-To pursue the above goal, we started applying previous work from \cite{specissue} to our large industrial case-study, following guidelines in \cite{runeson}. The work in \cite{specissue} presents a decision-tree that allows to identify community types (summarised on Table \ref{commtypes}) by means of key defining attributes. Our initial approach was try to colour the decision-tree from \cite{specissue} with available data. We were immediately presented with problems that we solved incrementally.
+To pursue the above goal, we started applying previous work from \cite{specissue} to our large industrial case-study, following guidelines in \cite{runeson}. 
+%The work in \cite{specissue} presents a decision-tree that allows to identify community types (summarised on Table \ref{commtypes}) by means of key defining attributes. Our initial approach was try to colour the decision-tree from \cite{specissue} with available data. We were immediately presented with problems that we solved incrementally. 
 %
 %Through gap analysis and brainstorming with the industrial stakeholder on problems and issues found, we were able to refine a definitive version of SEEDS. Finally, to validate SEEDS we (re-)conducted the case-study in a classical way, following guidelines in \cite{runeson}.\\
 %ELABORATE\\
@@ -585,7 +586,7 @@ To pursue the above goal, we started applying previous work from \cite{specissue
 
 Finally, we used a parallel case-study, conducted by our industrial stakeholder, (referred to as \emph{Study 2}, from now on) to confirm the validity of SEEDS. We structured the \emph{Study 2} parallel study with observer and data triangulation to minimise bias and unreliability following guidelines from \cite{stake}. The parallel case-study was conducted by an insider of Company X, using data available as well as his own expertise and experience/knowledge about Company X. While the two studies were started at the same time, the researcher conducting the first study (called \emph{Study 1}) was prohibited to share increments of partial results. Weekly meetings were planned to assess progress status only. The supervision of two senior researchers was used throughout the duration of the study to assess the quality of progress.
 
-All along the case-study, data sources triangulation \cite{stake} and observer triangulation were used to tackle possible threats to validity, as discussed in Section \ref{disc}. 
+All along the case-study, data sources triangulation and observer triangulation \cite{stake} were used to tackle possible threats to validity, as discussed in Section \ref{disc}. 
 
 %
 %Moreover,  was used to aid the generalizability of our results. To this purpose, three different sets of data were used. Two of these were obtained through surveys and other empirical enquiry methods.
@@ -596,7 +597,7 @@ All along the case-study, data sources triangulation \cite{stake} and observer t
 
 \section{Discovering Community Snapshots, a Case-Study}\label{cs}
 
-To validate in practice the decision-tree introduced in \cite{specissue}, we analysed the evidence introduced in Section~\ref{mm}. We needed data to determine if certain key attributes of social communities were present in the case we were observing at Company X. Based on \cite{specissue} and \cite{ossslr}, all the nodes in the decision-tree from \cite{specissue} (see Section \ref{nodes}) needed answering.
+To validate in practice the decision-tree introduced in \cite{specissue}, we analysed the evidence introduced in Section~\ref{mm}. We needed data to determine if certain key attributes of social communities were present in the case at Company X. Based on \cite{specissue} and \cite{ossslr}, all the nodes in the decision-tree from \cite{specissue} (see Section \ref{nodes}) needed answering.
 %The method allows associating a single community type to multiple observable attributes, through a decision-tree (see Fig.~\ref{tree}). 
 %%%%%%%
 %%%%%%%From the work in \cite{specissue} we learned the approach had a limitation in terms of scalability.
@@ -630,15 +631,15 @@ On higher levels (products for customers), Company X employs centralised models 
 
 \subsection{Using a Questionnaire to Gather Data}
 
-The vivid scenario introducing Section \ref{cs} reflects a large quantity of data from our resources. 
+The vivid scenario above reflects a large quantity of data from our resources. 
 %Given this sheer amount of data to answer nodes in the decision-tree we noticed that many visits to the decision-tree were needed to exhaust all the information available. This would have introduced a fundamental flaw in our validation attempt, since we would be applying a partially validated framework over and over again.
-In order to interpret this data, we initially tried to visit the decision-tree in a top-down fashion. Given the sheer amount of information and the fact that it was collected for other purposes than organisational analysis, we quickly found that this approach was not working.
+In order to interpret this data, we initially tried to visit the decision-tree in a top-down fashion. Given the amount of data and the fact that it was collected for other purposes than organisational analysis, we quickly found that this approach was not working.
 
-This led us to switching our course of action. Rather than visiting the decision-tree top-down, looking for data to answer each node, we instead prepared a list of questions representing nodes in the decision-tree. This allowed us to ``visit'' all nodes in parallel, delaying the drawing of the decision-tree until all data was properly organised in a questionnaire. Analysing the available data twice, we were able to exactly pinpoint the areas of text that explicitly and unmistakably answered the questions.
+This led us to switching our course of action. Rather than visiting the decision-tree top-down, looking for data to answer each node, we instead prepared a list of questions representing nodes in the decision-tree. This allowed us to ``visit'' all nodes in parallel, delaying the drawing of the decision-tree until all data was properly organised in a questionnaire. Analysing the available data, we were able to exactly pinpoint the areas of text that explicitly and unmistakably answered the questions.
 % SAY EXPLICITLY THAT WE TRIED TO VISIT THE TREE TOP DOWN BUT THAT WAS NOT WORKING AND WE HAD TO VISIT ALL NODES AT THE SAME TIME IN A SENSE
 % MARTIN COMMENT: What does "analysing the available data twice" actually mean?
 
-Answers to this questionnaire are summarised in Table \ref{questionnaire1} for Study~1, and in Table~\ref{questionnaire2} for Study~2. Column~1 reports the question needed to gather necessary information. Column~2 presents answers that we found in our two studies.
+Answers to this questionnaire are summarised in Table \ref{questionnaire1} for Study~1, and in Table~\ref{questionnaire2} for Study~2. Column~1 reports the questions needed to gather necessary information. Column~2 presents answers that we found in our two studies.
 
 \begin{table}
 \vspace{-4cm}
@@ -649,7 +650,7 @@ Answers to this questionnaire are summarised in Table \ref{questionnaire1} for S
 \hline 
 \hline 
 \emph{\footnotesize Can you distinguish an organised structure across
-yourself and your colleagues?} & {\footnotesize Evidence available in \emph{\bf Agile Slides} points out to a non-trivial
+yourself and your colleagues?} & {\footnotesize Evidence available in \emph{\bf Reference 3} points out to a non-trivial
 structure for professionals within Company X.}\tabularnewline
 \hline 
 \emph{\footnotesize Do you and the colleagues you work with work in
@@ -666,7 +667,7 @@ to single sites.}\tabularnewline
 \emph{\footnotesize Do you and your fellow colleagues interact informally
 only?} & {\footnotesize Selection and governance protocols are still in action
 to request additional people to work on certain tasks (page 84 of
-\emph{\bf Reference 2} + \emph{\bf Agile Slides}).}\tabularnewline
+\emph{\bf Reference 2} + \emph{\bf Reference 3}).}\tabularnewline
 \hline 
 \emph{\footnotesize Do you work on time-bound projects?} & {\footnotesize In page 2 of AGILE SLIDES the strategic portfolio duration
 (i.e. the set of projects planned) is fixed to increments of 2-5 years.}\tabularnewline
@@ -899,10 +900,10 @@ Brainstorming with the Industrial Partner and digging deeper in the data, we fou
 
 \emph{Pivots} however, were not explicit in our questionnaire. Rather they resided in the multiple versions of the same questionnaire, e.g. answered with different sets of data. To make \emph{pivots} explicit we decided to use a Checklist.
 
-The checklist in Fig.~\ref{list} contains answers from both our parallel studies. Answers are marked with the label ``[\emph{x}]'' where \emph{x} is either of our two \emph{Sub-studies}. The checklist also makes it possible to spot attributes for which we did not have enough data to answer. For example, in our case, none of our data sources contained evidence to clearly describe Company X' s FORMALITY practices as present or absent. Our Industrial Partner however, was able to fill-in for \emph{Sub-study 2}, using own data and experience within Company X. 
+The checklist in Fig.~\ref{list} contains answers from both our parallel studies. Answers are marked with the label ``[\emph{x}]'' where \emph{x} is either of our two \emph{studies}. The checklist also makes it possible to spot attributes for which we did not have enough data to answer. For example, in our case, none of our data sources contained evidence to clearly describe Company X' s FORMALITY practices as present or absent. Our Industrial Partner however, was able to fill-in for \emph{Study 2}, using own data and experience within Company X. 
 %To emphasise the multiple nature of these key-points in our ``picture'' we used the term  , since they are points of indecision that distinctively characterise the configuration for Company X.
 
-The first \emph{pivot}, DISPERSION, is caused by the presence of two different sets of data to answer. The first set refers to Company X as a whole, describing the overall structure and operations. The second set refers to specific sites within Company X, describing their own operations, and their collaboration with open-source communities. Consequently, the specific sites work in a way different than Company X as a whole.
+The first \emph{pivot}, DISPERSION, is caused by the presence of two different types of data. Each type led to a different answer. The first type refers to Company X as a whole, describing the overall structure and operations. The second set refers to specific sites within Company X, describing their own operations, and their collaboration with open-source communities. Consequently, the specific sites work in a way different than Company X as a whole.
 
 The second \emph{pivot}, FORMALITY, is caused by an inconsistency within the observed community. While the Industrial Partner gave a straight YES answer to the FORMALITY question, parts of the data at our disposal led us to find that Company X did not adopt formal evaluation of members. Other parts led us to find that Company X did use formal procedures and background checks to enrol members in teams or other project development units. When presented with the snapshot, the Industrial Partner identified the inconsistency. The inconsistency was due to the collaboration between open- and closed-source developers. While people directly appointed by Company X were formally evaluated, people from open-source never went through any background or experience checks.
 
@@ -931,7 +932,7 @@ The second \emph{pivot}, FORMALITY, is caused by an inconsistency within the obs
 
 \subsection{Applying the Decision-tree to Infer Community Types}
 
-Using data structured with the checklist in Fig. \ref{list}, ``colouring'' the decision-tree from \cite{specissue} becomes effortless. Figure \ref{result} shows the colouring. The colouring evidences the two pivot points, namely DISPERSION and FORMALITY as well as three social communities, namely, a plain Social Network (SN), Formal Networks (FNs) and Informal Communities (ICs). Pivot points are shown in ovals, while identified social community types are shown in circles.
+Structured with the checklist in Fig. \ref{list}, ``colouring'' the decision-tree from \cite{specissue} is effortless. Figure \ref{result} shows the colouring. The colouring evidences the two pivot points, DISPERSION and FORMALITY as well as three social communities, a plain Social Network (SN), Formal Networks (FNs) and Informal Communities (ICs). Pivot points are shown in ovals, while identified social community types are shown in circles.
 %(WGs - part A of Fig.~\ref{result})
 
 According to our data, Company X is organised as a globally dispersed (i.e.~separated by distance in time and space) set of sites. No joint work sessions are planned or supported in any one site. Rather, work stays dispersed and relies on dedicated digital means for sharing and synchronisation. Overall, Company X looks like a SN, self-organising and open to collaboration with other communities. In our case, for example, some (parts of) sites, were explicitly collaborating with (and connected to) open-source communities.
@@ -959,16 +960,16 @@ The above description, represents the instantaneous configuration of the organis
 %Applying the SEEDS Evaluation Framework to Diagnose Company X
 
 So we got to \emph{snapshots}. It is then that the Industrial Partner asked us: ``now what?''. 
-Across many brainstorming sessions we came up with ways to investigate the \emph{snapshot} to really understand the community configuration it represented. 
+Across many brainstorming sessions we found ways to investigate the \emph{snapshot} to really understand the community configuration it represented. 
 
 %\begin{center}
-\subsubsection{Concerning Community Complexity.}
+\subsubsection{Concerning Community Complexity}
 %\end{center}
 
 We found that Company X's \emph{snapshot} had a rather \emph{complex} form, i.e. a blend of multiple community types and multiple additional attributes. Conversely, a simpler form could have exhibited a single path and a few attributes. Moreover, the simplest form could have exhibited a single path and no additional attributes. Finally, a ``chaotic'' form could have shown \emph{pivots} only.
 
 %\begin{center}
-\subsubsection{Concerning Attributes.}
+\subsubsection{Concerning Attributes}
 %\end{center}
 %%%%%%%% ENRICH THE DISCUSSION WITH DETAILS AND WHY AND DESCRIBE THAT IT COMES FROM THE SWOT MODE - WHICH YES ANSWERS DO YOU EXPECT?? YOU HAVE YESSES WHERE YOU EXPECT AND YOU HAVE YESSES WHERE YOU DONT
 
@@ -982,10 +983,10 @@ Third, FNs were found in sites not currently collaborating with open-source. Thi
 %
 %More than trivially showing that Company X was a complex organisation, we decided to use our \emph{snapshot} to look for desirable properties. This meant posing the questions:  or conversely ``was there anything you did not find but would have liked?''.
 
-Finally, found that the \emph{snapshot} evidenced the VISIBILITY attribute set to NO. Conversely, empirical evidence from \textbf{Reference 1} and \textbf{2} indicated that members of Company X, from multiple sites, identified the need for increased VISIBILITY of practice, artefacts and people. Management at Company X can now plan for practices to explicitly support VISIBILITY across their sites.
+Finally, found that the \emph{snapshot} evidenced the VISIBILITY attribute set to NO. Conversely, empirical evidence from \textbf{Reference 1} and \textbf{2} indicated that members of Company X, from multiple sites, identified the need for increased VISIBILITY of practice, artefacts and people. For example, one of the interviewees part of \textbf{Reference 1}, responded with the following quote: ``all teams’ backlogs are [or must be] transparent and product management really needs to prioritise the content (features) of those backlogs''. Management at Company X can now plan for practices to explicitly support VISIBILITY across their sites.
 
 %\begin{center}
-\subsubsection{Concerning Steering Directions.}
+\subsubsection{Concerning Steering Directions}
 %\end{center}
 
 Finally, inspecting the decision-tree, we also found that it can be divided in three higher-order sets of attributes. 
@@ -1166,7 +1167,7 @@ Using the above ``diagnosis'' and the connected \emph{snapshot}, management at C
 %ADD FINDING ABOUT BARRIER\\
 %ADD FINDING ABOUT DIFFERENT PIVOT POINT FROM TWO DISTINCT OBSERVERS\\
 
-This section discusses our results and key observations. The section starts by discussing general observations on our case-study and SEEDS. Later, section \ref{sec:complexity} discusses how SEEDS can be used as a framework to establish community complexity. Finally, the section discusses threats to validity of this study, including SEEDS' limitations.
+This section discusses our results and key observations. The section starts by discussing general observations on our case-study and SEEDS. Later, section \ref{sec:complexity} discusses how SEEDS can be used as a framework to establish community complexity. Finally, section \ref{ttv} discusses threats to validity of this study, including SEEDS' limitations.
 
 
 %%% WHEN FIRST WE NOITCUED THAT A GLOBAL OGANIZTION HAS A TYPE ON THE LEFT HAND SIDE, EHRE FOR NOKIA IS THE OTHER WAY AROUND
@@ -1296,10 +1297,10 @@ Where certainty and agreement levels are high, decisions are \emph{simple}. Howe
 \begin{figure}[h!]
 %\begin{wrapfigure}{r}{0.30\textwidth}
   \begin{center}
-    \includegraphics[width=3.4in]{Stacey.pdf}    %
+    \includegraphics[width=2.7in]{Stacey.pdf}    %
   \end{center}
 \vspace{-5mm}
-\caption{\footnotesize The Stacey matrix (from \cite{sta02aa}.)}\label{fig:stacey}
+\caption{\footnotesize The Stacey matrix from \cite{sta02aa}.}\label{fig:stacey}
 %\end{wrapfigure}
 \end{figure}
 
@@ -1321,17 +1322,17 @@ Using SEEDS to understand these many dimensions is critical to elaborate organis
 
 While we were able to carry out a complete case-study to ``reverse engineer'' SEEDS, this also taught us that the resulting method still has many limitations. 
 
-First of all, SEEDS is currently based on qualitative evidence alone. To give statistical validity to the approach, quantitative metrics should be evaluated and developed. In addition, the SEEDS analysis framework is still very preliminary and based on organisational research, rather than focused to the benefits of development communities. Testing SEEDS on working development communities gave us many insights for improvement, however much work still needs to be done. 
+First, SEEDS is currently based on qualitative evidence alone. To give statistical validity to the approach, quantitative metrics should be evaluated and developed. In addition, the SEEDS analysis framework is still very preliminary and based on organisational research, rather than focused to the benefits of development communities. Testing SEEDS on working development communities gave us many insights for improvement, however much work still needs to be done. 
 
-Moreover, the validation of our method through a large industrial case study, validates snapshots-based evaluation of a community, but says little or nothing about validating its evolution. Last but not least, the method presented in Section \ref{method} was obtained as a refinement of guidelines presented in \cite{specissue} but is the result of exploratory research during the case study. Before the final version of the method was obtained, many intermediate versions were worked-out in our case study, until desired \emph{snapshots} were obtained. This series of intermediate versions compromises the external validity of our case-study. More study is therefore needed to confirm the external validity of our approach. In summary, many critical research questions still remain open concerning SEEDS and its application. For example, what is the period of time to which a snapshot should be associated? how should the SEEDS feedback loop for tuning be instrumented? Even with these limitations, our results are encouraging.
+Moreover, the validation of our method through a large industrial case study, validates snapshots-based evaluation of a community, but says little about validating its evolution. Last but not least, the method presented in Section \ref{method} was obtained as a refinement of guidelines presented in \cite{specissue} but is the result of exploratory research during the case study. Before the final version was obtained, many intermediate versions were worked-out in our case study, until desired \emph{snapshots} were obtained. This series of intermediate versions compromises the external validity of our case-study. More study is therefore needed to confirm the external validity of our approach. In summary, many critical research questions still remain open concerning SEEDS and its application. For example, what is the period of time to which a snapshot should be associated? how should the SEEDS feedback loop for tuning be instrumented? Even with these limitations, our results are encouraging.
 
 Finally, while evaluating and applying SEEDS we found some threats to validity. Based on the taxonomy in \cite{wohlin}, there are four potential validity threat areas, namely: external, construct, internal, and conclusion validity. 
 
-\emph{``External Validity''} concerns the applicability of the results in a more general context. The validity of our conclusions could be limited to the investigated organisation. To make sure our results were generalizable we carried out a confirmatory study, focused on confirming our observations with people from Company X. The confirmatory study was also focused on assessing the (re-)applicability of our results in different contexts, based on the experience of the interviewees. The parallel confirmatory study successfully confirmed results.
+\emph{External Validity} concerns the applicability of the results in a more general context. The validity of our conclusions could be limited to the investigated organisation. To make sure our results were generalizable we carried out a confirmatory study, focused on confirming our observations with people from Company X. The confirmatory study was also focused on assessing the (re-)applicability of our results in different contexts, based on the experience of the interviewees. The parallel confirmatory study successfully confirmed results.
 
-\emph{``Construct Validity''} and \emph{``Internal Validity''} concern the generalizability of the constructs under study, as well as the methods used to study and analyse data (e.g.~the types of bias involved). To mitigate these threats, our methods were tailored to use multiple triangulation of data sources. A representative from Company X verified our interpretations of the data and provided clarifications and corrections where necessary. Partial results and incremental analysis was conducted to gather constant independent feedback by two senior researchers, experienced in empirical methods.
+\emph{Construct Validity} and \emph{Internal Validity} concern the generalizability of the constructs under study, as well as the methods used to study and analyse data (e.g.~the types of bias involved). To mitigate these threats, our methods were tailored to use multiple triangulation of data sources. A representative from Company X verified our interpretations of the data and provided clarifications and corrections where necessary. Partial results and incremental analysis was conducted to gather constant independent feedback by two senior researchers, experienced in empirical methods.
 
-\emph{``Conclusion Validity''} concerns the degree to which our conclusions are reasonable based on our data. Our conclusions were drawn by an analysis of empirical evidence using known and confirmed methods from literature such as, coding, gap- and taxonomy-analysis. The approach and instruments that we used to gather such evidence were presented and validated in previous work \cite{specissue,icgseoss,icsesympo}. 
+\emph{Conclusion Validity} concerns the degree to which our conclusions are reasonable based on our data. Our conclusions were drawn by an analysis of empirical evidence using known and confirmed methods from literature such as, coding, gap- and taxonomy-analysis. The approach and instruments that we used to gather such evidence were presented and validated in previous work \cite{specissue,icgseoss,icsesympo}. 
 
 \section{Conclusion and Future Work}\label{conc}
 
